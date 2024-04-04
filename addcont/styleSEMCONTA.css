@@ -1,0 +1,90 @@
+
+
+body{
+    background-image:url(imagem/abstract1.jpg) ;
+    
+    background-size: cover;
+}
+
+div{
+    background-color: rgba(0, 0, 0, 0.844);
+    border-radius: 20px;
+    width: 500px;
+   height: 400px;
+   margin: auto;
+   margin-top: 125px;
+   background: linear-gradient(to right, rgba(4, 238, 238, 0.086), rgba(0, 0, 0, 0.364));
+   border: 1px solid rgb(43, 0, 255);
+}
+h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+
+
+form{
+   margin-top: 100px;
+}
+
+input.endereco{
+    background-color: rgba(253, 255, 253, 0.315);
+    
+   display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 400px;
+padding-left: 10px;
+margin-bottom: 20px;
+align-items: center;
+color: rgb(248, 248, 248);
+font-weight: 800;
+border: none;
+    }
+    ::placeholder { /* Seletor universal para todos os navegadores */
+        color: rgba(253, 253, 253, 0.632);
+        opacity: 1; /* Firefox */
+    }
+   
+
+    input.btn{ 
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        width: 150px;
+  padding: 10px;
+  border-radius: 100px;
+  font-weight: bold;
+  background-color:rgba(43, 0, 255, 0.444);
+  font-size: 15px;
+  transition: .5s;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  border: none;
+    }
+    input.btn:hover{ 
+        transition: .5s;
+        background-color:rgb(43, 0, 255);
+        color: rgb(9, 202, 2)   
+    }
+    @media only screen and (max-width: 600px) {
+        div {
+            width: 90%;
+            margin-top: 150px;
+        }
+        input.endereco, input.btn {
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+
+
+

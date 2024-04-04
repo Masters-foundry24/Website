@@ -1,0 +1,64 @@
+
+
+body{
+    background-image:url(imagem/abstract1.jpg) ;
+    
+    background-size: cover;
+}
+
+div{
+    background-color: rgba(0, 0, 0, 0.844);
+    border-radius: 20px;
+    width: 500px;
+   height: 400px;
+   margin: auto;
+   margin-top: 125px;
+   background: linear-gradient(to right, rgba(4, 238, 238, 0.086), rgba(0, 0, 0, 0.364));
+   border: 1px solid rgb(43, 0, 255);
+}
+h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+}
+ul a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  height: 45px;
+color: black;
+font-size: 18px;
+font-weight: bold;
+background-color:rgba(43, 0, 255, 0.405);
+border-radius:10px ;
+margin-right: 40px;
+padding-bottom: none;
+margin-bottom: 5px;
+padding-top: 20px;
+text-transform: uppercase;
+transition: .5s;
+}
+
+ul a:hover{
+  transition: .5s;
+background-color:rgb(43, 0, 255);
+color: rgb(9, 202, 2);
+}
+ul{
+   margin-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+    div {
+        width: 90%;
+        height: auto;
+        margin-top: 150px;
+    }
+    ul a {
+        font-size: 16px;
+    }
+}

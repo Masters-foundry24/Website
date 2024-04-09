@@ -76,7 +76,7 @@
         </p>
 
         <div id="input_group">
-          <input type="email" id="email" style="background-color: wheat; border-radius: 5px;" required>
+          <input type="email" id="email" style="background-color: wheat; border-radius: 5px; color:black; font-weight: bolder;" required>
           <button>
             <i class="fa-regular fa-envelope"></i>
           </button>

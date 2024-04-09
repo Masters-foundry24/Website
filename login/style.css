@@ -169,7 +169,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #000000 0%, #140e0e 100%);
+  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -220,13 +220,12 @@ form.sign-in-form {
 .btn.transparent {
   margin: 0;
   background: none;
-  border: .5px solid #0008ff51;
+  border: 3px solid #fff;
   width: 130px;
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: rgb(43, 0, 255);
 }
 
 .right-panel .image,

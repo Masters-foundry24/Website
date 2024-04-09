@@ -46,7 +46,7 @@
           <a href="#" class="footer-link">About Us</a>
         </li>
         <li>
-          <a href="contato/contact_form.html" class="footer-link" target="_parent">Contact Us</a>
+          <a href="../contacto1/contato.php" class="footer-link" target="_parent">Contact Us</a>
         </li>
         <li>
           <a href="#" class="footer-link">Shipping Policy</a>

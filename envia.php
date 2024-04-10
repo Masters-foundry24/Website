@@ -8,7 +8,7 @@
 <body>
     
 
-<form action="conect.php" method="post">
+<form action="./conect.php" method="post">
     <label for="descricao">Descricao:   </label> <br>
     <textarea name="descricao" id="descricao" cols="50" rows="4"></textarea> <br> <br>
     <input type="submit" value="Enviar">

@@ -1,0 +1,52 @@
+
+.formulari0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px;
+    border: 1px solid #000000;
+    margin: auto;
+    border-radius: 10px;
+}
+textarea {
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+textarea, input[type="email"] {
+    resize: none;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #f30707; /* cor de fundo */
+    color: white; /* cor do texto */
+    padding: 14px 20px; /* tamanho */
+    border: none; /* sem borda */
+    border-radius: 4px; /* bordas arredondadas */
+    cursor: pointer; /* cursor do mouse como mãozinha */
+}
+input[type="submit"]:hover {
+    background-color: #00ff0d; /* cor de fundo quando o mouse está sobre */
+}
+@media screen and (max-width: 600px) {
+    form .formulario {
+        width: 50%;
+        padding: 10px;
+    }
+    .formulari0 {
+       
+        height: 50vh;
+    }
+}

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
     
+
+
+<link rel="stylesheet" href="./descricao/style.css">
+
     <link rel="stylesheet" href="Responsive Footer/assets/css/style.css">
     <title>Criação de Miniaturas</title>
     <style>
@@ -534,10 +538,21 @@ header .container {
 
 
 
+    <div class="formulari0">
+        <form action="conect.php" method="post" class="formulario">
+        <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="email" placeholder="Example@gmail.com" required> <br> 
+            <label for="descricao">Descricao:</label> <br>
+            <textarea name="descricao" id="descricao" cols="50" rows="4" placeholder="Faz a sua decricao aqui..."></textarea> <br> <br>
+            <label for="imagem">Imagem:</label> <br>
+        <input type="file" name="imagem" id="imagem"> <br> <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 
 
 
-
+    
 
 
 

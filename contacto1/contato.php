@@ -65,14 +65,6 @@ div p a i{
 <body> <br> 
 <?php include '../Responsive Footer/header.php'; ?>   
 
-
-
-
-
-
-
-
-
 <div style="display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,11 +80,7 @@ div p a i{
     
 <img src="../img/fundopreto.jpg" alt="Logo"
           style="margin-bottom:30px;  cursor: pointer; background-color:blue; height: 20%;
-width: 18%;">
-        
-
-
-    
+width: 18%;"> 
     <p class="principal">
         Have a question or concern? Please reach out to us!
     </p> <br>
@@ -115,14 +103,6 @@ width: 18%;">
         <a target="_blank" rel="external" href="https://www.facebook.com/profile.php?id=61557132789271"><i class="fa-brands fa-facebook-messenger"></i></a>
     </p>
 </div>
-
-
-
-
-
-
-
-
 <?php include '../Responsive Footer/footer.php'; ?>
 <script src="../app.js"></script>
 </body>

@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif; background-color: #0cdbee12;
+  font-family: "Poppins", sans-serif;
  
 }
 
@@ -234,7 +234,7 @@ header .container {
 .toggle-btn {
   display: inline-block;
   border: none;
-  background: var(--darkTwo);
+  background: rgb(0, 0, 0);
   color: var(--backgroundColor);
   outline: none;
   cursor: pointer;
@@ -300,13 +300,14 @@ header .container {
     max-width: 450px;
     width: 65%;
     height: 100%;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
     z-index: 95;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: translateX(100%);
     transition: 0.5s;
+    
   }
 
   .links ul {
@@ -314,7 +315,7 @@ header .container {
   }
 
   .links a {
-    color: #000000;
+    color: #ffffff;
     margin-left: 0;
     padding: 2rem 0;
     font-weight: bold;
@@ -415,7 +416,7 @@ header .container {
             flex-wrap: wrap;
             margin: 20px;
             margin-bottom: 150px;
-            margin-top: 200px;
+            margin-top: 450px;
         }
         .option {
             background-color: #ffffff5f;
@@ -482,33 +483,43 @@ header .container {
 </head>
 <body>
 
+  <div class="big-wrapper light" style=" margin-top: 190px;  margin-bottom: -500px; outline: none;  min-height: 0vh;" >
     <header>
-        <div class="container">
-          <div class="logo">
-            <img src="./img/Logo1.png" alt="Logo" />
-            <h3>Fundição Masters</h3>
-          </div>
+            <div class="container">
+              <div class="logo">
+                <img src="../img/branca.jpg" alt="Logo" />
+                
+              </div>
+    
+              <div class="links">
+                <ul>
+                  <a href="../index.html" class="active">Home</a>
+                  <a href="../compra/index.html">Gallery</a>
+                  <a href="#">Our Process</a>
+                  <a href="../contacto1/contato.html">Contact</a>
+    
+                  <a href="../criarminis.html">Create Minis</a>
+                  <a href="../faq/faq.html">FAQ</a>
+                  <a href="../login/index.html"><i id="contaa" class="fa-solid fa-user" style="font-size: 25px;"></i></a>
+    
+                  <a href="../compra/index.html"><i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i></a>
+                </ul>
+              </div>
+    
+              <div class="overlay"></div>
+    
+              <div class="hamburger-menu">
+                <div class="bar"></div>
+              </div>
+            </div>
+    
+            
+          </header>
+      </div>
 
-          <div class="links">
-            <ul>
-              <a href="index.html" class="active">Home</a>
-              <a href="compra/index.html">Gallery</a>
-              <a href="../SMALLmedio/contacto1/contato.php">Contact</a>
-              <a href="#">Our Process</a>
-              <a href="#">Create Minis</a>
-              <a href="../SMALLmedio/faq/faq.php">FAQ</a>
-              <a href="login/index.html"><i id="contaa" class="fa-solid fa-user" style="font-size: 25px;"></i></a>
-              <a href="compra/index.html"><i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i></a>
-            </ul>
-          </div>
 
-          <div class="overlay"></div>
-
-          <div class="hamburger-menu">
-            <div class="bar"></div>
-          </div>
-        </div>
-      </header>
+      <img src="img/fundopreto.jpg" alt="Logo"
+      style="margin: auto; width: 100px; height: 5%; margin-top: 330px; margin-bottom: -400px; display: block; cursor: pointer;">
 
 
 
@@ -538,29 +549,111 @@ header .container {
 
 
 
-    <div class="formulari0">
-        <form action="conect.php" method="post" class="formulario">
-        <label for="email">Email:</label> <br>
-            <input type="email" name="email" id="email" placeholder="Example@gmail.com" required> <br> 
-            <label for="descricao">Descricao:</label> <br>
-            <textarea name="descricao" id="descricao" cols="50" rows="4" placeholder="Faz a sua decricao aqui..."></textarea> <br> <br>
-            <label for="imagem">Imagem:</label> <br>
-        <input type="file" name="imagem" id="imagem"> <br> <br>
-            <input type="submit" value="Enviar">
-        </form>
+
+
+
+    
+
+
+
+
+
+
+    
+       
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <h1>Fundição Masters</h1>
+        <p>It's all about your dreams.</p>
+
+        <div id="footer_social_media">
+          <a href="#" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=61557132789271" class="footer-link" id="facebook"
+            rel="external" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="tel:+2399885140" class="footer-link" id="whatsapp" target="_blank" rel="external">
+
+
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Blog</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">ainda</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">ainda</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">ainda</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3 style="color: white;">A company for and by perfections</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">About Us</a>
+        </li>
+        <li>
+          <a href="contato/contact_form.html" class="footer-link" target="_parent">Contact Us</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Shipping Policy</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Returns & Conditions</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Ethics Policy</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Sitemap</a>
+        </li>
+
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3>Subscribe</h3>
+
+        <p>
+          Enter your e-mail to receive notifications about our miniatures.
+        </p>
+
+        <div id="input_group">
+          <input type="email" id="email" style="background-color: wheat; border-radius: 5px;" required>
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
     </div>
 
-
-
-    
-
-
-
-
-
-
-    
-    <?php include './Responsive Footer/footer.php'; ?>
+    <div id="footer_copyright" style="color: white;">
+      &#169
+      2024 all rights reserved
+      <button class="toggle-btn">
+      </button>
+    </div>
+  </footer>
     
     
     

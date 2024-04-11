@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
 *{
-   font-family: 'Nunito', sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
-   outline: none; border:none;
+   outline: none;
+    border:none;
    text-decoration: none;
    transition: all .2s linear;
    text-transform: capitalize;
@@ -17,7 +18,7 @@ html{
 }
 
 body{
-   background: #eee;
+   background: #ffffff;
 }
 
 .container{
@@ -42,9 +43,9 @@ body{
 .container .products-container .product{
    text-align: center;
    padding:3rem 2rem;
-   background: #fff;
+   background: #5c5c5c1c;
    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-   outline: .1rem solid #ccc;
+   outline: .1rem solid #00000080;
    outline-offset: -1.5rem;
    cursor: pointer;
 }
@@ -92,7 +93,7 @@ body{
    display: none;
    padding:2rem;
    text-align: center;
-   background: #fff;
+   background: #ffffff;
    position: relative;
    margin:2rem;
    width: 40rem;
@@ -231,3 +232,292 @@ body{
       font-size: 16px;
      }
 }
+
+
+
+
+
+
+
+.big-wrapper {
+   position: relative;
+   padding: 1.7rem 0 2rem;
+   width: 100%;
+   min-height: 100vh;
+   overflow: hidden;
+   background-color: var(--backgroundColor);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
+ }
+
+ header {
+   position: fixed;
+   z-index: 70;
+   background-color: black;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: -27px;
+   box-shadow:  1px 5px 10px rgba(0, 0, 0, 0.051);
+ width: 100%;
+ }
+ header .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+ }
+ .overlay {
+   display: none;
+ }
+ .logo {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ color: #fff;
+   margin-right: -50px;
+   margin-top: 5px;
+   border-radius: 5px;
+ 
+   padding: 5px;
+ }
+ .logo img {
+   width: 40px;
+   margin-right: 0.6rem;
+   margin-top: -0.6rem;
+  
+ 
+ }
+ .links ul {
+   display: flex;
+   list-style: none;
+   align-items: center;
+   color: white;
+ }
+ .links a {
+  
+   margin-left: 1.5rem;
+   display: inline-block;
+   transition: 0.3s;
+   color: rgb(255, 255, 255);
+   font-weight: 500;
+   text-transform: uppercase;
+ 
+ }
+ .links a:hover {
+   color: rgba(0, 170, 255, 0.853);
+   transform: scale(1.05);
+   
+ }
+ .btn {
+   display: inline-block;
+   padding: 0.9rem 1.9rem;
+   color: #fff !important;
+   background-color: var(--mainColor);
+   border-radius: 16px;
+   text-transform: capitalize;
+   transition: 0.3s;
+ }
+ .btn:hover {
+   background-color: var(--hoverColor);
+   transform: scale(1) !important;
+ }
+ .hamburger-menu {
+   position: relative;
+   z-index: 99;
+   width: 2rem;
+   height: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   display: none;
+   
+ }
+ .hamburger-menu .bar {
+   position: relative;
+   width: 100%;
+   height: 3px;
+   background-color: rgb(8, 33, 251);
+   border-radius: 3px;
+   transition: 0.5s;
+ }
+ .bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.bar::before {
+   transform: translateY(-8px);
+ }
+ 
+ .bar::after {
+   transform: translateY(8px);
+ }
+ .big-wrapper.active .hamburger-menu .bar {
+   background-color: transparent;
+ }
+ .big-wrapper.active .bar::before {
+   transform: translateY(0) rotate(-45deg);
+ }
+ .big-wrapper.active .bar::after {
+   transform: translateY(0) rotate(45deg);
+ }
+ .showcase-area .container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   justify-content: center;
+ }
+ .toggle-btn {
+   display: inline-block;
+   border: none;
+   background: var(--darkTwo);
+   color: var(--backgroundColor);
+   outline: none;
+   cursor: pointer;
+   height: 39px;
+   width: 39px;
+   border-radius: 50%;
+   font-size: 1.1rem;
+   transition: 0.3s;
+ }
+ .toggle-btn i {
+   line-height: 39px;
+ }
+ .toggle-btn:hover {
+   background: var(--mainColor);
+ }
+ .big-wrapper.light .toggle-btn i:last-child {
+   display: none;
+ }
+ 
+ .big-wrapper.light .toggle-btn i:first-child {
+   display: block;
+ }
+ 
+ .big-wrapper.dark .toggle-btn i:last-child {
+   display: block;
+ }
+ 
+ .big-wrapper.dark .toggle-btn i:first-child {
+   display: none;
+ }
+ .copy {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   animation: appear 1s 1 both;
+ }
+
+ @keyframes appear {
+   0% {
+     clip-path: circle(30% at -25% -25%);
+   }
+   100% {
+     clip-path: circle(150% at 0 0);
+   }
+ }
+ @media screen and (max-width: 975px) {
+   .hamburger-menu {
+     display: flex;
+   }
+ 
+   .links {
+     position: fixed;
+     top: 0;
+     right: 0;
+     max-width: 450px;
+     width: 65%;
+     height: 100%;
+     background-color:rgb(0, 0, 0);
+     z-index: 95;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transform: translateX(100%);
+     transition: 0.5s;
+   }
+ 
+   .links ul {
+     flex-direction: column-reverse;
+   }
+ 
+   .links a {
+     color: #ffffff;
+     margin-left: 0;
+     padding: 2rem 0;
+     font-weight: bold;
+   }
+ 
+   .links .btn {
+     background: none;
+   }
+ 
+   .overlay {
+     display: block;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(8, 17, 1, 0.545);
+     opacity: 0;
+     pointer-events: none;
+     transition: 0.5s;
+   }
+ 
+   .big-wrapper.active .links {
+     transform: translateX(0);
+     box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.4);
+   }
+ 
+   .big-wrapper.active .overlay {
+     pointer-events: all;
+     opacity: 1;
+   }
+ 
+   .showcase-area {
+     padding: 2.5rem 0;
+     max-width: 700px;
+     margin: 0 auto;
+   }
+ 
+   .showcase-area .container {
+     grid-template-columns: 1fr;
+     justify-content: center;
+     grid-gap: 2rem;
+   }
+ 
+   .big-title {
+     font-size: 1.1rem;
+   }
+ 
+   .text {
+     font-size: 0.95rem;
+     margin: 1.4rem 0 1.5rem;
+   }
+ 
+   .person {
+     width: 100%;
+     transform: none;
+   }
+ 
+   .logo h3 {
+     font-size: 1.25rem;
+   }
+ 
+   .shape {
+     bottom: -180px;
+     left: -150px;
+   }
+ }
+ 
+ 

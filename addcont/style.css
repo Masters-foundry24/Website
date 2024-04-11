@@ -1,12 +1,8 @@
 
 
-body{
-    background-image:url(imagem/abstract1.jpg) ;
-    
-    background-size: cover;
-}
 
-div{
+
+div.addconta{
     background-color: rgba(0, 0, 0, 0.844);
     border-radius: 20px;
     width: 500px;
@@ -15,6 +11,7 @@ div{
    margin-top: 125px;
    background: linear-gradient(to right, rgba(4, 238, 238, 0.086), rgba(0, 0, 0, 0.364));
    border: 1px solid rgb(43, 0, 255);
+   margin-bottom: 50px;
 }
 h1{
     text-align: center;
@@ -25,7 +22,7 @@ h1{
     font-size: 25px;
     color: aliceblue;
 }
-ul a{
+ul a.criarconta{
     display: block;
     text-decoration: none;
     text-align: center;
@@ -44,7 +41,7 @@ text-transform: uppercase;
 transition: .5s;
 }
 
-ul a:hover{
+ul a.criarconta:hover{
   transition: .5s;
 background-color:rgb(43, 0, 255);
 color: rgb(9, 202, 2);
@@ -53,12 +50,12 @@ ul{
    margin-top: 50px;
 }
 @media only screen and (max-width: 600px) {
-    div {
+    div.addconta {
         width: 90%;
         height: auto;
         margin-top: 150px;
     }
-    ul a {
+    ul a.criarconta {
         font-size: 16px;
     }
 }

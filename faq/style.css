@@ -2,13 +2,14 @@
 
 body {
   font-family: "Baloo Bhai 2", cursive;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 .containerFluid {
   width: 60%;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 600px;
+  margin-bottom: -390px;
 }
 
 .containerFluid h2 {

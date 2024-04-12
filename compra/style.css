@@ -10,6 +10,7 @@ body{
     text-align: center;
     padding-top: 10px;
     transition: transform .5s;
+    margin-bottom: 50px;
 }
 svg{
     width: 30px;

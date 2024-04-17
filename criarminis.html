@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="./descricao/style.css">
 
     <link rel="stylesheet" href="Responsive Footer/assets/css/style.css">
+
+
+    <link rel="stylesheet" href="descricao/style.css">
     <title>Fundição Masters-Thumbnail Creation</title>
     <style>
       
@@ -551,6 +554,17 @@ header .container {
 
 
 
+    <div class="formulari0">
+      <form action="conect.php" method="post" class="formulario">
+      <label for="email">Email:</label> <br>
+          <input type="email" name="email" id="email" placeholder="Example@gmail.com" required> <br> 
+          <label for="descricao">Descricao:</label> <br>
+          <textarea name="descricao" id="descricao" cols="50" rows="4" placeholder="Faz a sua decricao aqui..."></textarea> <br> <br>
+          <label for="imagem">Imagem:</label> <br>
+      <input type="file" name="imagem" id="imagem"> <br> <br>
+          <input type="submit" value="Enviar">
+      </form>
+  </div>
 
 
     
@@ -638,13 +652,14 @@ header .container {
         <p>
           Enter your e-mail to receive notifications about our miniatures.
         </p>
-
-        <div id="input_group">
-          <input type="email" id="email" style="background-color: wheat; border-radius: 5px;" required>
-          <button>
-            <i class="fa-regular fa-envelope"></i>
-          </button>
-        </div>
+        <form id="input_group" action="https://formsubmit.co/ceitajosenasio19@gmail.com" method="POST">
+      
+          <input type="email" id="email" placeholder="example@gmail.com" style="background-color: wheat; border-radius: 5px; color:black; font-weight: 600;" required>
+          <button type="submit"><i class="fa-regular fa-envelope"></i></button>
+          <input type="hidden" name="_subject" value="Email Vindo do WebSite">
+          <input type="text" name="_honey" style="display: none;">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
       </div>
     </div>
 

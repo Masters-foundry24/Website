@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 40vh;
+    margin-bottom: 100px;
 }
 form {
     width: 100%;
@@ -12,6 +13,7 @@ form {
     border: 1px solid #000000;
     margin: auto;
     border-radius: 10px;
+    height: 350px;
 }
 textarea {
     resize: none;
@@ -29,7 +31,7 @@ textarea, input[type="email"] {
     box-sizing: border-box;
 }
 
-input[type="submit"] {
+ input[type="submit"] {
     background-color: #f30707; /* cor de fundo */
     color: white; /* cor do texto */
     padding: 14px 20px; /* tamanho */
@@ -42,7 +44,7 @@ input[type="submit"]:hover {
 }
 @media screen and (max-width: 600px) {
     form .formulario {
-        width: 50%;
+        width: 40%;
         padding: 10px;
     }
     .formulari0 {

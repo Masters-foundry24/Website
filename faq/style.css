@@ -15,6 +15,7 @@ body {
 .containerFluid h2 {
   color: rgb(0, 0, 0);
   position: relative;
+ text-align: center;
   
 }
 
@@ -22,15 +23,14 @@ body {
 
 .accordion {
   width: 100%;
-  padding: 0 2px;
-  border: 2px solid #36f307;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  padding: 10px;
+  
+ 
+  background-color: black;
   cursor: pointer;
   border-radius: 0px;
   display: flex;
-  margin: 10px 0;
+  margin: 5px 0;
   align-items: center;
 }
 
@@ -39,7 +39,7 @@ body {
   width: 30px;
   height: 30px;
   background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
-    no-repeat 8px 7px #0ef030;
+    no-repeat 8px 7px #00000000;
   border-radius: 50%;
   float: left;  
   transition: all 0.5s ease-in;
@@ -50,22 +50,24 @@ body {
   margin: 0;
   padding: 1px 0 0 0;
   font-weight: normal;
-  color: #000000;
+  color: #ffffff;
+ 
 }
 
 .active {
-  background-color: #e9ff6d23;
-  color: #fc0808;
+  background-color: #0000008c;
+  color: rgb(224, 224, 224);
 }
 
 .active .icon {
   background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
-    no-repeat 8px -25px #f4030392;
+    no-repeat 8px -25px #000000;
+ 
 }
 
 .panel {
   padding: 0 15px;
-  border-left: 1px solid #cf03f3;
+  border-left: 1px solid #000000;
   margin-left: 25px;
   font-size: 14px;
   text-align: justify;

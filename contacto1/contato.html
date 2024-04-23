@@ -15,40 +15,58 @@
 
     <style>
 
-div p a{
-    text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: green;
+.informacoesdecontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Altura mínima para garantir que a div ocupe toda a altura da janela de visualização */
+    min-height: 100vh;
+    margin-top: -233px;
+    margin-bottom: -133px;
+}
+.informacoesdecontato a i{
+color: rgba(0, 0, 0, 0.771);
+font-size: 30px;
 }
 .principal{
-    font-size: 25px;
-}
-.segundo{
-    font-size: 20px;
-}
-div span{
-   font-weight: bold;
-   font-size: 20px;
-}
-div p {
-    font-weight: 600;
-}
-div p a i{
-    text-decoration: none;
-    font-size: 40px;
-    margin-right: 15px;
+font-size: 18px;
+font-weight: bold;
 }
 
+.informacoesdecontato a i#whatsappp:hover{
+ color: #25d366;
+ 
+}
+.informacoesdecontato a i#facebookk:hover{
+ color: #2312de;
+ 
+}
+.informacoesdecontato a i#messengerr:hover{
+ color: #de12c3;
+ 
+}
+.segundo{
+font-size: 17px;
+font-weight: 600;
+}
+.informacoesdecontato p, .informacoesdecontato a {
+
+    text-align: center;
+}
 @media (max-width: 600px) {
+  
             div p a{
-                font-size: 16.5px;
+                font-size: 16px;
             }
             .principal{
-                font-size: 1.2em;
+                font-size: 16.5px;
+                margin-left: 7px;
+                margin-right: 7px;
             }
             .segundo{
-                font-size: 1em;
+                font-size: 16px;
             }
             div span{
                 font-size: 1em;
@@ -73,7 +91,7 @@ div p a i{
 <header>
         <div class="container">
           <div class="logo">
-            <img src="../img/branca.jpg" alt="Logo" />
+           <a href="../index.html"> <img src="../img/branca.jpg" alt="Logo" /></a>
             
           </div>
 
@@ -81,7 +99,7 @@ div p a i{
             <ul>
               <a href="../index.html" class="active">Home</a>
               <a href="../product card popup/galeria.html">Gallery</a>
-              <a href="../NossoProcesso/">Our Process</a>
+              <a href="../NossoProcesso/nossoprocesso.html">Our Process</a>
               <a href="../contacto1/contato.html">Contact</a>
 
               <a href="../criarminis.html">Create Minis</a>
@@ -105,55 +123,43 @@ div p a i{
 
 
 
-  
 
 
 
-<div style="display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150vh;
-    text-align: center;
-    box-shadow: 0 0 10px #b7afaf1a;
-    padding: 20px;
+  <img src="../img/fundopreto.jpg" alt="Logo Principal do site"  style="margin: auto; width: 100px; height: 5%; margin-top: 530px; display: flex; cursor: pointer; margin-bottom: 60px;">
 
-    max-width: 800px;
-    margin: auto;
-  ">
+<div class="informacoesdecontato">
 
 
-
-<img src="img/fundopreto.jpg" alt="Logo"
-          style="margin: auto; width: 100px; height: 5%; margin-top: 40px; display: block; cursor: pointer;">
-
-
-    
-<img src="../img/fundopreto.jpg" alt="Logo"
-          style="margin-bottom:30px;  cursor: pointer;  height: 20%;
-width: 100px; margin-top: 500px;"> 
-    <p class="principal">
-        Have a question or concern? Please reach out to us!
-    </p> <br>
-    <p class="segundo">
-       Hours: Mon - Fri, 8:30 - 16:30 (UTC)
-    </p> <br>
-    <p>
-        <span>Email:</span> <a href="mailto:scott@mastersminis.com">scott@mastersminis.com </a>
-        <br>    
-       <span> Phone:</span> <a href="tel:+2399885140">+239 9885140</a>
-          <br>
+  <p class="principal">
+    Have a question or concern? Please reach out to us!
+</p> <br>
+<p class="segundo">
+   Hours: Mon - Fri, 8:30 - 16:30 (UTC)
+</p> <br>
+<p>
+    <span>Email:</span> <a href="mailto:scott@mastersminis.com">scott@mastersminis.com </a>
+    <br>    
+   <span> Phone:</span> <a href="tel:+2399885140">+239 9885140</a>
       <br>
-        <p class="segundo">Alternative contact methods:</p>
-    </p>
-    <br>
-      <br>
-    <p>
-        <a target="_blank" rel="external" href="tel:+2399885140"><i style="color: #25d366;" class="fa-brands fa-whatsapp"></i></a>
-        <a href=""><i style="color: blue" class="fa-brands fa-signal-messenger"></i></a>
-        <a target="_blank" rel="external" href="https://www.facebook.com/profile.php?id=61557132789271"><i class="fa-brands fa-facebook-messenger"></i></a>
-    </p>
+  <br>
+    <p class="segundo">Alternative contact methods:</p>
+</p>
+<br>
+  <br>
+<p>
+    <a target="_blank" rel="external" href="tel:+2399885140"><i class="fa-brands fa-whatsapp" id="whatsappp"></i></a>
+    <a href=""> <i style=" margin-left: 10px; margin-right: 10px;" class="fa-brands fa-facebook-f" id="facebookk"></i>  </a>
+    <a target="_blank" rel="external" href="https://www.facebook.com/profile.php?id=61557132789271"><i class="fa-brands fa-facebook-messenger" id="messengerr"></i></a>
+</p>
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -171,7 +177,7 @@ width: 100px; margin-top: 500px;">
     <div id="footer_content">
       <div id="footer_contacts">
         <h1>Fundição Masters</h1>
-        <p>It's all about your dreams.</p>
+       
 
         <div id="footer_social_media">
           <a href="#" class="footer-link" id="instagram">
@@ -190,18 +196,8 @@ width: 100px; margin-top: 500px;">
       </div>
 
       <ul class="footer-list">
-        <li>
-          <h3>Blog</h3>
-        </li>
-        <li>
-          <a href="#" class="footer-link">ainda</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">ainda</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">ainda</a>
-        </li>
+     
+      
       </ul>
 
       <ul class="footer-list">
@@ -212,7 +208,7 @@ width: 100px; margin-top: 500px;">
           <a href="#" class="footer-link">About Us</a>
         </li>
         <li>
-          <a href="../contacto1/contato.php" class="footer-link" target="_parent">Contact Us</a>
+          <a href="../contacto1/contato.html" class="footer-link" target="_parent">Contact Us</a>
         </li>
         <li>
           <a href="#" class="footer-link">Shipping Policy</a>

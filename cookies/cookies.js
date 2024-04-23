@@ -1,11 +1,11 @@
 var msgCookies = document.getElementById('cookies-msg')
 
 function aceito(){
-    localStorage.lgpd = 'biscoitotinhos'
+    localStorage.lgpd = 'biscoitotinhoss'
     msgCookies.classList.remove('mostrar')
 }
 
-if(localStorage.lgpd == 'biscoitotinhos'){
+if(localStorage.lgpd == 'biscoitotinhoss'){
     msgCookies.classList.remove('mostrar')
 }else{
     msgCookies.classList.add('mostrar')

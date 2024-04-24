@@ -1,20 +1,5 @@
 
-.formulari0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    margin-bottom: 100px;
-}
-form {
-    width: 100%;
-    max-width: 500px;
-    padding: 50px;
-    border: 1px solid #000000;
-    margin: auto;
-    border-radius: 10px;
-    height: 350px;
-}
+ 
 textarea {
     resize: none;
     padding: 10px;

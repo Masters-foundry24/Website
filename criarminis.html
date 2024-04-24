@@ -483,12 +483,22 @@ header .container {
                 width: 70%;
             }
         }
+
+        
+.formulari0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  margin-top: -300px;
+ 
+}
     </style>
 </head>
 <body>
 
   <div class="big-wrapper light" style=" margin-top: 190px;  margin-bottom: -500px; outline: none;  min-height: 0vh;" >
-    <header>
+    <header style="padding-bottom: 6.5px;">
             <div class="container">
               <div class="logo">
                 <a href="./index.html"><img src="../img/branca.jpg" alt="Logo" /></a>
@@ -555,7 +565,13 @@ header .container {
 
 
     <div id="formulari0">
-      <form action="conect.php" method="post" class="formulario">
+      <form style="  width: 100%;
+      max-width: 500px;
+      padding: 50px;
+      border: 1px solid #000000;
+      margin: auto;
+      border-radius: 10px;
+      height: 350px; padding: 20px;" action="conect.php" method="post" class="formulario">
       <label for="email">Email:</label> <br>
           <input type="email" name="email" id="email" placeholder="Example@gmail.com" required> <br> 
           <label for="descricao">Descricao:</label> <br>

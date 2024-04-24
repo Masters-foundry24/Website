@@ -58,7 +58,7 @@ a {
   
 }
 
-.containeri {
+.container {
   position: relative;
   max-width: 81rem;
   width: 100%;
@@ -79,7 +79,7 @@ header {
 width: 100%;
 }
 
-header .containeri {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,7 +215,7 @@ color: #fff;
   transform: translateY(0) rotate(45deg);
 }
 
-.showcase-area .containeri {
+.showcase-area .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -369,7 +369,7 @@ color: #fff;
     margin: 0 auto;
   }
 
-  .showcase-area .containeri {
+  .showcase-area .container {
     grid-template-columns: 1fr;
     justify-content: center;
     grid-gap: 2rem;
@@ -400,7 +400,7 @@ color: #fff;
 }
 
 @media screen and (max-width: 470px) {
-  .containeri {
+  .container {
     padding: 0 1.5rem;
   }
 

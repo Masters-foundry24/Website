@@ -7,7 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-.container {
+.containeri {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +363,7 @@ input:-webkit-autofill
         width: 100%;
         height: 100%;
     }
-    .container {
+    .containeri {
          
         margin-top: 30px;
         margin-bottom: 10px;
@@ -513,7 +513,7 @@ input:-webkit-autofill
         width: 50%;
     }
 
-    .container {
+    .containeri {
          
         margin-top: 30px;
         margin-bottom: 10px;
@@ -524,7 +524,7 @@ input:-webkit-autofill
     .form {
         width: 100%;
     }
-    .container {
+    .containeri {
         margin-top: 10px;
         margin-bottom: 20px;
     }

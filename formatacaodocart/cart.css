@@ -1,0 +1,22 @@
+/*faz o icone aparecer*/
+#iconeescondido {
+    font-size: 33px;    margin-top: -5px; color: #ffff;
+       display: none;
+       align-items: center;
+   }
+   
+   
+   /* O ícone aparecerá quando a largura da tela for 600px ou menos */
+   @media (max-width: 975px) {
+       #iconeescondido {
+           display: block;
+       }
+   }
+   @media (max-width: 770px) {
+       #iconeescondido {
+           display: block;
+               color: #ffff;
+           
+          
+       }
+   }

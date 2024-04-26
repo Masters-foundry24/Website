@@ -7,6 +7,7 @@ import { title } from 'process';
 // coloquei este agora para a porta ser dinamica
 const PORT = process.env.PORT || 3000;
 process.env.DOMAIN = `http://localhost:${PORT}/`;
+
 dotenv.config();
 
 const app=express();

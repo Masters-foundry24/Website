@@ -3,7 +3,7 @@
 const payBtn=document.querySelector(".btn-buy");
 
 
-
+// alterei  "http://127.0.0.1:3000/strip-checkout"
 payBtn.addEventListener("click", ()=>{
     fetch("http://127.0.0.1:3000/strip-checkout",{
      method: "post",
@@ -19,5 +19,5 @@ payBtn.addEventListener("click", ()=>{
     })
     .catch((err)=> console.log(err));
  });
- 
+
  

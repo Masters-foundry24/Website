@@ -4,7 +4,9 @@ import stripe from 'stripe';
 import cors from 'cors'; // Importando o pacote cors
 import { title } from 'process';
 
-
+// coloquei este agora para a porta ser dinamica
+const PORT = process.env.PORT || 3000;
+process.env.DOMAIN = `http://localhost:${PORT}/`;
 dotenv.config();
 
 const app=express();
@@ -70,8 +72,12 @@ res.json(session.url);
 
    });
 
-   
+  /* 
 app.listen(3000, () =>{
 console.log("listening on port 3000;");
 
+});
+*/
+app.listen(PORT, () => {
+    console.log(`listening on port ${PORT};`);
 });

@@ -135,7 +135,7 @@ text-align: center;
 width: 50%;
 border-radius: 2rem;
 border: none;
-background: rgba(39, 255, 10, 0.696);
+background: rgba(255, 255, 255, 0.696);
 color:rgb(255, 255, 255) ;
 font-size: 1rem;
 font-weight: bold;
@@ -145,8 +145,8 @@ cursor: pointer;
     }
 
     .btn-buy:hover{
-        background: rgb(39, 255, 10);
-       
+        background: rgb(255, 255, 255);
+        color:black ;
         
             }
 
@@ -157,14 +157,10 @@ position: absolute;
 font-size: 1.5rem;
 right: 0.8rem;
 cursor: pointer;
-color: rgb(81, 255, 0);
+color:azure;
 top: 1rem;
     }
-    #close-cart:hover{
-  font-weight: bold;
-        color: red;
-        
-            }
+  
 
 
 
@@ -274,7 +270,7 @@ font-weight: 500;
 
         }
         .fa-bag-shopping{
-background: rgba(19, 229, 4, 0.463);
+background: rgba(248, 248, 248, 0.463);
 position: absolute;
 bottom: 10px;
 right: 10px;
@@ -286,8 +282,8 @@ cursor: pointer;
         }
         .fa-bag-shopping:hover{
     
-background: rgb(19, 229, 4);
-
+background: rgb(255, 255, 255);
+color: black;
 
                     }
                     .sc-container{
@@ -352,7 +348,7 @@ cursor: pointer;
 
             .sc-btn:hover{
                
-                background: rgb(39, 255, 10);
+                background: red;
                
                             }
 

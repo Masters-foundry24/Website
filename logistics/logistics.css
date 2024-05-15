@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ 
+ 
+.mapamundo{
+     margin-top: 534px;
+   background-image: url("vulcao.jpg");
+   background-repeat: no-repeat;
+   background-size: cover; /* Isso fará a imagem cobrir toda a página */
+   background-position: center center; /* Isso centralizará a imagem */
+   background-attachment: fixed; /* Isso fará com que a imagem de fundo não role com a página */
+   margin-bottom: -149px;
+}
+svg path{
+ fill: #545454;
+stroke: #EBB887;
+stroke-width: .25;
+}
+
+svg path:hover{
+    fill: black;
+ transition: .6s;
+ cursor: pointer;
+   }
+
+
+   .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 190px;
+    z-index: 1;
+    background-color: black;
+    font-size: 12px;
+    padding-top: 20px;
+    border: 2px solid black;
+  }
+
+  .dropdown-content a {
+    display: block;
+    font-size: 14PX;
+    margin-bottom: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

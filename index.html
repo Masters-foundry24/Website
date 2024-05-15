@@ -7,25 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded2:opsz,wght,FILL,GRAD@48,400,0,0" />
+
   <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
   <title>Fundição Masters-Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
 
 
-  <link rel="stylesheet" href="Responsive Footer/assets/css/style.css">
+  <link rel="stylesheet" href="./Responsive Footer/assets/css/style.css">
 
 
 
 
-  <link rel="stylesheet" href="./Carrossel/style.css">
+   
 
 
 
   <link rel="stylesheet" href="./cookies/cookies.css">
  
 
+ 
 <!--link para a estilizacao do cart -->
-<link rel="stylesheet" href="./formatacaodocart/cart.css">
+
   <style>
 
 .martelodecriarminis a img{
@@ -51,15 +55,83 @@
     }
 
  
- 
+   
+
+       .preco {
+        text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        #fundo {
+            background-image: url("img/fundoHome.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .imagemhome{
+    margin-bottom: -130px;
+    margin-top: 50px;
+        }
+     
+        .imagemhome #imHome {
+          display: block;
+          width: 400px;
+          height: 5%;
+          margin-bottom: -260px;
+          margin-top: -100px;
+        }
+
+
+        .imagemhome2{
+  
+        }
+     
+        .imagemhome2 #imHome2 {
+          display: block;
+          width: 380px;
+          height: 5%;
+          margin-left: 900px;
+          margin-top: 50px;
+        }
+
+
+
+        .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 200px;
+      z-index: 1;
+      background-color: black;
+      font-size: 12px;
+      padding-top: 20px;
+      border: 2px solid black;
+    }
+
+    .dropdown-content a {
+      text-align: left;
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 </style>
 
 
 </head>
 
-<body style="background-color:#ffff">
-  <main style="margin-top: -10px; background-color:#ffff">
-    <div class="big-wrapper light" style="background-color:#ffff">
+<body>
+
+  
+    <div class="big-wrapper light" id="fundo">
       <header style="top: 3.5%; margin-top: -37.5px;">
         <div class="container">
           <div class="logo" style="margin-top: 13px;">
@@ -71,281 +143,178 @@
             <ul>
               <a href="index.html" class="active">Home</a>
               <a href="product card popup/galeria.html">Gallery</a>
-              <a href="./NossoProcesso/nossoprocesso.html">Our Process</a>
+              <a href="#">Services</a>
+              <a href="./logistics/logistics.html">Logistics</a>
+              <a href="faq/faq.html">FAQ</a>
+              <div class="dropdown">
+                <a href="Drop/dropdown.html">About Us</a>
+                <div class="dropdown-content">
+                  
+                  <a href="Hexagon0/hexagon.html">Our Amazing Team</a>
+                
+                  <a href="Hexagon0/hexagon.html">Our Amazing Company</a>
+                </div>
+              </div>
+
               <a href="contacto1/contato.html">Contact</a>
 
-              <a href="criarminis.html">Create Minis</a>
-              <a href="faq/faq.html">FAQ</a>
-              <a href="./addcont/addcont.html"><i id="contaa" class="fa-solid fa-user" style="font-size: 25px;"></i></a>
-
-              <a href="public/index.html"><i class="fa-solid fa-bag-shopping" style="font-size: 25px;"></i></a>
+              <a href="careers/careers.html">Careers</a>
+              
+              
               
             </ul>
             
           </div>
           
-          <a href="./public/index.html"><i  id="iconeescondido" class="fa-solid fa-bag-shopping" ></i></a>
-          <div class="overlay"></div>
+          
+           
 
           <div class="hamburger-menu">
             <div class="bar"></div>
           </div>
         </div>
       </header>
-      <div>
-        <img src="img/fundopreto.jpg" alt="Logo"
-          style="margin: auto; width: 100px; height: 5%; margin-top: 63px; display: block; cursor: pointer;">
-        <div style="margin: auto; display: block; text-align: justify;  margin-left: 25%; margin-right: 25%; ">
-          <h3 style="margin-top: 15px; margin-bottom: 150px;">
-            We print, paint and post custom miniatures! If you have a design you want brought to life, we can take it
-            from compute file to figure with passion! <br><br>
-            <p style="text-align: center;">SMALL: €300</p>
-          </h3>
 
-        </div>
 
+
+
+
+      <div class="imagemhome2">
+        <img src="product card popup/img/ffteste1 -Photoroom.png-Photoroom.png" alt="" id="imHome2">
       </div>
 
-      <div class="carrossel" tabindex="0" class="content" onfocus="closeSidebar()" id="content">
 
 
-        <div class="containerr">
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
 
-        </div>
-      </div>
-      <div style="display: flex; justify-content: center;" class="containertextocarrossel">
-        <span style="text-align: left; padding-right: 0px; width: 450px; margin-top: 15px; text-align: justify; font-weight: 500;  margin-right: 15px; padding-left:20px;padding-right:20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eos nuos temporibus facere expedita nobis. Reprehenderit, laudantium repellendus?</span>
-        <a href="compra/index.html" style="background-color: rgb(109, 109, 105); width: 150px; text-align: center; border-radius: 3px;  height: 33px; margin-top: 30px; color: rgb(255, 255, 255); font-weight: 600;" class="carrossel1" id="ficapreto">Add To Cart</a>
-    </div>
 
-      <!---->
-        
-        
+      <img src="./contacto1/imagem/LOGO.png" alt="Logo"
+      style="margin: auto; width: 200px; height: 10%; margin-top: -30px; display: block; cursor: pointer;">
+
+
+
     
-    </div>
-
-  </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <main >
-  
-<div >
-      <p style="text-align: center; margin-top: 60px; font-weight: 600; margin-bottom: 150px; padding-bottom: 10px;">MEDIUM: €300</p>
-      <div class="carrossel2" tabindex="0" class="content" onfocus="closeSidebar()" id="content" >
-
-
-        <div class="container2">
-
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-
-        </div>
-
-      </div>
-      <div style="display: flex; justify-content: center;margin-top:0px; " class="containertextocarrossel" >
-       
-        <span style="text-align: left;display: flex; padding-right: 0px; width: 450px; margin-top: 15px; text-align: justify; font-weight: 500; margin-right: 15px; padding-left:20px;padding-right:20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eos nuos temporibus facere expedita nobis. Reprehenderit, laudantium repellendus?</span>
-        <a href="compra/index.html" style="background-color: rgb(109, 109, 105); width: 150px; text-align: center; border-radius: 3px;  height: 33px; margin-top: 20px; color: rgb(255, 255, 255); font-weight: 600;" class="carrossel1">Add To Cart</a>
-    </div>
-
-      
-    </div>
-
-  </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <main>
-     
-    <div class="big-wrapper light" style="background-color:#ffff">
-      <p style="text-align: center; margin-top: 60px; font-weight: 600; margin-bottom: -111px; padding-bottom: 10px;">BIG: €300</p>
-     <br>
-
-      <div class="carrossel3" tabindex="0" class="content" onfocus="closeSidebar()" id="content" >
-
-        <div class="container3" >
-
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-          <img class="imagem" src="./Carrossel/Arquivos/3.jpg" alt="" />
-
-        </div>
-
-      </div>
-      <div style="display: flex; justify-content: center; margin-top: -135px;" class="containertextocarrossel">
-        <span style="text-align: left; padding-right: 0px; width: 450px; margin-top: 15px; text-align: justify; font-weight: 500;   margin-right: 15px; padding-left:20px;padding-right:20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eos nuos temporibus facere expedita nobis. Reprehenderit, laudantium repellendus?</span>
-        <a href="compra/index.html" style="background-color: rgb(109, 109, 105); width: 150px; text-align: center; border-radius: 3px;  height: 33px; margin-top: 30px; color: rgb(255, 255, 255); font-weight: 600;" class="carrossel1" >Add To Cart</a>
-    </div>
-
-      <!---->
-      <br>
-    </div>
-    <div style="margin-top: 20px;" class="martelodecriarminis">
-      <h5 style="text-align: center; font-size: 19px; padding: 5px;">
-        Find out how to design your own miniatures here:
-      </h5><br>
-     <a href="./criarminis.html"> <img src="img/desenhar1.png" alt="imagem para prosseguir para a pagina de desenho ou criacao de miniaturas" class="criarminis"></a>
-    </div>
-
-  </main>
-
-
-
-
-
-
-
-
-
-  <footer>
-
-<div id="footer_content">
-  <div id="footer_contacts">
-    <h1>Fundição Masters</h1>
      
 
-    <div id="footer_social_media">
-      <a href="#" class="footer-link" id="instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
 
-      <a href="https://www.facebook.com/profile.php?id=61557132789271" class="footer-link" id="facebook"
-        rel="external" target="_blank">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
+<div class="imagemhome">
+  <img src="product card popup/img/fKA1SF.png" alt="" id="imHome">
+</div>
 
-      <a href="tel:+2399885140" class="footer-link" id="whatsapp" target="_blank" rel="external">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-    </div>
-  </div>
+      <footer style="margin-bottom: -100px; margin-top: 300px;">
+
+        <div id="footer_content">
+          <div id="footer_contacts">
+            <h1>Fundição Masters</h1>
+             
+        
+            <div id="footer_social_media">
+              <a href="#" class="footer-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+        
+              <a href="https://www.facebook.com/profile.php?id=61557132789271" class="footer-link" id="facebook"
+                rel="external" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+        
+              <a href="tel:+2399885140" class="footer-link" id="whatsapp" target="_blank" rel="external">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        
+        
+        
+          <ul class="footer-list">
+        
+          </ul>
+        
+        
+        
+          <ul class="footer-list">
+            <li>
+              <h3 style="color: white;">A company for and by perfections</h3>
+            </li>
+            <li>
+              <a href="NossoProcesso/nossoprocesso.html" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="./contacto1/contato.html" class="footer-link" target="_parent">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Shipping Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Returns & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Ethics Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Sitemap</a>
+            </li>
+          </ul>
+        
+          <div id="footer_subscribe">
+            <h3>Subscribe</h3>
+        
+            <p>
+              Enter your e-mail to receive notifications about our miniatures.
+            </p>
+        
+        
+        
+        
+            <form id="input_group" action="https://formsubmit.co/ceitajosenasio19@gmail.com" method="POST">
+              
+              <input type="email" id="email" placeholder="example@gmail.com" style="background-color:  #ffff; border-radius: 5px; color:black; font-weight: 600;" required>
+              <button type="submit"><i class="fa-regular fa-envelope"></i></button>
+              <input type="hidden" name="_subject" value="Email Vindo do WebSite">
+              <input type="text" name="_honey" style="display: none;">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+        
+        
+        
+          </div>
+        </div>
+        
+        <div id="footer_copyright" style="color: white;">
+          &#169
+          2024 all rights reserved
+          <button class="toggle-btn">
+          </button>
+        </div>
+        </footer>
 
 
 
-  <ul class="footer-list">
+        <div class="cookies-msg" id="cookies-msg">
+            <div class="cookies-txt">
+                <p>This site uses cookies, no analytics or marketing here, just the essencial cookies to make the website function.<i class="fa-solid fa-cookie-bite" style="font-size: 27px; color: rgb(105, 54, 4);"></i> <i class="fa-solid fa-cookie-bite" style="font-size: 27px; color: rgb(105, 54, 4);"></i> <i class="fa-solid fa-cookie-bite" style="font-size: 27px; color: rgb(105, 54, 4);"></i></p>
+        
+                <div class="cookies-btn">
+                    <button onclick="aceito()">Accept</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="cookies/cookies.js"></script>
+        
+        
 
-  </ul>
-
-
-
-  <ul class="footer-list">
-    <li>
-      <h3 style="color: white;">A company for and by perfections</h3>
-    </li>
-    <li>
-      <a href="#" class="footer-link">About Us</a>
-    </li>
-    <li>
-      <a href="./contacto1/contato.php" class="footer-link" target="_parent">Contact Us</a>
-    </li>
-    <li>
-      <a href="#" class="footer-link">Shipping Policy</a>
-    </li>
-    <li>
-      <a href="#" class="footer-link">Returns & Conditions</a>
-    </li>
-    <li>
-      <a href="#" class="footer-link">Privacy Policy</a>
-    </li>
-    <li>
-      <a href="#" class="footer-link">Terms & Conditions</a>
-    </li>
-    <li>
-      <a href="#" class="footer-link">Ethics Policy</a>
-    </li>
-    <li>
-      <a href="#" class="footer-link">Sitemap</a>
-    </li>
-  </ul>
-
-  <div id="footer_subscribe">
-    <h3>Subscribe</h3>
-
-    <p>
-      Enter your e-mail to receive notifications about our miniatures.
-    </p>
-
-
-
-
-    <form id="input_group" action="https://formsubmit.co/ceitajosenasio19@gmail.com" method="POST">
       
-      <input type="email" id="email" placeholder="example@gmail.com" style="background-color: wheat; border-radius: 5px; color:black; font-weight: 600;" required>
-      <button type="submit"><i class="fa-regular fa-envelope"></i></button>
-      <input type="hidden" name="_subject" value="Email Vindo do WebSite">
-      <input type="text" name="_honey" style="display: none;">
-      <input type="hidden" name="_captcha" value="false">
-    </form>
-
-
-
-  </div>
-</div>
-
-<div id="footer_copyright" style="color: white;">
-  &#169
-  2024 all rights reserved
-  <button class="toggle-btn">
-  </button>
-</div>
-</footer>
 
 
 
 
-
-
-
-
-
+    
 
   
   <!-- JavaScript Files -->
@@ -359,19 +328,11 @@
 
 
 
-  <div class="cookies-msg" id="cookies-msg">
-    <div class="cookies-txt">
-        <p>This site uses cookies, no analytics or marketing here, just the essencial cookies to make the website function.<i class="fa-solid fa-cookie-bite" style="font-size: 27px; color: rgb(105, 54, 4);"></i> <i class="fa-solid fa-cookie-bite" style="font-size: 27px; color: rgb(105, 54, 4);"></i> <i class="fa-solid fa-cookie-bite" style="font-size: 27px; color: rgb(105, 54, 4);"></i></p>
+ 
 
-        <div class="cookies-btn">
-            <button onclick="aceito()">Accept</button>
-        </div>
-    </div>
-</div>
+<script src="cookies/cookies.js"></script>
 
-<script src="./cookies/cookies.js"></script>
-
-  <script src="Carrossel/script.js"></script>
+  <script src="Carrossel/novo.js"></script>
 </body>
 
 </html>

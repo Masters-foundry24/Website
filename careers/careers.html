@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Responsive Footer/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+         .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 190px;
+      z-index: 1;
+      background-color: black;
+      font-size: 12px;
+      padding-top: 20px;
+      border: 2px solid black;
+    }
+
+    .dropdown-content a {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    #fundo {
+            background-image: url("imagem/FundoCareers.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+
+        .titulous{
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .conteudos{
+      margin-top: 100px;
+      margin: auto;
+      width: 400px;
+    }
+    .conteudo{
+
+ 
+      text-align: center;
+      line-height: 2;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* O fundo do modal */
+     .modal {
+            display: none; /* Inicialmente escondido */
+            position: fixed; /* Fica em posição fixa na tela */
+            z-index: 1; /* Fica no topo */
+            left: 0;
+            top: 0;
+            width: 100%; /* Largura total */
+            height: 100%; /* Altura total */
+            overflow: auto; /* Habilita scroll se necessário */
+            background-color: rgb(0,0,0); /* Fundo preto com opacidade */
+            background-color: rgba(0,0,0,0.4); /* Também adiciona opacidade (preto com um pouco de transparência) */
+        }
+
+        /* O conteúdo do modal */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% do topo e centralizado */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%; /* 80% da largura */
+            border-radius: 10px;
+        }
+
+        /* O botão de fechar */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        .subtitulomodel{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        li {
+  list-style-position: inside;
+  padding-left: 20px; /* Ajuste o valor conforme necessário */
+}
+
+#titulomodal{
+  text-align: center; 
+   
+  margin: auto;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.163);
+  width: 350px;
+  border-radius: 10px;
+}
+#titulomodal:hover{
+color: rgb(148, 218, 241);
+background-color: rgb(0, 0, 0);
+box-shadow: 2px 2px 20px 5px rgba(173, 216, 230, 0.171);
+text-transform: uppercase;
+}
+    </style>
+
+
+
+
+</head>
+
+
+
+<body  id="fundo">
+
+
+    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -25px;  margin-bottom: -500px; outline: none;  min-height: 0vh;">
+        <header style="padding-bottom: 3px; margin-top: -5px;">
+                <div class="container">
+                  <div class="logo">
+                   <a href="../index.html"> <img src="../img/branca.jpg" alt="Logo" /></a>
+                    
+                  </div>
+        
+                  <div class="links">
+                    <ul>
+                      <a href="../index.html" class="active">Home</a>
+                      <a href="../product card popup/galeria.html">Gallery</a>
+                      <a href="#">Services</a>
+                      <a href="#">Logistics</a>
+                      <a href="../faq/faq.html">FAQ</a>
+        
+                      <div class="dropdown">
+                        <a href="#">About Us</a>
+                        <div class="dropdown-content">
+                          
+                          <a href="../Hexagon0/hexagon.html">Our Amazing Team</a>
+
+                          <a href="../Drop/dropdown.html">Our Amazing Company</a>
+                        
+                        </div>
+                      </div>
+                      
+                      
+                      <a href="../contacto1/contato.html">Contact</a>
+                      <a href="#">Careers</a>
+                     
+                     
+                      
+                       
+                    </ul>
+                  </div>
+        
+                  <div class="overlay"></div>
+        
+                  <div class="hamburger-menu">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+        
+                
+              </header>
+          </div>
+
+
+
+          <img src="../contacto1/imagem/LOGO.png" alt="Logo"
+          style="margin: auto; width: 200px; height: 10%; margin-top: 570px; display: block; cursor: pointer;">
+
+
+          <h1 class="titulous">Carrers</h1>
+
+  <div class="conteudos" style="margin-bottom: 50px;">
+<p class="conteudo" id="conteudo1">Are you interested in working with us? Browse our current job openings and apply here!</p>
+
+</div>
+
+
+
+<h2 id="titulomodal">Miniatures Painter</h2>
+
+
+
+<!-- O Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Conteúdo do Modal -->
+  <div class="modal-content">
+    <span class="close">×</span>
+
+    <h1 class="titulomodel">Miniatures Painter</h1>
+ 
+
+
+
+
+
+
+<h5 class="subtitulomodel">What you’ll be doing:
+</h5>
+<ul>
+    <li>Hand-painting gorgeous miniatures</li>
+    <li>Pushing your skills as an artists and a craftsman</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="subtitulomodel">Our requirements:</h5>
+<ul>
+    <li>Hardworking and focused mindset</li>
+    <li>Lots of patience</li>
+    <li>No specific work experience needed, but we would love to see a passion for tabletop games, art or both!</li>
+    
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="subtitulomodel">Why work with us?</h5>
+<ul>
+    <li>Do what you love and call it work!</li>
+    <li>Great compensation</li>
+    <li>Two months paid training</li>
+    <li>A lot of flexibility in your hours to accommodate study or family commitments</li>
+    <li>30 day paid vacation per year</li>
+</ul>
+
+
+
+
+
+<h5 class="subtitulomodel">How to apply:</h5>
+<ul style="margin-bottom: 20px;">
+    <li>Send an email to <a href="#">Lazaro@mastersminis.com</a> with your CV attached</li>
+    <li>Attach also, photos of your painting or other artwork that you would like to share</li>
+</ul>
+
+<img src="../contacto1/imagem/LOGO.png" alt="" style="width: 130px; margin: auto; align-items: center; display: block;">
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+          <footer style="margin-top: 300px;">
+
+            <div id="footer_content">
+              <div id="footer_contacts">
+                <h1>Fundição Masters</h1>
+               
+        
+                <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+        
+                  <a href="https://www.facebook.com/profile.php?id=61557132789271" class="footer-link" id="facebook"
+                    rel="external" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+        
+                  <a href="tel:+2399885140" class="footer-link" id="whatsapp" target="_blank" rel="external">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+        
+              <ul class="footer-list">
+             
+              
+              </ul>
+        
+              <ul class="footer-list">
+                <li>
+                  <h3 style="color: white;">A company for and by perfections</h3>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">About Us</a>
+                </li>
+                <li>
+                  <a href="../contacto1/contato.html" class="footer-link" target="_parent">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Shipping Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Returns & Conditions</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Ethics Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Sitemap</a>
+                </li>
+              </ul>
+        
+              <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+        
+                <p>
+                  Enter your e-mail to receive notifications about our miniatures.
+                </p>
+        
+                <form id="input_group" action="https://formsubmit.co/ceitajosenasio19@gmail.com" method="POST">
+              
+                  <input type="email" id="email" placeholder="example@gmail.com" style="background-color:  #ffff; border-radius: 5px; color:black; font-weight: 600;" required>
+                  <button type="submit"><i class="fa-regular fa-envelope"></i></button>
+                  <input type="hidden" name="_subject" value="Email Vindo do WebSite">
+                  <input type="text" name="_honey" style="display: none;">
+                  <input type="hidden" name="_captcha" value="false">
+                </form>
+              </div>
+            </div>
+        
+            <div id="footer_copyright" style="color: white;">
+              &#169
+              2024 all rights reserved
+              <button class="toggle-btn">
+              </button>  
+            </div>
+          </footer>
+
+          <script src="../app.js"></script>
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <script>
+            // Pega o modal
+            var modal = document.getElementById("myModal");
+            
+            // Pega o elemento que abre o modal
+            var btn = document.getElementsByTagName("h2")[0];
+            
+            // Pega o elemento <span> que fecha o modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // Quando o usuário clica no botão, abre o modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // Quando o usuário clica em <span> (x), fecha o modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // Quando o usuário clica fora do modal, fecha ele
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+</body>
+</html>

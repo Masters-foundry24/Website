@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Amazing Team</title>
+
+    <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Responsive Footer/assets/css/style.css">
+    <link rel="stylesheet" href="hexagon.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+             
+            justify-content: center;
+            align-items: center;
+             background-color: rgb(0, 0, 0);
+        }
+
+        .containerH{
+            margin-top: 500px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .containerH .hexagon{
+            position: relative;
+            width: 200px;
+            height: 240px;
+            margin: 50px 20px 70px;
+        }
+
+        .containerH .hexagon .hexagon-shape{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffff;
+            clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+            transition: 0.5s;  
+        }
+
+        .containerH .hexagon:hover .hexagon-shape{
+            transform: translateY(0px);
+        }
+
+        .containerH .hexagon .hexagon-shape img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .containerH .hexagon .hexagon-shape .content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: left;
+            color: #fff;
+            background: linear-gradient(45deg, #00000032, rgba(5, 239, 20, 0.5));
+            opacity: 0;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .containerH .hexagon:hover .hexagon-shape .content{
+            opacity: 1;
+        }
+
+
+        #hoverText {
+            margin-top: -450px; 
+            margin-left: 50px;
+            line-height: 1.5;
+            width: 450px;
+            height: 300px;
+            color: #ffff;
+            text-align: justify;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+          
+        }
+        @media screen and (max-width: 1269px) {
+        
+          #hoverText {
+            margin-top: -270px; 
+          
+          
+        }
+
+}
+        @media screen and (max-width: 1062px) {
+          .containerH{
+         background-color: rgb(47, 0, 255);
+        margin-left: -150px;
+        margin-right: 4650px;
+        margin-bottom: -50px;
+        }
+
+        #hoverText {
+            margin-top: -100px; 
+        
+          
+            width:90%;
+        margin: auto;
+            
+        }
+         
+
+}
+
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 195px;
+      z-index: 1;
+      background-color: black;
+      font-size: 12px;
+      padding-top: 20px;
+      border: 2px solid black;
+    }
+
+    .dropdown-content a {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+
+
+@media screen and (max-width: 595) {
+          .containerH{
+         
+        margin-left: -150px;
+        margin-right: 450px;
+        }
+        .containerH .hexagon{
+            position: relative;
+            width: 10px;
+            height: 20px;
+            margin: 50px 20px 70px;
+          
+        }
+        
+        #josenasio{
+          width: 100px;
+            height: 130px;
+        }
+        #lazaro{
+           
+          }
+          #scott{
+           
+          }
+          #pascoal{
+           
+          }
+          #jerciley{
+           
+          }
+          #jairson{
+           
+          }
+
+
+}
+
+
+
+
+       
+    </style>
+
+
+<script>
+    window.onload = function() {
+        var hexagons = document.querySelectorAll('.hexagon');
+        var textElement = document.getElementById('hoverText');
+        var texts = [
+            'I began working at Masters Minis as an intern during my university degree. I really liked the culture and the wide range of interesting work I got to do. Now I m in-charge of all things tech - from CAD editing to web design.',
+            'I studied business management at university. Im now adding to this with tons of practical experience watching this company grow from almost nothing to what it is now.',
+            'I quit my office job in Sydney Australia to pursue this passion project. Masters Foundry has had it is ups and downs over the years and I have not regretted the decision to follow my dreams.',
+            'I work part time as a painter while I study. This way I can pay for my tuition. It is kind of amazing that I can get a paid to do something that I would be doing anyway as a hobby.',
+            'Texto para o hexágono 5',
+            'I have always had a passion for art. I love sketching in my spare time. I am thrilled to have a job where I am able to paint all day.'
+        ];
+        hexagons.forEach(function(hexagon, index) {
+            hexagon.addEventListener('mouseover', function() {
+                textElement.textContent = texts[index];
+            });
+        });
+    };
+</script>
+
+
+</head>
+<body>
+    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -10px;  margin-bottom: -500px; outline: none;  min-height: 0vh;" >
+        <header style="padding-bottom: 4.5px; padding-top: 18px;">
+          <div class="container">
+            <div class="logo">
+              <a href="../index.html"> <img src="../img/branca.jpg" alt="Logo" /></a>
+            </div>
+            <div class="links">
+              <ul>
+                <a href="../index.html" class="active">Home</a>
+                <a href="../product card popup/galeria.html">Gallery</a>
+                <a href="../NossoProcesso/nossoprocesso.html">Services</a>
+                <a href="../logistics/logistics.html">Logistics</a>
+                <a href="../faq/faq.html">FAQ</a>
+                <div class="dropdown">
+
+
+                  <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                  
+
+                  <a href="../Drop/dropdown.html">Our Amazing Company</a>
+                
+                </div>
+              </div>
+                 
+                </div>
+                <a href="../contacto1/contato.html">Contact</a>
+                <a href="../careers/careers.html">Careers</a>
+              </ul>
+            </div>
+            <div class="overlay"></div>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+<h1 style=" color: #ffff; font-size: 20px;font-family: Arial, Helvetica, sans-serif;text-align: center; margin-top: 530px; margin-bottom: -540px;">Our Amazing Team</h1>
+ 
+    <div class="containerH">
+        <div class="hexagon" style="  margin-left: -250px;" id="josenasio" >
+            <div class="hexagon-shape">
+                <img src="josenasioo.jpg" alt="">
+                <div class="content">
+                    <div>
+                       <strong>Josenasio Ceita</strong> <br>
+                       <strong>Software Engineer
+                    </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon" style=" margin-top: -309px; margin-left: 180px;" id="lazaro">
+            <div class="hexagon-shape">
+                <img src="lazaro.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <strong>Lazao Gaby</strong> <br>
+                        <strong>Logistics Specialist
+                        </strong>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon" style=" margin-top: -119px;  margin-left: -35px;" id="scott">
+            <div class="hexagon-shape">
+                <img src="scott.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <strong>Scott Master</strong> <br>
+                        <strong>Administration
+                        </strong>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon" style=" margin-left: 400px; margin-top: -310px;" id="jairson">
+            <div class="hexagon-shape">
+                <img src="josensio.png" alt="">
+                <div class="content">
+                    <div>
+                        <strong>Jairson Vera Cruz</strong> <br>
+                        <strong>Miniature Painter</strong>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon" style="margin-left: 180px; margin-top: -120px;" id="pascoal">
+            <div class="hexagon-shape">
+                <img src="images/testi2.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <strong>Pascoal Quaresma</strong> <br>
+                        <strong>Miniature Painter</strong>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon" style="margin-left: 610px; margin-top: -308px;" id="jerciley">
+            <div class="hexagon-shape">
+                <img src="images/img426.png" alt="">
+                <div class="content">
+                    <div>
+                        <strong>Jerciley de Graça</strong> <br>
+                        <strong>Miniature Painter</strong>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="hoverText"></p>
+
+
+
+    <footer style="  margin-top: 150px; border-top: 2px solid #ffff;" >
+
+        <div id="footer_content">
+          <div id="footer_contacts">
+            <h1>Fundição Masters</h1>
+         
+    
+            <div id="footer_social_media">
+              <a href="#" class="footer-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+    
+              <a href="https://www.facebook.com/profile.php?id=61557132789271" class="footer-link" id="facebook"
+                rel="external" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+    
+              <a href="tel:+2399885140" class="footer-link" id="whatsapp" target="_blank" rel="external">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+    
+          <ul class="footer-list">
+            
+          </ul>
+    
+          <ul class="footer-list">
+            <li>
+              <h3 style="color: white;">A company for and by perfections</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="../contacto1/contato.php" class="footer-link" target="_parent">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Shipping Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Returns & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Ethics Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Sitemap</a>
+            </li>
+          </ul>
+    
+          <div id="footer_subscribe">
+            <h3>Subscribe</h3>
+    
+            <p>
+              Enter your e-mail to receive notifications about our miniatures.
+            </p>
+    
+            <form id="input_group" action="https://formsubmit.co/ceitajosenasio19@gmail.com" method="POST">
+          
+              <input type="email" id="email" placeholder="example@gmail.com" style="background-color:  #ffffff; border-radius: 5px; color:black; font-weight: 600;" required>
+              <button type="submit"><i class="fa-regular fa-envelope"></i></button>
+              <input type="hidden" name="_subject" value="Email Vindo do WebSite">
+              <input type="text" name="_honey" style="display: none;">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
+        </div>
+    
+        <div id="footer_copyright" style="color: white;">
+          &#169
+          2024 all rights reserved
+          <button class="toggle-btn">
+          </button>
+        </div>
+      </footer>
+
+      <script src="../app.js"></script>
+</body>
+</html>

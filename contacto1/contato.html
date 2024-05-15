@@ -14,6 +14,11 @@
 
 
     <style>
+    body {
+            background-image: url("imagem/fundocontato.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
 .informacoesdecontato {
     display: flex;
@@ -79,6 +84,40 @@ font-weight: 600;
                 width: 50%;
             }
         }
+
+
+
+
+
+
+
+
+
+        .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 190px;
+      z-index: 1;
+      background-color: black;
+      font-size: 12px;
+      padding-top: 20px;
+      border: 2px solid black;
+    }
+
+    .dropdown-content a {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
     </style>
 
 </head>
@@ -99,14 +138,28 @@ font-weight: 600;
             <ul>
               <a href="../index.html" class="active">Home</a>
               <a href="../product card popup/galeria.html">Gallery</a>
-              <a href="../NossoProcesso/nossoprocesso.html">Our Process</a>
-              <a href="../contacto1/contato.html">Contact</a>
-
-              <a href="../criarminis.html">Create Minis</a>
+              <a href="#">Services</a>
+              <a href="#">Logistics</a>
               <a href="../faq/faq.html">FAQ</a>
-              <a href="../addcont/addcont.html"><i id="contaa" class="fa-solid fa-user" style="font-size: 25px;"></i></a>
 
-              <a href="../public/index.html"><i class="fa-solid fa-bag-shopping" style="font-size: 25px;"></i></a>
+              <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                  
+                  <a href="../Hexagon0/hexagon.html">Our Amazing Team</a>
+
+                  <a href="../Drop/dropdown.html">Our Amazing Company</a>
+                
+                </div>
+              </div>
+              
+              
+              <a href="../contacto1/contato.html">Contact</a>
+              <a href="../careers/careers.html">Careers</a>
+             
+             
+              
+               
             </ul>
           </div>
 
@@ -126,7 +179,7 @@ font-weight: 600;
 
 
 
-  <img src="../img/fundopreto.jpg" alt="Logo Principal do site"  style="margin: auto; width: 100px; height: 5%; margin-top: 522px; display: flex; cursor: pointer; margin-bottom: 60px;">
+  <img src="imagem/LOGO.png" alt="Logo Principal do site"  style="margin: auto; width: 150px; height: 5%; margin-top: 522px; display: flex; cursor: pointer; margin-bottom: 60px;">
 
 <div class="informacoesdecontato">
 
@@ -138,7 +191,7 @@ font-weight: 600;
    Hours: Mon - Fri, 8:30 - 16:30 (UTC)
 </p> <br>
 <p>
-    <span>Email:</span> <a href="mailto:scott@mastersminis.com">scott@mastersminis.com </a>
+    <span>Email:</span> <a href="mailto:lazaro@mastersminis.com">lazaro@mastersminis.com </a>
     <br>    
    <span> Phone:</span> <a href="tel:+2399885140">+239 9885140</a>
       <br>
@@ -239,7 +292,7 @@ font-weight: 600;
 
         <form id="input_group" action="https://formsubmit.co/ceitajosenasio19@gmail.com" method="POST">
       
-          <input type="email" id="email" placeholder="example@gmail.com" style="background-color: wheat; border-radius: 5px; color:black; font-weight: 600;" required>
+          <input type="email" id="email" placeholder="example@gmail.com" style="background-color:  #ffff; border-radius: 5px; color:black; font-weight: 600;" required>
           <button type="submit"><i class="fa-regular fa-envelope"></i></button>
           <input type="hidden" name="_subject" value="Email Vindo do WebSite">
           <input type="text" name="_honey" style="display: none;">

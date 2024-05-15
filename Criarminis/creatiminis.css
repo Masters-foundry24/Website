@@ -1,0 +1,88 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.nossoprocesso{
+    width: 75%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.029);
+    margin-bottom: 10px;
+    margin-top: 600px;
+  }
+  .tudo{
+    width: 70%;
+    margin: auto;
+ 
+  }
+  .step{
+    text-align: justify;
+   padding: 10px;
+   
+   font-size: 18px;
+margin-top: -60px;
+background-color: rgba(0, 0, 0, 0.081);
+   border-radius: 10px;
+    
+  }
+  .step:hover{
+     
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.104);
+  }
+  .descricaominis{
+    text-align: center;
+  
+   font-weight: 550;
+   font-size: 18px;
+
+   
+  }
+  .nomeplataforma {
+    text-align: center;
+   margin-top: 50px;
+ 
+   
+  }
+  .nomeplataforma a {
+  
+color: black;
+   
+  }
+  .ourprocess{
+    text-align: center;
+  background-color: rgba(232, 226, 226, 0.508);
+font-weight: bolder;
+   font-size: 25px;
+  }
+
+  .stepimagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20%;
+margin-top: 20px;
+     
+}
+
+@media (max-width: 600px) {
+   
+    .tudo {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .step{
+      text-align: justify;
+       font-size: 16px;
+    
+       
+      }
+
+      .stepimagem{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+   width: 300px;
+    }
+}

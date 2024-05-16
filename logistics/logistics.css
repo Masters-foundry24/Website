@@ -35,7 +35,7 @@ svg path:hover{
   .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 190px;
+    min-width: 200px;
     z-index: 1;
     background-color: black;
     font-size: 12px;
@@ -45,7 +45,7 @@ svg path:hover{
 
   .dropdown-content a {
     display: block;
-    font-size: 14PX;
+    font-size: 14px;
     margin-bottom: 5px;
   }
 

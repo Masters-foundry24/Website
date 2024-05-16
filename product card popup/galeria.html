@@ -36,7 +36,7 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      min-width: 190px;
+      min-width: 200px;
       z-index: 1;
       background-color: black;
       font-size: 12px;
@@ -54,11 +54,25 @@
       display: block;
     }
     #fundogaleria{
+      margin-top: -33px;
+      width: 100%;
+      position: relative;
+  display: inline-block;
       padding-bottom: 5px;
       background-image: url("img/fundogaleria.jpg");
       background-repeat: no-repeat;
    background-size: cover; 
    border-bottom: none;
+    }
+
+    #fundogaleria::after{
+      content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px; /* Ajuste a altura conforme necessário */
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
     }
    </style>
 
@@ -91,7 +105,7 @@
                         <a href="../Hexagon0/hexagon.html">Our Amazing Team</a>
                       
 
-                        <a href="../Hexagon0/hexagon.html">Our Amazing Team</a>
+                        <a href="../Drop/dropdown.html">Our Amazing Company</a>
                       </div>
                     </div>
 
@@ -117,9 +131,9 @@
 
 <div id="fundogaleria">
         <img src="../contacto1/imagem/LOGO.png" alt="Logo"
-          style="margin: auto; width: 150px; height: 5%; margin-top: -40px; display: block; cursor: pointer; margin-top: -33px; padding-top: 25px; padding-bottom: 20px;">
+          style="margin: auto; width: 200px; height: 10%; margin-top: -40px; display: block; cursor: pointer; margin-top: -33px; padding-top: 25px; padding-bottom: 20px;">
 
-          <h3 class="title">Take a look at some of the things we've painted</h3>
+          <h3 class="title">Take a look at some of that miniatures that we have painted.</h3>
  
         </div>
 

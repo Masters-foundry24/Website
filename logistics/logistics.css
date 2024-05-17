@@ -3,16 +3,20 @@
     padding: 0;
 
 }
+body{
+  
+  background-image: url("Logistics.jpg\ -\ Editado.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Isso fará a imagem cobrir toda a página */
+  background-position: center center; /* Isso centralizará a imagem */
+  background-attachment: fixed; /* Isso fará com que a imagem de fundo não role com a página */
+}
  
  
 .mapamundo{
      margin-top: 534px;
-   background-image: url("vulcao.jpg");
-   background-repeat: no-repeat;
-   background-size: cover; /* Isso fará a imagem cobrir toda a página */
-   background-position: center center; /* Isso centralizará a imagem */
-   background-attachment: fixed; /* Isso fará com que a imagem de fundo não role com a página */
-   margin-bottom: -149px;
+   
+   margin-bottom: -154px;
 }
 svg path{
  fill: #545454;

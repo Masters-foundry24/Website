@@ -1,0 +1,123 @@
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+     
+ 
+ 
+    transition: all 0.2s linear;
+}
+
+body {
+    background: #ffffff;
+    overflow-x: hidden; /* Evita a rolagem lateral */
+}
+
+.coffee-container {
+    width: 90%;
+    margin: 0 auto; 
+    margin-top: -550px;
+}
+
+ 
+
+.coffee-menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr)); /* Ajustado para 4 colunas */
+    gap: 1rem;
+    margin-bottom: 3rem;  margin-top: 600px;
+}
+
+.coffee-menu {
+    text-align: center;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: 0.1rem solid #ccc;
+    outline-offset: -0.7rem;
+}
+
+.coffee-menu:hover {
+    outline-offset: 0;
+    outline: 0.1rem solid #000;
+}
+
+.coffee-menu img {
+    width: 100%;
+}
+
+.coffee-menu img:hover {
+    transform: scale(.9);
+}
+
+ 
+
+.coffee-menu-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+
+.coffee-preview {
+    display: none;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    width: 40%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.coffee-preview img {
+    width: 100%;
+}
+
+.coffee-preview.active {
+    display: inline-block;
+}
+
+.coffee-preview h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+
+
+.coffee-preview p {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+ 
+
+.coffee-preview .fa-xmark {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.coffee-preview .fa-xmark:hover {
+    transform: rotate(180deg);
+    color: go ld;
+}
+
+@media (max-width: 667px) {
+    .coffee-menu-container {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Ajusta para 2 colunas */
+    }
+}

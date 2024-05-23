@@ -34,16 +34,7 @@
 
   
 
-    @media (max-width: 1500px) {
-        footer {
-            
-            
-            margin-top: 8000px;
-
-        }
-      
-        
-    }
+  
 
  
    
@@ -55,48 +46,45 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .imagemhome{
-      
-    margin-bottom: -130px;
-    margin-top: 50px;
-        }
+        
 
 
 
 
 
      
-        .imagemhome #imHome {
+        .reiartur #reiartur {
           display: block;
-          width: 400px;
-          height: 5%;
-          margin-bottom: -260px;
-          margin-top: -100px;
+          width: 30%;
+        
+          
+          margin-top: -25%;
         }
 
 
          
      
-        .imagemhome2 #imHome2 {
-          display: inline-block;
-          width: 70%;
+        .dragao #dragao {
+          display: block;
+          width: 85%;
        
-          margin-left: 30%;
-          margin-top: 3.5%;
+          margin-left: 15%;
+       
           margin-bottom: -34.7%;
           
-          
-           
+          min-height: 75vh;
+       
      
         }
 
-        img>.LOGOO{
-      
+        .logohome{
+      position: relative;
           margin: auto;
-           width: 24.16%;
+           width: 30%;
            height: 20%;
-            margin-top: -80%; 
-            display: inline-block;
+          margin-top: -100px;
+          
+            display: block;
     }
       
 
@@ -107,13 +95,9 @@
        
       }
        
-      img>.LOGOO{
-      width: 10%px;
-       
-      }
+    
   }
-
-
+ 
 
 
 
@@ -159,18 +143,21 @@
 
 
     footer{
+      z-index: 999;
        margin-bottom: -100px;
-       margin-top: 12%;
+       margin-top: -12%;
+position: fixed;
+bottom: 0;
     }
 </style>
 
 
 </head>
 
-<body>
+<body  id="fundo" style="min-height: 100vh; ">
 
   
-    <div class="big-wrapper light" id="fundo">
+    <div class="big-wrapper light">
       <header style="top: 3.5%; margin-top: -37.5px; padding-top: 17.3px; padding-bottom: 3px;">
         <div class="container">
           <div class="logo" style="margin-top: 13px;">
@@ -181,7 +168,7 @@
           <div class="links" style="text-align:right ;">
             <ul>
               <a href="index.html" class="active">Home</a>
-              <a href="product card popup/galeria.html">Gallery</a>
+              <a href="">Gallery</a>
               <a href="services/services.html">Services</a>
               <a href="./logistics/logistics.html">Logistics</a>
               <a href="faq/faq.html">FAQ</a>
@@ -214,33 +201,31 @@
         </div>
       </header>
 
+    </div>
+
+
+ 
+    <div class="dragao">
+      <img src="img/Dragão.png" alt="" id="dragao">
+    </div>
 
 
 
 
-      <div class="imagemhome2">
-        <img src="img/Dragão.png" alt="" id="imHome2">
-      </div>
-
-
-
-
-
-      <img class="LOGOO" src="./contacto1/imagem/LOGO.png" alt="Logo"
+      <img class="logohome" src="./contacto1/imagem/LOGO.png" alt="Logo"
      >
 
-
+     <div class="reiartur">
+      <img src="img/Rei Arthur - Editado.png" alt="" id="reiartur" >
+    </div>
 
     
      
 
 
-<div class="imagemhome">
-  <img src="img/Rei Arthur - Editado.png" alt="" id="imHome" style="    display: block;
-  width:25%; height: auto; margin-bottom: -9%;">
-</div>
+ 
 
-<div class="footer" style="margin-bottom:-70px; margin-top: 180px;">
+<div class="footer" style="margin-bottom:-70px; margin-top: -6.4%; z-index: 99999;">
   <div>
     <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="TermServices/termservices.html">Terms of Service</a></p>
     

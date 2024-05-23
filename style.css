@@ -49,7 +49,7 @@ a {
   position: relative;
   padding: 1.7rem 0 2rem;
   width: 100%;
-  min-height: 100vh;
+  min-height: 6vh;
   overflow: hidden;
   background-color: var(--backgroundColor);
   display: flex;

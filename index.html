@@ -32,74 +32,45 @@
 
   <style>
 
-  
-
-  
-
- 
-   
-
-        
-
         #fundo {
             background-image: url("img/fundoHome.jpg");
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size:  cover;
+
+            background-position: center;
+            background-attachment: fixed; /* opcional */
+            margin: 0;
+            padding: 0;
         }
-        
-
-
-
-
-
      
-        .reiartur #reiartur {
-          display: block;
-          width: 30%;
-        
-          
-          margin-top: -25%;
+         
+.footer {
+  margin-bottom: -200px;
+   margin-top: 300px;
+ 
         }
-
 
          
-     
-        .dragao #dragao {
-          display: block;
-          width: 85%;
-       
-          margin-left: 15%;
-       
-          margin-bottom: -34.7%;
-          
-          min-height: 75vh;
-       
-     
+     .logohome{
+      width: 40%; 
+       margin: auto;
+        display: block;
+         margin-top: 5%;  
+ 
         }
-
-        .logohome{
-      position: relative;
-          margin: auto;
-           width: 30%;
-           height: 20%;
-          margin-top: -100px;
-          
-            display: block;
-    }
+  
       
 
-
-        @media screen and (max-width: 376px) {
-        .imagemhome2 #imHome2{
-       height: 600px;
-       
-      }
-       
-    
-  }
+ 
  
 
 
+
+
+
+
+
+ 
 
 
 
@@ -142,19 +113,142 @@
     }
 
 
-    footer{
-      z-index: 999;
-       margin-bottom: -100px;
-       margin-top: -12%;
-position: fixed;
-bottom: 0;
-    }
+
+
+    @media screen and (max-width: 415px) {
+      .footer {
+        margin-top: 482px;
+          padding-top: 36px;
+          padding-bottom: 33px;
+        }
+        .footer img {
+    max-width: 80px;
+    height: auto;
+    
+    
+  }
+  .logohome{
+      width: 55%; 
+      
+        
+         margin-top: 50%;  
+ margin-bottom: -10%;
+        }
+        
+          
+        }
+
+        @media screen and (max-width: 431px) {
+      .footer {
+        margin-top: 482px;
+          padding-top: 36px;
+          padding-bottom: 33px;
+        }
+        .footer img {
+    max-width: 80px;
+    height: auto;
+    
+    
+  }
+  .logohome{
+      width: 55%; 
+      
+        
+         margin-top: 50%;  
+ margin-bottom: -10%;
+        }
+        
+          
+        }
+
+
+        @media screen and (max-width: 769px) {
+      .footer {
+        margin-top: 482px;
+          padding-top: 36px;
+          padding-bottom: 33px;
+        }
+        .footer img {
+    max-width: 80px;
+    height: auto;
+    
+    
+  }
+  .logohome{
+      width: 55%; 
+      
+        
+         margin-top: 50%;  
+ margin-bottom: -10%;
+        }
+        
+          
+        }
+
+
+
+        @media screen and (max-width: 821px) {
+      .footer {
+        margin-top: 482px;
+          padding-top: 36px;
+          padding-bottom: 33px;
+        }
+        .footer img {
+    max-width: 80px;
+    height: auto;
+    
+    
+  }
+  .logohome{
+      width: 55%; 
+      
+        
+         margin-top: 50%;  
+ margin-bottom: -10%;
+        }
+        
+          
+        }
+
+
+
+
+
+
+        @media screen and (max-width: 1024px) {
+      .footer {
+        margin-top: 482px;
+          padding-top: 36px;
+          padding-bottom: 33px;
+        }
+        .footer img {
+    max-width: 95px;
+    height: auto;
+    
+    
+  }
+  .logohome{
+      width: 55%; 
+      
+        
+         margin-top: 50%;  
+ margin-bottom: -10%;
+        }
+        
+          
+        }
+
+
+
+
+    
+ 
 </style>
 
 
 </head>
 
-<body  id="fundo" style="min-height: 100vh; ">
+<body id="fundo" >
 
   
     <div class="big-wrapper light">
@@ -199,15 +293,21 @@ bottom: 0;
             <div class="bar"></div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+        
       </header>
 
     </div>
 
 
- 
-    <div class="dragao">
-      <img src="img/Dragão.png" alt="" id="dragao">
-    </div>
+  
 
 
 
@@ -215,30 +315,13 @@ bottom: 0;
       <img class="logohome" src="./contacto1/imagem/LOGO.png" alt="Logo"
      >
 
-     <div class="reiartur">
-      <img src="img/Rei Arthur - Editado.png" alt="" id="reiartur" >
-    </div>
-
+  
     
      
 
 
  
 
-<div class="footer" style="margin-bottom:-70px; margin-top: -6.4%; z-index: 99999;">
-  <div>
-    <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="TermServices/termservices.html">Terms of Service</a></p>
-    
-  </div>
-  <div>
-    <img src="../img/branca.jpg" alt="Image description">
-  </div>
-  <div>
-    <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="PoliticaePrivacidade/politica.html">Privacy Policy</a></p>
-  </div>
-</div>
-<button style="margin-left: -1000px;" class="toggle-btn">
-</button>
 
 
         
@@ -249,7 +332,21 @@ bottom: 0;
 
 
 
-
+     <div class="footer">
+      <div>
+        <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="TermServices/termservices.html">Terms of Service</a></p>
+        
+      </div>
+      <div>
+        <img src="../img/branca.jpg" alt="Image description">
+      </div>
+      <div>
+        <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="PoliticaePrivacidade/politica.html">Privacy Policy</a></p>
+      </div>
+    </div>
+    <button style="margin-left: -1000px;" class="toggle-btn">
+    </button>
+    
     
 
   

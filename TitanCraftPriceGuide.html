@@ -238,10 +238,10 @@
         <div class="card">
             <img src="ImagemTitam/Pic3.png" alt="Card Image 2">
             <div class="info">
-                <div>Cost of unpainted resin: <span>$15.00</span></div>
-                <div>Cost to the customer: <span>$<span class="costToCustomer">15.00</span></span></div>
-                <div>Masters Minis revenue: <span>$<span class="MastersMinisRevenue">9.50</span></span></div>
-                <div>TitanCraft revenue: <span>$<span class="TitanCraftRevenue">5.50</span></span></div>
+                <div>Cost of unpainted resin: <span>$15.87</span></div>
+                <div>Cost to the customer: <span>$<span class="costToCustomer">15.87</span></span></div>
+                <div>Masters Minis revenue: <span>$<span class="MastersMinisRevenue">10.05</span></span></div>
+                <div>TitanCraft revenue: <span>$<span class="TitanCraftRevenue">5.82</span></span></div>
             </div>
         </div>
         <!-- Card 3 -->
@@ -258,103 +258,89 @@
         <div class="card" style="margin-top: -30px;">
             <img src="ImagemTitam/PIC 4.png" alt="Card Image 4">
             <div class="info">
-                <div>Cost of unpainted resin: <span>$15.00</span></div>
-                <div>Cost to the customer: <span>$<span class="costToCustomer">15.00</span></span></div>
-                <div>Masters Minis revenue: <span>$<span class="MastersMinisRevenue">9.50</span></span></div>
-                <div>TitanCraft revenue: <span>$<span class="TitanCraftRevenue">5.50</span></span></div>
+                <div>Cost of unpainted resin: <span>$47.87</span></div>
+                <div>Cost to the customer: <span>$<span class="costToCustomer">47.87</span></span></div>
+                <div>Masters Minis revenue: <span>$<span class="MastersMinisRevenue">30.32</span></span></div>
+                <div>TitanCraft revenue: <span>$<span class="TitanCraftRevenue">17.55</span></span></div>
             </div>
         </div>
     </div>
     
+    
     <script>
-        document.getElementById('markup').addEventListener('input', calculateRevenue);
-        document.getElementById('exclusiveAgreement').addEventListener('change', calculateRevenue);
-        document.getElementById('photoConfirmation').addEventListener('change', calculateRevenue);
-        document.getElementById('dispatchTime').addEventListener('change', calculateRevenue);
+       document.getElementById('markup').addEventListener('input', calculateRevenue);
+document.getElementById('exclusiveAgreement').addEventListener('change', calculateRevenue);
+document.getElementById('photoConfirmation').addEventListener('change', calculateRevenue);
+document.getElementById('dispatchTime').addEventListener('change', calculateRevenue);
 
-        function calculateRevenue() {
-            let markupValue = parseFloat(document.getElementById('markup').value) || 0;
-            let costOfUnpaintedResin = 15.00;
-            let costToCustomer = costOfUnpaintedResin * (1 + markupValue / 100);
-            let costOfMaterialsEUR = 1.81;
-            let photoConfirmation = document.getElementById('photoConfirmation').value;
-            let exclusiveAgreement = document.getElementById('exclusiveAgreement').value;
-            let dispatchTime = parseInt(document.getElementById('dispatchTime').value);
+function calculateRevenue() {
+    let markupValue = parseFloat(document.getElementById('markup').value) || 0;
+    
+    // Itera sobre cada cartão para atualizar os valores
+    document.querySelectorAll('.card').forEach(card => {
+        let costOfUnpaintedResin = parseFloat(card.querySelector('.info div:first-child span').innerText.replace('$', ''));
+        let costToCustomer = costOfUnpaintedResin * (1 + markupValue / 100);
+        let costOfMaterialsEUR = 1.81;
+        let photoConfirmation = document.getElementById('photoConfirmation').value;
+        let exclusiveAgreement = document.getElementById('exclusiveAgreement').value;
+        let dispatchTime = parseInt(document.getElementById('dispatchTime').value);
 
-            let costOfPaintingEUR;
-            let costOfOtherLabourEUR;
-            
-            if (photoConfirmation === "yes") {
-                costOfPaintingEUR = 3.31;
-                costOfOtherLabourEUR = 1.56;
-            } else {
-                costOfPaintingEUR = 2.65;
-                costOfOtherLabourEUR = 1.04;
-            }
+        let costOfPaintingEUR;
+        let costOfOtherLabourEUR;
 
-            let s = costOfUnpaintedResin / 15;
-            let totalCostUSD = 1.09 * (costOfMaterialsEUR + costOfPaintingEUR + costOfOtherLabourEUR);
-            let h0 = 17 * s;
-            let v0 = (totalCostUSD + 1) * s;
-            let g0 = s * (9.5 - 6.995) / (costOfUnpaintedResin - v0);
-
-            
-
-            let y;
-            if (exclusiveAgreement === "no") {
-                let g1 = (Math.sqrt(Math.pow(g0, 2) + 1) - 1) / g0;
-                let b = 1;
-                let a = b * Math.pow(g1, -2);
-                let l1 = h0 * (1 - g1 / g0) - g1 * v0 * (1 - 1 / g0);
-                let l2 = h0 * (1 + 1 / (g0 * g1)) + v0 * (1 - 1 / g0) / g1;
-
-                let A = a * a - b * b;
-                let B = -2 * (a * a * (costToCustomer * g1 + l1) + b * b * (costToCustomer / g1 - l2));
-                let C = Math.pow(a * (costToCustomer * g1 + l1), 2) - Math.pow(b * (costToCustomer / g1 - l2), 2) - Math.pow(a * b, 2);
-                y = (-B - Math.sqrt(B * B - 4 * A * C)) / (2 * A);
-
-            } else {
-                y = v0 + g0 * (costToCustomer - v0);
-            }
-
-            let MastersMinisRevenue;
-            if (dispatchTime === 5) {
-                MastersMinisRevenue = y;
-            } else if (dispatchTime === 4) {
-                MastersMinisRevenue = y + 0.9 * s * Math.exp(-0.11640505 * g0 / s);
-            } else if (dispatchTime === 3) {
-                MastersMinisRevenue = y + 2.1 * s * Math.exp(-0.10647943 * g0 / s);
-            } else { // if dispatchTime == 2
-                MastersMinisRevenue = y + 4.2 * s * Math.exp(-0.08417938 * g0 / s);
-            }
-
-            let TitanCraftRevenue = costToCustomer - MastersMinisRevenue;
-
-            document.querySelectorAll('.costToCustomer').forEach(element => {
-                element.innerText = costToCustomer.toFixed(2);
-            });
-
-            document.querySelectorAll('.MastersMinisRevenue').forEach(element => {
-                element.innerText = MastersMinisRevenue.toFixed(2);
-            });
-
-            document.querySelectorAll('.TitanCraftRevenue').forEach(element => {
-                element.innerText = TitanCraftRevenue.toFixed(2);
-            });
+        if (photoConfirmation === "yes") {
+            costOfPaintingEUR = 3.31;
+            costOfOtherLabourEUR = 1.56;
+        } else {
+            costOfPaintingEUR = 2.65;
+            costOfOtherLabourEUR = 1.04;
         }
 
-        // Initialize calculation
-        calculateRevenue();
+        let s = costOfUnpaintedResin / 15;
+        let totalCostUSD = 1.09 * (costOfMaterialsEUR + costOfPaintingEUR + costOfOtherLabourEUR);
+        let h0 = 17 * s;
+        let v0 = (totalCostUSD + 1) * s;
+        let g0 = s * (9.5 - 6.995) / (costOfUnpaintedResin - v0);
 
+        let y;
+        if (exclusiveAgreement === "no") {
+            let g1 = (Math.sqrt(Math.pow(g0, 2) + 1) - 1) / g0;
+            let b = 1;
+            let a = b * Math.pow(g1, -2);
+            let l1 = h0 * (1 - g1 / g0) - g1 * v0 * (1 - 1 / g0);
+            let l2 = h0 * (1 + 1 / (g0 * g1)) + v0 * (1 - 1 / g0) / g1;
 
+            let A = a * a - b * b;
+            let B = -2 * (a * a * (costToCustomer * g1 + l1) + b * b * (costToCustomer / g1 - l2));
+            let C = Math.pow(a * (costToCustomer * g1 + l1), 2) - Math.pow(b * (costToCustomer / g1 - l2), 2) - Math.pow(a * b, 2);
+            y = (-B - Math.sqrt(B * B - 4 * A * C)) / (2 * A);
 
+        } else {
+            y = v0 + g0 * (costToCustomer - v0);
+        }
 
+        let MastersMinisRevenue;
+        if (dispatchTime === 5) {
+            MastersMinisRevenue = y;
+        } else if (dispatchTime === 4) {
+            MastersMinisRevenue = y + 0.9 * s * Math.exp(-0.11640505 * g0 / s);
+        } else if (dispatchTime === 3) {
+            MastersMinisRevenue = y + 2.1 * s * Math.exp(-0.10647943 * g0 / s);
+        } else { // if dispatchTime == 2
+            MastersMinisRevenue = y + 4.2 * s * Math.exp(-0.08417938 * g0 / s);
+        }
 
+        let TitanCraftRevenue = costToCustomer - MastersMinisRevenue;
 
+        card.querySelector('.costToCustomer').innerText = costToCustomer.toFixed(2);
+        card.querySelector('.MastersMinisRevenue').innerText = MastersMinisRevenue.toFixed(2);
+        card.querySelector('.TitanCraftRevenue').innerText = TitanCraftRevenue.toFixed(2);
+    });
+}
 
-
-    
-    </script>
-    <script src="app.js"></script>
+// Initialize calculation
+calculateRevenue();
+    </script>  
+      <script src="app.js"></script>
 </body>
 </html>

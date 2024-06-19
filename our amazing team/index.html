@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Configurações de meta tags -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Define a compatibilidade com versões do Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define o comportamento do layout em dispositivos móveis -->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Descrição da página para SEO -->
     <meta name="description" content="Meet our amazing team and discover the passionate professionals behind our success.">
 
+    <!-- Título da página -->
     <title>Masters Minis-Our Amazing Team</title>
+    <!-- Ícone da página -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
+    <!-- Fonte de ícones do Font Awesome -->
     <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
 
+    <!-- Links para arquivos de CSS -->
     <link rel="stylesheet" href="../Responsive Footer/assets/css/style.css">
     <link rel="stylesheet" href="hexagon.css">
+    
+    <!-- Estilo CSS interno -->
     <style>
-        *{
+        /* Reseta as margens e o preenchimento padrão, e define o box-sizing */
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-           
         }
 
-        body{
-             
+        /* Estilo do corpo da página */
+        body {
             justify-content: center;
             align-items: center;
-             background-color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0); /* Cor de fundo preta */
         }
 
-        .containerH{
+        /* Container principal para os hexágonos */
+        .containerH {
             margin-top: 500px;
             position: relative;
             display: flex;
@@ -39,29 +47,33 @@
             flex-wrap: wrap;
         }
 
-        .containerH .hexagon{
+        /* Estilo dos hexágonos */
+        .containerH .hexagon {
             position: relative;
-            width:200px;
+            width: 200px;
             height: 240px;
             margin: 50px 20px 70px;
         }
 
-        .containerH .hexagon .hexagon-shape{
+        /* Forma do hexágono */
+        .containerH .hexagon .hexagon-shape {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: #ffff;
-            clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-            transition: 0.5s;  
+            background: #ffff; /* Cor de fundo branca */
+            clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%); /* Forma do hexágono */
+            transition: 0.5s;
         }
 
-        .containerH .hexagon:hover .hexagon-shape{
+        /* Animação ao passar o mouse sobre o hexágono */
+        .containerH .hexagon:hover .hexagon-shape {
             transform: translateY(0px);
         }
 
-        .containerH .hexagon .hexagon-shape img{
+        /* Imagem dentro do hexágono */
+        .containerH .hexagon .hexagon-shape img {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -70,7 +82,8 @@
             object-fit: cover;
         }
 
-        .containerH .hexagon .hexagon-shape .content{
+        /* Conteúdo dentro do hexágono */
+        .containerH .hexagon .hexagon-shape .content {
             position: absolute;
             top: 0;
             left: 0;
@@ -81,274 +94,258 @@
             justify-content: center;
             padding: 20px;
             text-align: left;
-            color: #fff;
-            background: linear-gradient(45deg, #00000032, rgba(5, 239, 20, 0.5));
+            color: #fff; /* Cor do texto branca */
+            background: linear-gradient(45deg, #00000032, rgba(5, 239, 20, 0.5)); /* Gradiente de fundo */
             opacity: 0;
             transition: 0.5s;
             cursor: pointer;
         }
 
-        .containerH .hexagon:hover .hexagon-shape .content{
+        /* Animação ao passar o mouse sobre o conteúdo do hexágono */
+        .containerH .hexagon:hover .hexagon-shape .content {
             opacity: 1;
         }
 
-
+        /* Estilo do texto que aparece ao passar o mouse sobre os hexágonos */
         #hoverText {
-            margin-top: -450px; 
+            margin-top: -450px;
             margin-left: 50px;
             line-height: 1.5;
             width: 450px;
             height: 300px;
-            color: #ffff;
+            color: #ffff; /* Cor do texto branca */
             text-align: justify;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
-          
         }
+
+        /* Media query para ajustar o layout em telas menores */
         @media screen and (max-width: 1269px) {
-        
-          #hoverText {
-            margin-top: -270px; 
-          
-          
+            #hoverText {
+                margin-top: -270px;
+            }
         }
 
-}
         @media screen and (max-width: 1062px) {
-          .containerH{
-         background-color: rgb(47, 0, 255);
-        margin-left: -150px;
-        margin-right: 4650px;
-        margin-bottom: -50px;
+            .containerH {
+                background-color: rgb(47, 0, 255); /* Cor de fundo azul */
+                margin-left: -150px;
+                margin-right: 4650px;
+                margin-bottom: -50px;
+            }
+
+            #hoverText {
+                margin-top: -100px;
+                width: 90%;
+                margin: auto;
+            }
         }
 
-        #hoverText {
-            margin-top: -100px; 
-        
-          
-            width:90%;
-        margin: auto;
-            
-        }
-         
-
-}
-
-
-
-
-
-.dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      min-width: 200px;
-      z-index: 1;
-      background-color: black;
-      font-size: 12px;
-      padding-top: 20px;
-      border-left: 2px solid rgba(255, 255, 255, 0.092);
-      border-right: 2px solid rgba(255, 255, 255, 0.092);
-      border-bottom: 2px solid rgba(255, 255, 255, 0.092);
-    }
-
-    .dropdown-content a {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-
-
-
-@media screen and (max-width: 595) {
-          .containerH{
-         
-        margin-left: -150px;
-        margin-right: 450px;
-        }
-        .containerH .hexagon{
+        /* Estilo do menu dropdown */
+        .dropdown {
             position: relative;
-            width: 10px;
-            height: 20px;
-            margin: 50px 20px 70px;
-          
+            display: inline-block;
         }
-      
-       
 
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            z-index: 1;
+            background-color: black;
+            font-size: 12px;
+            padding-top: 20px;
+            border-left: 2px solid rgba(255, 255, 255, 0.092);
+            border-right: 2px solid rgba(255, 255, 255, 0.092);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.092);
+        }
 
+        .dropdown-content a {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
 
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-
-       
+        /* Ajustes adicionais para telas menores */
+        @media screen and (max-width: 595px) {
+            .containerH {
+                margin-left: -150px;
+                margin-right: 450px;
+            }
+            .containerH .hexagon {
+                position: relative;
+                width: 10px;
+                height: 20px;
+                margin: 50px 20px 70px;
+            }
+        }
     </style>
 
+    <!-- Script JavaScript para atualizar o texto ao passar o mouse sobre os hexágonos -->
+    <script>
+        window.onload = function() {
+            var hexagons = document.querySelectorAll('.hexagon'); // Seleciona todos os elementos com a classe 'hexagon'
+            var textElement = document.getElementById('hoverText'); // Seleciona o elemento de texto para exibir as informações
+            var texts = [
+                "I began working at Masters Minis as an intern during my university degree. I really liked the culture and the wide range of interesting work I got to do. Now I'm in-charge of all things tech - from CAD editing to web design.",
+                "I studied business management at USTP. I'm now adding to this with tons of practical experience, helping this company grow from almost the very beginning.",
+                "I quit my office job in Sydney Australia to pursue this passion project. Masters Foundry has had it's ups and downs, but so far I have not regretted the decision to take this risk.",
+                " I work part time as a painter while I study. This way I can pay for my tuition. It's kind of amazing that I can get a paid to do something that I would be doing anyway as a hobby.",
+                "I've always had a passion for art. I love sketching in my spare time. I'm thrilled to have a job where I am able to paint all day.",
+                "My favourite part about this job is imagining something and then seeing it take shape before my eyes. Then there's the ability to look at something amazing and think 'I made that'."
+            ]; // Array de textos para exibir ao passar o mouse sobre os hexágonos
 
-<script>
-    window.onload = function() {
-        var hexagons = document.querySelectorAll('.hexagon');
-        var textElement = document.getElementById('hoverText');
-        var texts = [
-            "I began working at Masters Minis as an intern during my university degree. I really liked the culture and the wide range of interesting work I got to do. Now I'm in-charge of all things tech - from CAD editing to web design.",
-            "I studied business management at USTP. I'm now adding to this with tons of practical experience, helping this company grow from almost the very beginning.",
-            "I quit my office job in Sydney Australia to pursue this passion project. Masters Foundry has had it's ups and downs, but so far I have not regretted the decision to take this risk.",
-            " I work part time as a painter while I study. This way I can pay for my tuition. It's kind of amazing that I can get a paid to do something that I would be doing anyway as a hobby.",
-            "I've always had a passion for art. I love sketching in my spare time. I'm thrilled to have a job where I am able to paint all day.",
-            "My favourite part about this job is imagining something and then seeing it take shape before my eyes. Then there's the ability to look at something amazing and think 'I made that'."
-        ];
-        hexagons.forEach(function(hexagon, index) {
-            hexagon.addEventListener('mouseover', function() {
-                textElement.textContent = texts[index];
+            hexagons.forEach(function(hexagon, index) {
+                hexagon.addEventListener('mouseover', function() {
+                    textElement.textContent = texts[index]; // Atualiza o texto ao passar o mouse sobre o hexágono
+                });
             });
-        });
-    };
-</script>
-
+        };
+    </script>
 
 </head>
 <body>
-    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -10px;  margin-bottom: -500px; outline: none;  min-height: 0vh;" >
-        <header style=" padding-top: 17px; padding-bottom: 4px;">
-          <div class="container">
-            <div class="logo">
-              <a href="../index.html"> <img src="../img/branca.jpg" alt="Logo" /></a>
-            </div>
-            <div class="links">
-              <ul>
-                <a href="../index.html" class="active">Home</a>
-                <a href="../gallery/index.html">Gallery</a>
-                <a href="../services/index.html">Services</a>
-                <a href="../logistics/index.html">Logistics</a>
-                <a href="../faq/index.html">FAQ</a>
-                <div class="dropdown">
-
-
-                  <div class="dropdown">
-                <a href="../about us/index.html">About Us</a>
-                <div class="dropdown-content">
-                  
-                  <a href="../our amazing team/index.html">Our Amazing Team</a>
-                  <a href="../about us/index.html">Our Amazing Company</a>
-                 
-                
+    <!-- Cabeçalho da página -->
+    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -10px;  margin-bottom: -500px; outline: none;  min-height: 0vh;">
+        <header style="padding-top: 17px; padding-bottom: 4px;">
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html"> <img src="../img/branca.jpg" alt="Logo" /></a> <!-- Link para a página inicial com o logo -->
                 </div>
-              </div>
-                 
+                <div class="links">
+                    <ul>
+                        <a href="../index.html" class="active">Home</a>
+                        <a href="../gallery/index.html">Gallery</a>
+                        <a href="../services/index.html">Services</a>
+                        <a href="../logistics/index.html">Logistics</a>
+                        <a href="../faq/index.html">FAQ</a>
+                        <div class="dropdown">
+                            <a href="../about us/index.html">About Us</a>
+                            <div class="dropdown-content">
+                              <a href="../our amazing team/index.html">Our Amazing Team</a>
+                              <a href="../about us/index.html">Our Amazing Company</a>
+                            </div>
+                          </div>
+                          <a href="../contact/index.html">Contact</a>
+                        <a href="../careers/index.html">Careers</a>
+                        </div>
+                        
+                    </ul>
                 </div>
-                <a href="../contact/index.html">Contact</a>
-                <a href="../careers/index.html">Careers</a>
-              </ul>
+                <div class="overlay"></div>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
             </div>
-            <div class="overlay"></div>
-            <div class="hamburger-menu">
-              <div class="bar"></div>
-            </div>
-          </div>
         </header>
-      </div>
+    </div>
 
-<h1 style=" color: #ffff; font-size: 20px;font-family: Arial, Helvetica, sans-serif;text-align: center; margin-top: 530px; margin-bottom: -540px;">Our Amazing Team</h1>
- 
+    <!-- Título da seção de hexágonos -->
+    <h1 style="color: #ffff; font-size: 20px; font-family: Arial, Helvetica, sans-serif; text-align: center; margin-top: 530px; margin-bottom: -540px;">Our Amazing Team</h1>
+    
+    <!-- Container dos hexágonos -->
     <div class="containerH">
-        <div class="hexagon" style="  margin-left: -250px;" id="josenasio" >
+        <!-- Hexágono 1 -->
+        <div class="hexagon" style="margin-left: -250px;" id="josenasio">
             <div class="hexagon-shape">
-                <img src="josenasioo.jpg" alt="">
+                <img src="josenasioo.jpg" alt=""> <!-- Imagem do integrante -->
                 <div class="content">
                     <div>
                        <strong>Josenasio Ceita</strong> <br>
-                       <strong>Software Engineer
-                    </strong>
+                       <strong>Software Engineer</strong> <!-- Informações sobre o integrante -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hexagon" style=" margin-top: -309px; margin-left: 180px;" id="lazaro">
+        <!-- Hexágono 2 -->
+        <div class="hexagon" style="margin-top: -309px; margin-left: 180px;" id="lazaro">
             <div class="hexagon-shape">
-                <img src="lazaro.jpg" alt="">
+                <img src="lazaro.jpg" alt=""> <!-- Imagem do integrante -->
                 <div class="content">
                     <div>
                         <strong>Lázaro Gaby</strong> <br>
-                        <strong>Logistics Specialist
-                        </strong>
+                        <strong>Logistics Specialist</strong> <!-- Informações sobre o integrante -->
                      </div>
                 </div>
             </div>
         </div>
-        <div class="hexagon" style=" margin-top: -119px;  margin-left: -35px;" id="scott">
+        <!-- Hexágono 3 -->
+        <div class="hexagon" style="margin-top: -119px; margin-left: -35px;" id="scott">
             <div class="hexagon-shape">
-                <img src="scott.jpg" alt="">
+                <img src="scott.jpg" alt=""> <!-- Imagem do integrante -->
                 <div class="content">
                     <div>
                         <strong>Scott Master</strong> <br>
-                        <strong>Administration
-                        </strong>
+                        <strong>Administration</strong> <!-- Informações sobre o integrante -->
                      </div>
                 </div>
             </div>
         </div>
-        <div class="hexagon" style=" margin-left: 400px; margin-top: -310px;" id="jairson">
+        <!-- Hexágono 4 -->
+        <div class="hexagon" style="margin-left: 400px; margin-top: -310px;" id="jairson">
             <div class="hexagon-shape">
-                <img src="jairson.jpg" alt="">
+                <img src="jairson.jpg" alt=""> <!-- Imagem do integrante -->
                 <div class="content">
                     <div>
                         <strong>Jairson Vera Cruz</strong> <br>
-                        <strong>Miniature Painter</strong>
+                        <strong>Miniature Painter</strong> <!-- Informações sobre o integrante -->
                      </div>
                 </div>
             </div>
         </div>
+        <!-- Hexágono 5 -->
         <div class="hexagon" style="margin-left: 180px; margin-top: -120px;" id="pascoal">
             <div class="hexagon-shape">
-                <img src="jerciley.jpg" alt="">
+                <img src="jerciley.jpg" alt=""> <!-- Imagem do integrante -->
                 <div class="content">
                     <div>
                         <strong>Jerciley da Graça</strong> <br>
-                        <strong>Miniature Painter</strong>
+                        <strong>Miniature Painter</strong> <!-- Informações sobre o integrante -->
                      </div>
                 </div>
             </div>
         </div>
+        <!-- Hexágono 6 -->
         <div class="hexagon" style="margin-left: 610px; margin-top: -308px;" id="jerciley">
             <div class="hexagon-shape">
-                <img src="pascoal.jpg" alt="">
+                <img src="pascoal.jpg" alt=""> <!-- Imagem do integrante -->
                 <div class="content">
                     <div>
                         <strong>Pascoal Quaresma</strong> <br>
-                        <strong>Miniature Painter</strong>
+                        <strong>Miniature Painter</strong> <!-- Informações sobre o integrante -->
                      </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <!-- Texto que aparece ao passar o mouse sobre os hexágonos -->
     <p id="hoverText"></p>
 
-
-    <div class="footer" style="margin-bottom:-45px; margin-top: 100px; border-top: 1px solid #ffffff5d;">
-      <div>
-        <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p>
-        
-      </div>
-      <div>
-        <img src="../img/branca.jpg" alt="Image description">
-      </div>
-      <div>
-        <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../Privacy Policy/index.html">Privacy Policy</a></p>
-      </div>
+    <!-- Rodapé da página -->
+    <div class="footer" style="margin-bottom: -45px; margin-top: 100px; border-top: 1px solid #ffffff5d;">
+        <div>
+            <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p>
+        </div>
+        <div>
+            <img src="../img/branca.jpg" alt="Image description"> <!-- Imagem no rodapé -->
+        </div>
+        <div>
+            <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../Privacy Policy/index.html">Privacy Policy</a></p>
+        </div>
     </div>
+    
+    <!-- Botão de alternância (ainda não implementado) -->
     <button style="margin-left: -1000px;" class="toggle-btn">
     </button>
 
-      <script src="../app.js"></script>
+    <!-- Script externo JavaScript -->
+    <script src="../app.js"></script>
 </body>
 </html>
+

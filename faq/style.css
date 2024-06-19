@@ -1,82 +1,84 @@
+/* Importa a fonte "Baloo Bhai 2" e "Muli" do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
 
+/* Estilização básica do corpo do documento */
 body {
-  font-family: "Baloo Bhai 2", cursive;
-  background-color: #ffffff;
+  font-family: "Baloo Bhai 2", cursive; /* Define a fonte para todo o corpo usando "Baloo Bhai 2" */
+  background-color: #ffffff; /* Define a cor de fundo como branco */
 }
 
+/* Container para o conteúdo principal */
 .containerFluid {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 600px;
-  margin-bottom: -390px;
+  width: 60%; /* Largura do container */
+  margin: 0 auto; /* Centraliza o container na página */
+  margin-top: 600px; /* Margem superior para ajuste de layout */
+  margin-bottom: -390px; /* Margem inferior para ajuste de layout */
 }
 
+/* Estilização para o título h2 dentro do container */
 .containerFluid h2 {
-  color: rgb(0, 0, 0);
-  position: relative;
- text-align: center;
-  
+  color: rgb(0, 0, 0); /* Cor do texto */
+  position: relative; /* Define a posição como relativa */
+  text-align: center; /* Alinhamento central do texto */
 }
 
- 
-
+/* Estilização básica para os acordeões */
 .accordion {
-  width: 100%;
-  padding: 10px;
-  
- 
-  background-color: black;
-  cursor: pointer;
-  border-radius: 0px;
-  display: flex;
-  margin: 5px 0;
-  align-items: center;
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  background-color: black; /* Cor de fundo dos acordeões */
+  cursor: pointer; /* Cursor do mouse */
+  border-radius: 0px; /* Borda arredondada */
+  display: flex; /* Exibe como flex container */
+  margin: 5px 0; /* Margem superior e inferior */
+  align-items: center; /* Alinha itens verticalmente ao centro */
 }
 
+/* Ícone dentro do acordeão */
 .accordion .icon {
-  margin: 0 10px 0 0;
-  width: 30px;
-  height: 30px;
-  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
-    no-repeat 8px 7px #00000000;
-  border-radius: 50%;
-  float: left;  
-  transition: all 0.5s ease-in;
+  margin: 0 10px 0 0; /* Margem do ícone */
+  width: 30px; /* Largura do ícone */
+  height: 30px; /* Altura do ícone */
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png) no-repeat 8px 7px #00000000; /* Imagem de fundo e posição */
+  border-radius: 50%; /* Borda arredondada para formato de círculo */
+  float: left; /* Flutua à esquerda */
+  transition: all 0.5s ease-in; /* Transição suave para animações */
 }
 
+/* Estilização do título h5 dentro do acordeão */
 .accordion h5 {
-  font-size: 20px;
-  margin: 0;
-  padding: 1px 0 0 0;
-  font-weight: normal;
-  color: #ffffff;
- 
+  font-size: 20px; /* Tamanho da fonte */
+  margin: 0; /* Margem zero */
+  padding: 1px 0 0 0; /* Preenchimento do título */
+  font-weight: normal; /* Peso da fonte */
+  color: #ffffff; /* Cor do texto */
 }
 
+/* Estilo aplicado quando o acordeão está ativo */
 .active {
-  background-color: #0000008c;
-  color: rgb(224, 224, 224);
+  background-color: #0000008c; /* Cor de fundo quando ativo */
+  color: rgb(224, 224, 224); /* Cor do texto quando ativo */
 }
 
+/* Estilização do ícone quando o acordeão está ativo */
 .active .icon {
-  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
-    no-repeat 8px -25px #000000;
- 
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png) no-repeat 8px -25px #000000; /* Imagem de fundo e nova posição */
 }
 
+/* Estilização do painel que é mostrado quando o acordeão está ativo */
 .panel {
-  padding: 0 15px;
-  border-left: 1px solid #000000;
-  margin-left: 25px;
-  font-size: 14px;
-  text-align: justify;
-  overflow: hidden;
-  max-height: 0;
-  transition: all 0.3s ease-in;
-
+  padding: 0 15px; /* Preenchimento interno do painel */
+  border-left: 1px solid #000000; /* Borda esquerda */
+  margin-left: 25px; /* Margem à esquerda */
+  font-size: 14px; /* Tamanho da fonte */
+  text-align: justify; /* Alinhamento justificado do texto */
+  overflow: hidden; /* Oculta conteúdo que ultrapassa o limite */
+  max-height: 0; /* Altura máxima inicial (escondido) */
+  transition: all 0.3s ease-in; /* Transição suave para animações */
 }
-.panel p{
- font-size: 17px;
-font-weight: 500;
+
+/* Estilização para parágrafos dentro do painel */
+.panel p {
+  font-size: 17px; /* Tamanho da fonte do parágrafo */
+  font-weight: 500; /* Peso da fonte do parágrafo */
 }

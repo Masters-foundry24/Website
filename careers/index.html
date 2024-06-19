@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <!-- Meta description para SEO -->
     <meta name="description" content="Discover career opportunities with us and join our team of dedicated professionals.">
     <title>Masters Minis-Careers</title>
+    <!-- Link para o arquivo de estilo CSS principal -->
     <link rel="stylesheet" href="../style.css">
+    <!-- Link para o estilo CSS do rodapé responsivo -->
     <link rel="stylesheet" href="../Responsive Footer/assets/css/style.css">
+    <!-- Favicon do site -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- Script para carregar ícones do Font Awesome -->
     <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
     <style>
-
-
- 
+        /* Estilos para o dropdown */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -41,18 +44,21 @@
             display: block;
         }
 
+        /* Estilos para o fundo da página */
         #fundo {
             background-image: url("imagem/FundoCareers.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
 
+        /* Estilos para o título */
         .titulous {
             margin-top: 20px;
             text-align: center;
             margin-bottom: 50px;
         }
 
+        /* Estilos para o conteúdo */
         .conteudos {
             margin-top: 100px;
             margin: auto;
@@ -66,8 +72,8 @@
             font-weight: bold;
         }
 
+        /* Estilos para o modal */
         .modal {
-           
             display: none;
             position: fixed;
             z-index: 1;
@@ -76,16 +82,14 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.9);
+            background-color: rgba(0, 0, 0, 0.9);
             display: flex;
             justify-content: center;
             align-items: center;
-
             margin-top: 30px;
         }
 
         .modal-content {
-          
             background-color: #ffffff;
             padding: 20px;
             border: 1px solid #888;
@@ -97,12 +101,10 @@
 
         .closes {
             float: right;
-          position: fixed;
+            position: fixed;
             color: #aaa;
-            
             font-size: 30px;
             font-weight: bold;
-            
             text-align: right;
         }
 
@@ -114,6 +116,7 @@
             position: fixed;
         }
 
+        /* Estilos para os subtítulos do modal */
         .subtitulomodel {
             font-size: 100%;
             font-family: Arial, Helvetica, sans-serif;
@@ -121,11 +124,13 @@
             margin-top: 20px;
         }
 
+        /* Estilos para as listas */
         li {
             list-style-position: inside;
             padding-left: 20px;
         }
 
+        /* Estilos para o título do modal */
         #titulomodal {
             text-align: center;
             margin: auto;
@@ -137,24 +142,23 @@
 
         #titulomodal:hover {
             color: rgb(148, 218, 241);
-            background-color:rgba(0, 0, 0, 0.353);
+            background-color: rgba(0, 0, 0, 0.353);
             box-shadow: 2px 2px 20px 5px rgba(173, 216, 230, 0.171);
             text-transform: uppercase;
         }
-       
-
-
-       
     </style>
 </head>
+
 <body id="fundo">
     <div class="big-wrapper light" style="background-color:#ffff; margin-top: -25px;  margin-bottom: -500px; outline: none;  min-height: 0vh;">
         <header style="padding-bottom: 3px; margin-top: -5px;">
             <div class="container">
                 <div class="logo">
+                    <!-- Logo com link para a página inicial -->
                     <a href="../index.html"><img src="../img/branca.jpg" alt="Logo" /></a>
                 </div>
                 <div class="links">
+                    <!-- Links de navegação -->
                     <ul>
                         <a href="../index.html" class="active">Home</a>
                         <a href="../gallery/index.html">Gallery</a>
@@ -180,12 +184,19 @@
         </header>
     </div>
 
+    <!-- Imagem do logo principal -->
     <img src="../contact/imagem/LOGO.png" alt="Logo" style="margin: auto; width: 200px; height: 10%; margin-top: 519px; display: block;  ">
+
+    <!-- Título da página -->
     <h1 class="titulous">Careers</h1>
+
+    <!-- Conteúdo da página -->
     <div class="conteudos" style="margin-bottom: 50px;">
         <p class="conteudo" id="conteudo1">Are you interested in working with us? Browse our current job openings and apply here!</p>
     </div>
-    <h2 id="titulomodal">Miniatures Painter  </h2>
+
+    <!-- Título do modal -->
+    <h2 id="titulomodal">Miniatures Painter</h2>
 
     <!-- O Modal -->
     <div id="myModal" class="modal">
@@ -220,54 +231,61 @@
         </div>
     </div>
 
+    <!-- Rodapé -->
     <div class="footer" style="margin-bottom:-95px; margin-top: 300px;">
         <div>
-          <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p>
-          
+            <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p>
         </div>
         <div>
-          <img src="../img/branca.jpg" alt="Image description">
+            <img src="../img/branca.jpg" alt="Image description">
         </div>
         <div>
-          <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../Privacy Policy/index.html">Privacy Policy</a></p>
+            <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../Privacy Policy/index.html">Privacy Policy</a></p>
         </div>
-      </div>
-      <button style="margin-left: -1000px;" class="toggle-btn">
-      </button>
+    </div>
+    <button style="margin-left: -1000px;" class="toggle-btn">
+    </button>
+
+    <!-- Scripts -->
     <script src="../app.js"></script>
     <script>
-     var modal = document.getElementById("myModal");
-var btn = document.getElementById("titulomodal");
-var span = document.getElementsByClassName("closes")[0];
+        // Obtém o modal
+        var modal = document.getElementById("myModal");
+        // Obtém o botão que abre o modal
+        var btn = document.getElementById("titulomodal");
+        // Obtém o elemento <span> que fecha o modal
+        var span = document.getElementsByClassName("closes")[0];
 
-btn.onclick = function() {
-    modal.style.display = "flex";
-    document.body.style.overflow = "hidden";  // Disable scrolling on the main page
-}
+        // Quando o usuário clicar no botão, abre o modal
+        btn.onclick = function() {
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden"; // Desabilita a rolagem na página principal
+        }
 
-span.onclick = function() {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";  // Enable scrolling on the main page
-}
+        // Quando o usuário clicar em <span> (x), fecha o modal
+        span.onclick = function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // Habilita a rolagem na página principal
+        }
 
-document.addEventListener('DOMContentLoaded', function() {
-    modal.style.display = "none";
-});
+        // Quando o conteúdo do documento estiver totalmente carregado, esconde o modal
+        document.addEventListener('DOMContentLoaded', function() {
+            modal.style.display = "none";
+        });
 
-// Prevent scrolling on the main page when the modal is at its scroll end
-modal.addEventListener('scroll', function(event) {
-    var scrollTop = modal.scrollTop;
-    var scrollHeight = modal.scrollHeight;
-    var offsetHeight = modal.offsetHeight;
-    
-    if (scrollTop === 0) {
-        modal.scrollTop = 1; // Prevent scrolling up
-    } else if (scrollTop + offsetHeight >= scrollHeight) {
-        modal.scrollTop = scrollHeight - offsetHeight - 1; // Prevent scrolling down
-    }
-});
+        // Previne a rolagem na página principal quando o modal atingir o fim da rolagem
+        modal.addEventListener('scroll', function(event) {
+            var scrollTop = modal.scrollTop;
+            var scrollHeight = modal.scrollHeight;
+            var offsetHeight = modal.offsetHeight;
 
-
+            if (scrollTop === 0) {
+                modal.scrollTop = 1; // Previne a rolagem para cima
+            } else if (scrollTop + offsetHeight >= scrollHeight) {
+                modal.scrollTop = scrollHeight - offsetHeight - 1; // Previne a rolagem para baixo
+            }
+        });
     </script>
 </body>
+
 </html>

@@ -1,129 +1,131 @@
- 
-
+/* Define estilos padrão para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-     
- 
- 
-    transition: all 0.2s linear;
+    text-decoration: none; /* Remove decoração de texto */
+    transition: all 0.2s linear; /* Define transição suave para propriedades */
 }
 
+/* Estilos para o corpo do documento */
 body {
-    background: #ffffff;
+    background: #ffffff; /* Cor de fundo branca */
     overflow-x: hidden; /* Evita a rolagem lateral */
 }
 
+/* Estilos para o container principal dos produtos de café */
 .coffee-container {
-    width: 90%;
-    margin: 0 auto; 
-    margin-top: -550px;
+    width: 90%; /* Largura do container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: -550px; /* Margem superior negativa para ajuste de layout */
 }
 
- 
-
+/* Estilos para o container do menu de café */
 .coffee-menu-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr)); /* Ajustado para 4 colunas */
-    gap: 1rem;
-    margin-bottom: 3rem;  margin-top: 600px;
+    display: grid; /* Exibe como grid */
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr)); /* Colunas responsivas com tamanho mínimo e máximo */
+    gap: 1rem; /* Espaçamento entre os itens do grid */
+    margin-bottom: 3rem; /* Margem inferior */
+    margin-top: 600px; /* Margem superior para ajuste de layout */
 }
 
+/* Estilos para cada item do menu de café */
 .coffee-menu {
-    text-align: center;
-    padding: 0.5rem;
-    background: #fff;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: 0.1rem solid #ccc;
-    outline-offset: -0.7rem;
+    text-align: center; /* Alinhamento central do texto */
+    padding: 0.5rem; /* Preenchimento interno */
+    background: #fff; /* Fundo branco */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer; /* Cursor do mouse */
+    outline: 0.1rem solid #ccc; /* Borda fina sólida */
+    outline-offset: -0.7rem; /* Offset negativo para esconder a borda */
 }
 
+/* Efeito de hover para os itens do menu de café */
 .coffee-menu:hover {
-    outline-offset: 0;
-    outline: 0.1rem solid #000;
+    outline-offset: 0; /* Offset da borda no hover */
+    outline: 0.1rem solid #000; /* Borda fina sólida preta */
 }
 
+/* Estilos para imagens dentro dos itens do menu de café */
 .coffee-menu img {
-    width: 100%;
+    width: 100%; /* Largura total da imagem */
 }
 
+/* Efeito de escala ao passar o mouse sobre a imagem do menu de café */
 .coffee-menu img:hover {
-    transform: scale(.9);
+    transform: scale(.9); /* Reduz a escala da imagem */
 }
 
- 
-
+/* Estilos para o menu de pré-visualização dos produtos */
 .coffee-menu-preview {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-    
+    position: fixed; /* Posição fixa na tela */
+    top: 0; /* Alinhamento no topo */
+    left: 0; /* Alinhamento à esquerda */
+    min-height: 100vh; /* Altura mínima igual à altura da viewport */
+    width: 100%; /* Largura total */
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente preto */
+    display: none; /* Inicialmente oculto */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Alinha itens horizontalmente ao centro */
+    margin-top: 25px; /* Margem superior */
 }
 
+/* Estilos para os elementos de pré-visualização dos produtos */
 .coffee-preview {
-    display: none;
-    padding: 0.5rem;
-    text-align: center;
-    position: relative;
-    width: 40%;
-    background: #fff;
-    border-radius: 10px;
+    display: none; /* Inicialmente oculto */
+    padding: 0.5rem; /* Preenchimento interno */
+    text-align: center; /* Alinhamento central do texto */
+    position: relative; /* Posição relativa */
+    width: 40%; /* Largura do elemento de pré-visualização */
+    background: #fff; /* Fundo branco */
+    border-radius: 10px; /* Borda arredondada */
 }
 
+/* Estilos para imagens dentro dos elementos de pré-visualização */
 .coffee-preview img {
-    width: 100%;
+    width: 100%; /* Largura total da imagem */
 }
 
+/* Estilo aplicado quando o elemento de pré-visualização está ativo */
 .coffee-preview.active {
-    display: inline-block;
+    display: inline-block; /* Exibe o elemento quando ativo */
 }
 
+/* Estilos para o título h3 dentro dos elementos de pré-visualização */
 .coffee-preview h3 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
 }
 
-
-
+/* Estilos para parágrafos dentro dos elementos de pré-visualização */
 .coffee-preview p {
-    font-size: 1.8rem;
-    color: #333;
+    font-size: 1.8rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
 }
 
- 
-
+/* Estilos para o ícone de fechar ('x') dentro dos elementos de pré-visualização */
 .coffee-preview .fa-xmark {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    color: #333;
-    cursor: pointer;
+    position: absolute; /* Posição absoluta */
+    top: 1rem; /* Distância do topo */
+    right: 1rem; /* Distância da direita */
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: #333; /* Cor do ícone */
+    cursor: pointer; /* Cursor do mouse */
 }
 
+/* Efeito de rotação ao passar o mouse sobre o ícone de fechar ('x') */
 .coffee-preview .fa-xmark:hover {
-    transform: rotate(180deg);
-    color: go ld;
+    transform: rotate(180deg); /* Rotação de 180 graus */
+    color: rgb(0, 0, 0); /* Cor do ícone no hover */
 }
 
+/* Media query para dispositivos com largura máxima de 667px */
 @media (max-width: 667px) {
     .coffee-menu-container {
         grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Ajusta para 2 colunas */
     }
 
     .coffee-preview {
-        
-        width: 80%;
-       
+        width: 80%; /* Largura do elemento de pré-visualização */
     }
 }

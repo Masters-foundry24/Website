@@ -3,246 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- Insere o favicon do website -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
     <title>Masters Minis-Contacto</title>
-
+    <!-- Faz aparecer os ícones do Font Awesome -->
     <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
 
+    <!-- Links para os arquivos CSS -->
     <link rel="stylesheet" href="../Responsive Footer/assets/css/style.css">
     <link rel="stylesheet" href="../style.css">
 
-
+    <!-- Estilos internos para o fundo e os links -->
     <style>
     body {
-            background-image: url("imagem/fundocontato.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
+        background-image: url("imagem/fundocontato.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-           
+    .contatinhos a {
+        color: rgba(0, 0, 0, 0.826);
+        padding-left: 5px;
+        padding-right: 5px;
+        border-bottom: 2px solid transparent; /* Começa com uma borda transparente */
+        transition: border-bottom 1s ease; /* Adiciona uma transição suave */
+    }
+
+    .contatinhos a:hover {
+        background-color: rgba(0, 0, 0, 0.368);
+        border-radius: 3px;
+        color: rgb(255, 255, 255);
+        border-bottom: 2px solid; /* A borda aparecerá gradualmente */
+        font-weight: 600;
+    }
+
+    .informacoesdecontato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+        margin-top: -233px;
+        margin-bottom: -133px;
+    }
+
+    .informacoesdecontato a i {
+        color: rgba(0, 0, 0, 0.771);
+        font-size: 30px;
+    }
+
+    .principal {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .informacoesdecontato a i#whatsappp:hover {
+        color: #25d366;
+    }
+
+    .informacoesdecontato a i#facebookk:hover {
+        color: #2312de;
+    }
+
+    .informacoesdecontato a i#messengerr:hover {
+        background-image: linear-gradient(to right, #f604d6 90%, #3910ef75); /* Gradiente de azul para azul escuro */
+        background-clip: text; /* Aplica o gradiente apenas ao texto */
+        -webkit-background-clip: text; /* Suporte para navegadores baseados em WebKit */
+        transition: color 0.9s ease; /* Adiciona uma transição suave para a cor */
+    }
+
+    .segundo {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .informacoesdecontato p, .informacoesdecontato a {
+        text-align: center;
+    }
+
+    /* Estilos para dispositivos com largura máxima de 600px */
+    @media (max-width: 600px) {
+        div p a {
+            font-size: 16px;
         }
-
-.informacoesdecontato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* Altura mínima para garantir que a div ocupe toda a altura da janela de visualização */
-    min-height: 100vh;
-    margin-top: -233px;
-    margin-bottom: -133px;
-}
-.informacoesdecontato a i{
-color: rgba(0, 0, 0, 0.771);
-font-size: 30px;
-}
-.principal{
-font-size: 18px;
-font-weight: bold;
-}
-
-.informacoesdecontato a i#whatsappp:hover{
- color: #25d366;
- 
-}
-.informacoesdecontato a i#facebookk:hover{
- color: #2312de;
- 
-}
-.informacoesdecontato a i#messengerr:hover{
- color: #de12c3;
- 
-}
-.segundo{
-font-size: 17px;
-font-weight: 600;
-}
-.informacoesdecontato p, .informacoesdecontato a {
-
-    text-align: center;
-}
-@media (max-width: 600px) {
-  
-            div p a{
-                font-size: 16px;
-            }
-            .principal{
-                font-size: 16.5px;
-                margin-left: 7px;
-                margin-right: 7px;
-            }
-            .segundo{
-                font-size: 16px;
-            }
-            div span{
-                font-size: 1em;
-            }
-            div p a i{
-                font-size: 30px;
-            }
-          
+        .principal {
+            font-size: 16.5px;
+            margin-left: 7px;
+            margin-right: 7px;
         }
+        .segundo {
+            font-size: 16px;
+        }
+        div span {
+            font-size: 1em;
+        }
+        div p a i {
+            font-size: 30px;
+        }
+    }
 
-
-
-
-
-
-
-
-
-        .dropdown {
-      position: relative;
-      display: inline-block;
+    /* Estilos para o dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
     }
 
     .dropdown-content {
-      display: none;
-      position: absolute;
-      min-width: 200px;
-      z-index: 1;
-      background-color: black;
-      font-size: 12px;
-      padding-top: 20px;
-      border: 2px solid black;
+        display: none;
+        position: absolute;
+        min-width: 200px;
+        z-index: 1;
+        background-color: black;
+        font-size: 12px;
+        padding-top: 20px;
+        border: 2px solid black;
     }
 
     .dropdown-content a {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 5px;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
     }
 
     .dropdown:hover .dropdown-content {
-      display: block;
+        display: block;
     }
     </style>
 
 </head>
 <body> <br> 
 
-
-
-
-  <div class="big-wrapper light" style="background-color:#ffff; margin-top: -27px;  margin-bottom: -500px; outline: none;  min-height: 0vh;" >
-<header style="padding-bottom: 3px;">
+<!-- Wrapper principal -->
+<div class="big-wrapper light" style="background-color:#ffff; margin-top: -27px; margin-bottom: -500px; outline: none; min-height: 0vh;">
+    <!-- Cabeçalho -->
+    <header style="padding-bottom: 3px;">
         <div class="container">
-          <div class="logo">
-           <a href="../index.html"> <img src="../img/branca.jpg" alt="Logo" /></a>
-            
-          </div>
+            <div class="logo">
+                <!-- Logo do site -->
+                <a href="../index.html"><img src="../img/branca.jpg" alt="Logo" /></a>
+            </div>
 
-          <div class="links">
-            <ul>
-              <a href="../index.html" class="active">Home</a>
-              <a href="../gallery/index.html">Gallery</a>
-              <a href="../services/index.html">Services</a>
-              <a href="../logistics/index.html">Logistics</a>
-              <a href="../faq/index.html">FAQ</a>
+            <div class="links">
+                <!-- Menu de navegação -->
+                <ul>
+                    <a href="../index.html" class="active">Home</a>
+                    <a href="../gallery/index.html">Gallery</a>
+                    <a href="../services/index.html">Services</a>
+                    <a href="../logistics/index.html">Logistics</a>
+                    <a href="../faq/index.html">FAQ</a>
+                    <!-- Dropdown para 'About Us' -->
+                    <div class="dropdown">
+                        <a href="../about us/index.html">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="../our amazing team/index.html">Our Amazing Team</a>
+                            <a href="../about us/index.html">Our Amazing Company</a>
+                        </div>
+                    </div>
+                    <a href="../contact/index.html">Contact</a>
+                    <a href="../careers/index.html">Careers</a>
+                </ul>
+            </div>
 
-              <div class="dropdown">
-                <a href="../about us/index.html">About Us</a>
-                <div class="dropdown-content">
-                  
-                  <a href="../our amazing team/index.html">Our Amazing Team</a>
+            <div class="overlay"></div>
 
-                  <a href="../about us/index.html">Our Amazing Company</a>
-                
-                </div>
-              </div>
-              
-              
-              <a href="../contact/index.html">Contact</a>
-              <a href="../careers/index.html">Careers</a>
-             
-             
-              
-               
-            </ul>
-          </div>
-
-          <div class="overlay"></div>
-
-          <div class="hamburger-menu">
-            <div class="bar"></div>
-          </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+            </div>
         </div>
+    </header>
+</div>
 
-        
-      </header>
-  </div>
+<!-- Imagem do logo principal -->
+<img src="imagem/LOGO.png" alt="Logo Principal do site" style="margin: auto; width: 200px; height: 10%; margin-top: 497px; display: flex; margin-bottom: 60px;">
 
-
-
-
-
-
-  <img src="imagem/LOGO.png" alt="Logo Principal do site"  style="margin: auto; width: 200px; height: 10%; margin-top: 497px; display: flex;  margin-bottom: 60px;">
-
+<!-- Seção de informações de contato -->
 <div class="informacoesdecontato">
-
-
-  <p class="principal">
-    Have a question or concern? Please reach out to us!
-</p> <br>
-<p class="segundo">
-   Hours: Mon - Fri, 8:30 - 16:30 (UTC)
-</p> <br>
-<p>
-    <span>Email:</span> <a href="mailto:lazaro@mastersminis.com">lazaro@mastersminis.com </a>
-    <br>    
-   <span> Phone:</span> <a href="tel:+2399885140">+239 9885140</a>
-      <br>
-  <br>
-    <p class="segundo">Alternative contact methods:</p>
-</p>
-<br>
-  <br>
-<p>
-  
-    <a target="_blank" rel="external" href="tel:+2399885140" rel="external" target="_blank"><i class="fa-brands fa-whatsapp" id="whatsappp"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61557132789271" rel="external" target="_blank"> <i style=" margin-left: 10px; margin-right: 10px;" class="fa-brands fa-facebook-f" id="facebookk"></i>  </a>
-    <a target="_blank" rel="external" href="https://www.facebook.com/profile.php?id=61557132789271"><i class="fa-brands fa-facebook-messenger" id="messengerr"></i></a>
-</p>
-
-
-
+    <p class="principal">
+        Have a question or concern? Please reach out to us!
+    </p> <br>
+    <p class="segundo">
+        Hours: Mon - Fri, 8:30 - 16:30 (UTC)
+    </p> <br>
+    <p class="contatinhos">
+        <span>Email:</span> <a href="mailto:lazaro@mastersminis.com">lazaro@mastersminis.com</a>
+        <br>  
+        <span>Phone:</span> <a href="tel:+2399885140">+239 9885140</a>
+        <br><br>
+        <p class="segundo">Alternative contact methods:</p>
+    </p>
+    <br><br>
+    <p>
+        <!-- Links para contato alternativo -->
+        <a target="_blank" rel="external" href="tel:+2399885140"><i class="fa-brands fa-whatsapp" id="whatsappp"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61557132789271" rel="external" target="_blank"><i style="margin-left: 10px; margin-right: 10px;" class="fa-brands fa-facebook-f" id="facebookk"></i></a>
+        <a target="_blank" rel="external" href="https://www.facebook.com/profile.php?id=61557132789271"><i class="fa-brands fa-facebook-messenger" id="messengerr"></i></a>
+    </p>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="footer" style="margin-bottom:-95px; margin-top: 300px;  background-attachment: fixed; ">
-  <div>
-    <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p>
-    
-  </div>
-  <div>
-    <img sty src="../img/branca.jpg" alt="Image description">
-  </div>
-  <div>
-    <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../Privacy Policy/index.html">Privacy Policy</a></p>
-  </div>
+<!-- Rodapé -->
+<div class="footer" style="margin-bottom:-95px; margin-top: 300px; background-attachment: fixed;">
+    <div>
+        <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p>
+    </div>
+    <div>
+        <img src="../img/branca.jpg" alt="Image description">
+    </div>
+    <div>
+        <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../Privacy Policy/index.html">Privacy Policy</a></p>
+    </div>
 </div>
-<button style="margin-left: -1000px;" class="toggle-btn">
-</button>
 
+<button style="margin-left: -1000px;" class="toggle-btn"></button>
 
-
-
+<!-- Script para funcionalidades adicionais -->
 <script src="../app.js"></script>
 </body>
 </html>

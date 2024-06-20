@@ -1,7 +1,7 @@
 // Seleciona os elementos do DOM
 var toggle_btn; // Botão de toggle para alternar entre temas
 var big_wrapper; // Wrapper principal da página
-var hamburger_menu; // Menu hamburguer para dispositivos móveis
+var hamburger_menu; // Menu hamburguer pra dispositivos móveis
 
 // Função para declarar e inicializar os elementos
 function declare() {

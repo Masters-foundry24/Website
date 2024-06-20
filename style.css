@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Poppins" do Google Fonts */
 
 .light {
   --mainColor: #ffffff;
@@ -9,6 +10,7 @@
   --lightOne: #919191;
   --lightTwo: #aaa;
 }
+/* Define variáveis de CSS para o tema claro */
 
 .dark {
   --mainColor: #ffffff;
@@ -19,6 +21,7 @@
   --lightOne: #ccc;
   --lightTwo: #e7e3e3;
 }
+/* Define variáveis de CSS para o tema escuro */
 
 *,
 *::before,
@@ -27,23 +30,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Define o box-sizing para incluir padding e border no tamanho total e remove padding e margem padrão */
 
 body {
   font-family: "Poppins", sans-serif;
-
 }
+/* Define a fonte da página para Poppins */
 
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
-
-
-
+/* Classe para impedir rolagem */
 
 a {
   text-decoration: none;
 }
+/* Remove sublinhado de links */
 
 .big-wrapper {
   position: relative;
@@ -55,8 +58,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
+/* Estilos para o contêiner principal */
 
 .container {
   position: relative;
@@ -65,8 +68,8 @@ a {
   margin: 0 auto;
   padding: 0 3rem;
   z-index: 10;
-  
 }
+/* Estilos para um contêiner centralizado com largura máxima */
 
 header {
   position: fixed;
@@ -75,40 +78,41 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: -27px;
-  box-shadow:  1px 5px 10px rgba(0, 0, 0, 0.051);
-width: 100%;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.051);
+  width: 100%;
 }
+/* Estilos para o cabeçalho fixo no topo da página */
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
+/* Estilos para o contêiner dentro do cabeçalho */
 
 .overlay {
   display: none;
 }
+/* Define o overlay como invisível por padrão */
 
 .logo {
   display: flex;
   align-items: center;
   cursor: pointer;
-color: #fff;
+  color: #fff;
   margin-right: -50px;
   margin-top: 5px;
   border-radius: 5px;
-
   padding: 5px;
 }
+/* Estilos para o logo */
 
 .logo img {
   width: 40px;
   margin-right: 0.6rem;
   margin-top: -0.6rem;
- 
-
 }
+/* Estilos para a imagem do logo */
 
 .logo h3 {
   color: var(--darkTwo);
@@ -116,6 +120,7 @@ color: #fff;
   line-height: 1.2;
   font-weight: 700;
 }
+/* Estilos para o texto do logo */
 
 .links ul {
   display: flex;
@@ -123,29 +128,23 @@ color: #fff;
   align-items: center;
   color: white;
 }
+/* Estilos para a lista de links no cabeçalho */
 
 .links a {
-  
   margin-left: 1.5rem;
   display: inline-block;
   transition: 0.3s;
   color: rgb(255, 255, 255);
   font-weight: 500;
   text-transform: uppercase;
-
 }
-
-
-
-
-
-
+/* Estilos para os links */
 
 .links a:hover {
   color: rgba(0, 170, 255, 0.853);
   transform: scale(1.05);
-  
 }
+/* Efeito de hover nos links */
 
 .btn {
   display: inline-block;
@@ -156,11 +155,13 @@ color: #fff;
   text-transform: capitalize;
   transition: 0.3s;
 }
+/* Estilos para botões */
 
 .btn:hover {
   background-color: var(--hoverColor);
   transform: scale(1) !important;
 }
+/* Efeito de hover nos botões */
 
 .hamburger-menu {
   position: relative;
@@ -172,8 +173,8 @@ color: #fff;
   justify-content: center;
   cursor: pointer;
   display: none;
-  
 }
+/* Estilos para o menu hambúrguer (oculto por padrão) */
 
 .hamburger-menu .bar {
   position: relative;
@@ -183,6 +184,7 @@ color: #fff;
   border-radius: 3px;
   transition: 0.5s;
 }
+/* Estilos para a barra do menu hambúrguer */
 
 .bar::before,
 .bar::after {
@@ -194,26 +196,32 @@ color: #fff;
   border-radius: 3px;
   transition: 0.3s;
 }
+/* Estilos para as barras superior e inferior do menu hambúrguer */
 
 .bar::before {
   transform: translateY(-8px);
 }
+/* Posição da barra superior */
 
 .bar::after {
   transform: translateY(8px);
 }
+/* Posição da barra inferior */
 
 .big-wrapper.active .hamburger-menu .bar {
   background-color: transparent;
 }
+/* Menu hambúrguer ativo com a barra transparente*/
 
 .big-wrapper.active .bar::before {
   transform: translateY(0) rotate(-45deg);
 }
+/* Barra superior transformada em X */
 
 .big-wrapper.active .bar::after {
   transform: translateY(0) rotate(45deg);
 }
+/* Barra inferior transformada em X */
 
 .showcase-area .container {
   display: grid;
@@ -221,6 +229,7 @@ color: #fff;
   align-items: center;
   justify-content: center;
 }
+/* Estilos para a área de exibição usando grid */
 
 .big-title {
   font-size: 1.4rem;
@@ -228,6 +237,7 @@ color: #fff;
   text-transform: capitalize;
   line-height: 1.4;
 }
+/* Estilos para o título principal */
 
 .text {
   color: var(--lightOne);
@@ -236,16 +246,18 @@ color: #fff;
   max-width: 600px;
   line-height: 2.3;
 }
+/* Estilos para o texto descritivo */
 
 .showcase-area .btn {
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
 }
+/* Sombra para botões na área de exibição */
 
 .person {
   width: 100%;
   transform: translate(20%, 5px);
-  
 }
+/* Estilos para a imagem de uma pessoa */
 
 .toggle-btn {
   display: inline-block;
@@ -260,32 +272,37 @@ color: #fff;
   font-size: 1.1rem;
   transition: 0.3s;
 }
+/* Estilos para o botão de alternar tema */
 
 .toggle-btn i {
   line-height: 39px;
 }
+/* Estilos para os ícones dentro do botão de alternar tema */
 
 .toggle-btn:hover {
   background: var(--mainColor);
 }
+/* Efeito de hover no botão de alternar tema */
 
 .big-wrapper.light .toggle-btn i:last-child {
   display: none;
 }
+/* Oculta o ícone do modo escuro no tema claro */
 
 .big-wrapper.light .toggle-btn i:first-child {
   display: block;
 }
+/* Exibe o ícone do modo claro no tema claro */
 
 .big-wrapper.dark .toggle-btn i:last-child {
   display: block;
 }
+/* Exibe o ícone do modo escuro no tema escuro */
 
 .big-wrapper.dark .toggle-btn i:first-child {
   display: none;
 }
-
-
+/* Oculta o ícone do modo claro no tema escuro */
 
 .copy {
   position: absolute;
@@ -294,6 +311,7 @@ color: #fff;
   z-index: 100;
   animation: appear 1s 1 both;
 }
+/* Estilos para a animação de cópia */
 
 @keyframes appear {
   0% {
@@ -303,11 +321,13 @@ color: #fff;
     clip-path: circle(150% at 0 0);
   }
 }
+/* Animação para aparecer */
 
 @media screen and (max-width: 975px) {
   .hamburger-menu {
     display: flex;
   }
+  /* Exibe o menu hambúrguer em telas menores que 975px */
 
   .links {
     position: fixed;
@@ -316,19 +336,20 @@ color: #fff;
     max-width: 450px;
     width: 65%;
     height: 100%;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     z-index: 95;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: translateX(100%);
     transition: 0.5s;
- 
   }
+  /* Estilos para os links no menu hambúrguer em telas menores */
 
   .links ul {
     flex-direction: column-reverse;
   }
+  /* Direção da lista de links em telas menores */
 
   .links a {
     color: #ffffff;
@@ -336,10 +357,12 @@ color: #fff;
     padding: 22px 0;
     font-weight: bold;
   }
+  /* Estilos dos links no menu hambúrguer em telas menores */
 
   .links .btn {
     background: none;
   }
+  /* Remove o fundo do botão no menu hambúrguer em telas menores */
 
   .overlay {
     display: block;
@@ -353,67 +376,81 @@ color: #fff;
     pointer-events: none;
     transition: 0.5s;
   }
+  /* Estilos para o overlay em telas menores */
 
   .big-wrapper.active .links {
     transform: translateX(0);
     box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.4);
   }
+  /* Transição do menu hambúrguer ativo em telas menores */
 
   .big-wrapper.active .overlay {
     pointer-events: all;
     opacity: 1;
   }
+  /* Transição do overlay ativo em telas menores */
 
   .showcase-area {
     padding: 2.5rem 0;
     max-width: 700px;
     margin: 0 auto;
   }
+  /* Estilos para a área de exibição em telas menores */
 
   .showcase-area .container {
     grid-template-columns: 1fr;
     justify-content: center;
     grid-gap: 2rem;
   }
+  /* Estilos para o grid da área de exibição em telas menores */
 
   .big-title {
     font-size: 1.1rem;
   }
+  /* Tamanho do título principal em telas menores */
 
   .text {
     font-size: 0.95rem;
     margin: 1.4rem 0 1.5rem;
   }
+  /* Estilos para o texto em telas menores */
 
   .person {
     width: 100%;
     transform: none;
   }
+  /* Estilos para a imagem de uma pessoa em telas menores */
 
   .logo h3 {
     font-size: 1.25rem;
   }
+  /* Tamanho do texto do logo em telas menores */
 
   .shape {
     bottom: -180px;
     left: -150px;
   }
+  /* Estilos adicionais para formas em telas menores */
 }
 
 @media screen and (max-width: 470px) {
   .container {
     padding: 0 1.5rem;
   }
+  /* Padding do contêiner em telas muito pequenas */
 
   .big-title {
     font-size: 0.9rem;
   }
+  /* Tamanho do título principal em telas muito pequenas */
 
   .text {
     margin: 1.1rem 0 1.5rem;
   }
+  /* Margem do texto em telas muito pequenas */
 
   .showcase-area .btn {
     font-size: 0.8rem;
   }
+  /* Tamanho do botão na área de exibição em telas muito pequenas */
 }

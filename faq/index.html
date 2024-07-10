@@ -23,78 +23,81 @@
     <style>
         /* Estilo do corpo da página */
         body {
-            background-image: url("imagem/faq.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: url("imagem/faq.jpg"); /* Define uma imagem de fundo para o corpo da página */
+            background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+            background-size: cover; /* Garante que a imagem cubra todo o fundo */
         }
-
+    
         /* Estilos responsivos para telas menores que 600px */
         @media screen and (max-width: 600px) {
             .responsive-text {
-                font-size: 12px;
-                margin-bottom: 150px;
-                margin-top: 75px;
-                padding-left: 90px;
-                padding-right: 90px;
+                font-size: 12px; /* Tamanho da fonte para texto responsivo */
+                margin-bottom: 150px; /* Margem inferior */
+                margin-top: 75px; /* Margem superior */
+                padding-left: 90px; /* Preenchimento à esquerda */
+                padding-right: 90px; /* Preenchimento à direita */
             }
             .accordion h5 {
-                font-size: 14px;
+                font-size: 14px; /* Tamanho da fonte para os títulos dentro dos acordeões */
             }
             .titulofaq {
-                font-size: 16px;
-                align-items: center;
+                font-size: 16px; /* Tamanho da fonte para o título principal do FAQ */
+                align-items: center; /* Centraliza os itens verticalmente */
             }
             .containerFluid {
-                width: 90%;
+                width: 90%; /* Largura do container principal para telas menores */
             }
         }
-
+    
         /* Estilos responsivos para telas menores que 1090px */
         @media screen and (max-width: 1090px) {
             .responsive-text {
-                font-size: 13px;
-                margin-bottom: 150px;
-                margin-top: 75px;
-                padding-left: 90px;
-                padding-right: 90px;
+                font-size: 13px; /* Tamanho da fonte para texto responsivo */
+                margin-bottom: 150px; /* Margem inferior */
+                margin-top: 75px; /* Margem superior */
+                padding-left: 90px; /* Preenchimento à esquerda */
+                padding-right: 90px; /* Preenchimento à direita */
             }
             .accordion {
-                width: 100%;
-                padding: -10px;
+                width: 100%; /* Largura total para os acordeões */
+                padding: -10px; /* Preenchimento negativo (não surte efeito real) */
             }
             .containerFluid {
-                width: 80%;
+                width: 80%; /* Largura do container principal para telas menores */
             }
         }
-
+    
         /* Estilo para dropdown */
         .dropdown {
-            position: relative;
-            display: inline-block;
+            position: relative; /* Posição relativa para o dropdown */
+            display: inline-block; /* Exibição em linha */
         }
-
+    
         .dropdown-content {
-            display: none;
-            position: absolute;
-            min-width: 200px;
-            z-index: 1;
-            background-color: rgb(0, 0, 0);
-            font-size: 12px;
-            padding-top: 20px;
-            border: 2px solid black;
+            display: none; /* Inicialmente oculto */
+            position: absolute; /* Posicionamento absoluto */
+            min-width: 200px; /* Largura mínima */
+            z-index: 1; /* Camada z-index */
+            background-color: rgb(0, 0, 0); /* Cor de fundo */
+            font-size: 12px; /* Tamanho da fonte para o conteúdo do dropdown */
+            padding-top: 20px; /* Preenchimento superior */
+            border: 2px solid black; /* Borda */
         }
-
+    
         .dropdown-content a {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 5px;
+            display: block; /* Exibição em bloco para os links */
+            font-size: 14px; /* Tamanho da fonte para os links do dropdown */
+            margin-bottom: 5px; /* Margem inferior */
         }
-
+    
         .dropdown:hover .dropdown-content {
-            display: block;
+            display: block; /* Mostra o conteúdo do dropdown ao passar o mouse */
         }
     </style>
-</head>
+    
+</head> 
+
+
 <body>
     <!-- Início do conteúdo principal -->
     <div class="big-wrapper light" style="background-color:#ffff; margin-top: -27px;  margin-bottom: -500px; outline: none;  min-height: 0vh;">
@@ -106,20 +109,20 @@
                 </div>
                 <div class="links">
                     <ul>
-                        <a href="../index.html" class="active">Home</a>
-                        <a href="../gallery/index.html">Gallery</a>
-                        <a href="../services/index.html">Services</a>
-                        <a href="../logistics/index.html">Logistics</a>
-                        <a href="#">FAQ</a>
+                        <a href="../index.html" class="active">Home</a> <!-- Link ativo para a página inicial -->
+                        <a href="../gallery/index.html">Gallery</a> <!-- Link para a galeria -->
+                        <a href="../services/index.html">Services</a> <!-- Link para os serviços -->
+                        <a href="../logistics/index.html">Logistics</a> <!-- Link para a logística -->
+                        <a href="#">FAQ</a> <!-- Link para as perguntas frequentes (FAQ) -->
                         <div class="dropdown">
-                            <a href="../about us/index.html">About Us</a>
+                            <a href="../about us/index.html">About Us</a> <!-- Link para a página Sobre Nós -->
                             <div class="dropdown-content">
-                                <a href="../our amazing team/index.html">Our Amazing Team</a>
-                                <a href="../about us/index.html">Our Amazing Company</a>
+                                <a href="../our amazing team/index.html">Our Amazing Team</a> <!-- Sublink para a equipe -->
+                                <a href="../about us/index.html">Our Amazing Company</a> <!-- Sublink para a empresa -->
                             </div>
                         </div>
-                        <a href="../contact/index.html">Contact</a>
-                        <a href="../careers/index.html">Careers</a>
+                        <a href="../contact/index.html">Contact</a> <!-- Link para contato -->
+                        <a href="../careers/index.html">Careers</a> <!-- Link para carreiras -->
                     </ul>
                 </div>
                 <div class="overlay"></div>
@@ -135,50 +138,55 @@
 
     <!-- Container principal para o FAQ -->
     <div class="containerFluid">
-        <h2 class="titulofaq">Frequently Asked Questions (FAQs)</h2>
+        <h2 class="titulofaq">Frequently Asked Questions (FAQs)</h2> <!-- Título principal do FAQ -->
+        <!-- Primeiro item do FAQ -->
         <div class="accordion">
             <div class="icon"></div>
-            <h5>What is the standard of the painting?</h5>
+            <h5>What is the standard of the painting?</h5> <!-- Pergunta sobre o padrão de pintura -->
         </div>
         <div class="panel">
             <p>
                 We discuss that question in detail with each client before we begin working together. We are both on the same page in that discussion, trying to figure out what level of painting makes sense for your clients. What you see in the <a href="../gallery/index.html" style="font-weight: bold; color: #ffff;">gallery</a> spans the spectrum from the most economical painting we can do, to the very best.
-            </p>
+            </p> <!-- Resposta detalhada para a pergunta -->
         </div>
       
+        <!-- Segundo item do FAQ -->
         <div class="accordion">
             <div class="icon"></div>
-            <h5>Where are you based?</h5>
+            <h5>Where are you based?</h5> <!-- Pergunta sobre a localização da empresa -->
         </div>
         <div class="panel">
             <p>
                 São Tomé and Princípe is an independent island nation in the Gulf of Guinea. With a GDP per capita of $3,167 São Tomé is still developing but we think it has a lot of potencial. Our founder Scott Masters is originally from Australia. He chose São Tomé as the ideal spot to locate the company.
-            </p>
+            </p> <!-- Resposta detalhada para a pergunta -->
         </div>
       
+        <!-- Terceiro item do FAQ -->
         <div class="accordion">
             <div class="icon"></div>
-            <h5>Who are your customers?</h5>
+            <h5>Who are your customers?</h5> <!-- Pergunta sobre os clientes da empresa -->
         </div>
         <div class="panel">
             <p>
                 We work with businesses who what to make painted miniatures available to their clients. We let you handle sales and marketing so that we can focus on our real obsession painting to the highest standard possible.
-            </p>
+            </p> <!-- Resposta detalhada para a pergunta -->
         </div>
       
+        <!-- Quarto item do FAQ -->
         <div class="accordion">
             <div class="icon"></div>
-            <h5> Are you currently taking commissions?</h5>
+            <h5> Are you currently taking commissions?</h5> <!-- Pergunta sobre a aceitação de encomendas -->
         </div>
         <div class="panel">
             <p>
                 Yes! If you are interested in working with us please <a href="../contact/index.html" style="font-weight: bold; color: #ffff">contact us</a> to start a conversation.
-            </p>
+            </p> <!-- Resposta detalhada para a pergunta -->
         </div>
 
+        <!-- Quinto item do FAQ -->
         <div class="accordion">
             <div class="icon"></div>
-            <h5> What are your shipping times?</h5>
+            <h5> What are your shipping times?</h5> <!-- Pergunta sobre os tempos de envio -->
         </div>
         <div class="panel">
             <p>
@@ -187,27 +195,29 @@
                 - North America: 15- 20 working days <br>
                 - Australia & New Zealand: 15 - 25 working days <br>
                 We use international resisted mail which includes track and trace in most countries.
-            </p>
+            </p> <!-- Resposta detalhada para a pergunta -->
         </div>
 
+        <!-- Sexto item do FAQ -->
         <div class="accordion">
             <div class="icon"></div>
-            <h5> What import taxes apply to São Tomé?</h5>
+            <h5> What import taxes apply to São Tomé?</h5> <!-- Pergunta sobre os impostos de importação para São Tomé -->
         </div>
         <div class="panel">
             <p>
                 As a democratic developing country São Tomé qualifies for programs such as AGOA (US) and EBA (EU) granting duty free access. Countries may still charge VAT at the boarder but there are generally no tariffs on top of this. For full details see our <a href="../logistics/index.html" style="font-weight: bold; color: #ffff">logistics</a> page.
-            </p>
+            </p> <!-- Resposta detalhada para a pergunta -->
         </div>
 
+        <!-- Sétimo item do FAQ -->
         <div class="accordion">
             <div class="icon"></div>
-            <h5>What are your prices?</h5>
+            <h5>What are your prices?</h5> <!-- Pergunta sobre os preços -->
         </div>
         <div class="panel">
             <p>
                 Our prices are able to be very competitive due to our own efficiency the low cost of your own inputs. The prices we quote vary with the amount of business you can direct our way so please <a href="../contact/index.html" style="font-weight: bold; color: #ffff"> contact us</a> if you would like to know more.
-            </p>
+            </p> <!-- Resposta detalhada para a pergunta -->
         </div>
     </div>
     
@@ -219,6 +229,9 @@
     </p>
     
 </body>
+
+
+
 <!-- Link para o arquivo JavaScript -->
 <script src="script.js"></script>
 

@@ -1,5 +1,7 @@
+/* Importa a fonte do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Define variáveis de cores para os temas light e dark */
 .light {
   --mainColor: #ffffff;
   --hoverColor: #5bacdf;
@@ -20,6 +22,7 @@
   --lightTwo: #e7e3e3;
 }
 
+/* Zera o padding e margin para todos os elementos */
 *,
 *::before,
 *::after {
@@ -28,197 +31,194 @@
   box-sizing: border-box;
 }
 
+/* Estilos básicos do corpo da página */
 body {
-  font-family: "Poppins", sans-serif;
-
+  font-family: "Poppins", sans-serif; /* Fonte principal */
 }
 
+/* Classe para parar o scroll da página */
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
 
-
-
-
+/* Remove o sublinhado padrão de links */
 a {
   text-decoration: none;
 }
 
+/* Estilos para o wrapper principal */
 .big-wrapper {
   position: relative;
   padding: 1.7rem 0 2rem;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: var(--backgroundColor);
+  background-color: var(--backgroundColor); /* Cor de fundo */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
+/* Container principal */
 .container {
   position: relative;
-  max-width: 81rem;
+  max-width: 81rem; /* Largura máxima */
   width: 100%;
-  margin: 0 auto;
-  padding: 0 3rem;
-  z-index: 10;
-  
+  margin: 0 auto; /* Centraliza na tela */
+  padding: 0 3rem; /* Padding nas laterais */
+  z-index: 10; /* Z-index para empilhamento */
 }
 
+/* Estilos do cabeçalho fixo */
 header {
-  position: fixed;
-  z-index: 70;
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: -27px;
-  box-shadow:  1px 5px 10px rgba(0, 0, 0, 0.051);
-width: 100%;
-
+  position: fixed; /* Fixa o cabeçalho no topo */
+  z-index: 70; /* Z-index para empilhamento */
+  background-color: black; /* Cor de fundo */
+  padding-top: 10px; /* Padding superior */
+  padding-bottom: 10px; /* Padding inferior */
+  margin-top: -27px; /* Margem negativa para ajuste */
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.051); /* Sombra */
+  width: 100%; /* Largura total */
 }
 
+/* Estilos para o conteúdo do cabeçalho */
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 
+/* Overlay para menu mobile (não utilizado) */
 .overlay {
   display: none;
 }
 
+/* Estilos para o logo */
 .logo {
   display: flex;
   align-items: center;
   cursor: pointer;
-color: #fff;
-  margin-right: -50px;
-  margin-top: 5px;
-  border-radius: 5px;
-
-  padding: 5px;
+  color: #fff; /* Cor do texto */
+  margin-right: -50px; /* Margem direita negativa */
+  margin-top: 5px; /* Margem superior */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 5px; /* Padding */
 }
 
 .logo img {
-  width: 40px;
-  margin-right: 0.6rem;
-  margin-top: -0.6rem;
- 
-
+  width: 40px; /* Largura da imagem do logo */
+  margin-right: 0.6rem; /* Margem direita */
+  margin-top: -0.6rem; /* Margem superior negativa */
 }
 
+/* Estilos para o título do logo (não utilizado) */
 .logo h3 {
-  color: var(--darkTwo);
-  font-size: 1.55rem;
-  line-height: 1.2;
-  font-weight: 700;
+  color: var(--darkTwo); /* Cor do texto */
+  font-size: 1.55rem; /* Tamanho da fonte */
+  line-height: 1.2; /* Altura da linha */
+  font-weight: 700; /* Peso da fonte */
 }
 
+/* Estilos para os links de navegação */
 .links ul {
   display: flex;
-  list-style: none;
-  align-items: center;
-  color: white;
-  align-items: center;
-    justify-content: space-between;
+  list-style: none; /* Remove os bullets */
+  align-items: center; /* Alinha itens verticalmente */
+  color: white; /* Cor do texto */
+  align-items: center; /* Alinha itens verticalmente */
+  justify-content: space-between; /* Justifica o espaço entre os itens */
 }
 
 .links a {
-  
-  margin-left: 1.5rem;
-  display: inline-block;
-  transition: 0.3s;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  text-transform: uppercase;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 1.5rem; /* Margem esquerda */
+  display: inline-block; /* Exibe como bloco */
+  transition: 0.3s; /* Transição suave */
+  color: rgb(255, 255, 255); /* Cor do texto */
+  font-weight: 500; /* Peso da fonte */
+  text-transform: uppercase; /* Transformação para maiúsculas */
 }
 
-
-
-
-
-
-
+/* Hover dos links */
 .links a:hover {
-  color: rgba(0, 170, 255, 0.853);
-  transform: scale(1.05);
-  
+  color: rgba(0, 170, 255, 0.853); /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Escala ao passar o mouse */
 }
 
+/* Estilos para o botão */
 .btn {
   display: inline-block;
   padding: 0.9rem 1.9rem;
-  color: #fff !important;
-  background-color: var(--mainColor);
-  border-radius: 16px;
-  text-transform: capitalize;
-  transition: 0.3s;
+  color: #fff !important; /* Cor do texto */
+  background-color: var(--mainColor); /* Cor de fundo */
+  border-radius: 16px; /* Bordas arredondadas */
+  text-transform: capitalize; /* Transformação para maiúsculas */
+  transition: 0.3s; /* Transição suave */
 }
 
 .btn:hover {
-  background-color: var(--hoverColor);
-  transform: scale(1) !important;
+  background-color: var(--hoverColor); /* Cor de fundo ao passar o mouse */
+  transform: scale(1) !important; /* Escala ao passar o mouse */
 }
 
+/* Ícone do menu hamburguer */
 .hamburger-menu {
   position: relative;
-  z-index: 99;
-  width: 2rem;
-  height: 1rem;
+  z-index: 99; /* Z-index para empilhamento */
+  width: 2rem; /* Largura */
+  height: 1rem; /* Altura */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  display: none;
-  
+  align-items: center; /* Alinha itens verticalmente */
+  justify-content: center; /* Alinha itens horizontalmente */
+  cursor: pointer; /* Cursor */
+  display: none; /* Não exibe por padrão */
 }
 
+/* Barras do ícone do menu hamburguer */
 .hamburger-menu .bar {
   position: relative;
-  width: 100%;
-  height: 3px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 3px;
-  transition: 0.5s;
+  width: 100%; /* Largura */
+  height: 3px; /* Altura */
+  background-color: rgb(255, 255, 255); /* Cor das barras */
+  border-radius: 3px; /* Bordas arredondadas */
+  transition: 0.5s; /* Transição suave */
 }
 
+/* Pseudo-elementos para criar as barras */
 .bar::before,
 .bar::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 3px;
-  transition: 0.3s;
+  background-color: rgb(255, 255, 255); /* Cor das barras */
+  border-radius: 3px; /* Bordas arredondadas */
+  transition: 0.3s; /* Transição suave */
 }
 
+/* Animação ao abrir o menu hamburguer */
 .bar::before {
-  transform: translateY(-8px);
+  transform: translateY(-8px); /* Translação para cima */
 }
 
 .bar::after {
-  transform: translateY(8px);
+  transform: translateY(8px); /* Translação para baixo */
 }
 
+/* Estilos quando o wrapper está ativo (menu hamburguer aberto) */
 .big-wrapper.active .hamburger-menu .bar {
-  background-color: transparent;
+  background-color: transparent; /* Barras transparentes */
 }
 
 .big-wrapper.active .bar::before {
-  transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg); /* Rotação para formar a cruz */
 }
 
 .big-wrapper.active .bar::after {
-  transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg); /* Rotação para formar a cruz */
 }
 
+/* Área de destaque (não utilizado) */
 .showcase-area .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -226,6 +226,7 @@ color: #fff;
   justify-content: center;
 }
 
+/* Título grande (não utilizado) */
 .big-title {
   font-size: 1.4rem;
   color: var(--darkOne);
@@ -233,6 +234,7 @@ color: #fff;
   line-height: 1.4;
 }
 
+/* Texto (não utilizado) */
 .text {
   color: var(--lightOne);
   font-size: 1.1rem;
@@ -241,16 +243,18 @@ color: #fff;
   line-height: 2.3;
 }
 
+/* Botão na área de destaque (não utilizado) */
 .showcase-area .btn {
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
 }
 
+/* Pessoa (não utilizado) */
 .person {
   width: 100%;
   transform: translate(20%, 5px);
-  
 }
 
+/* Botão de toggle (não utilizado) */
 .toggle-btn {
   display: inline-block;
   border: none;
@@ -273,6 +277,7 @@ color: #fff;
   background: var(--mainColor);
 }
 
+/* Ícones do botão de toggle no wrapper light */
 .big-wrapper.light .toggle-btn i:last-child {
   display: none;
 }
@@ -281,6 +286,7 @@ color: #fff;
   display: block;
 }
 
+/* Ícones do botão de toggle no wrapper dark */
 .big-wrapper.dark .toggle-btn i:last-child {
   display: block;
 }
@@ -289,61 +295,67 @@ color: #fff;
   display: none;
 }
 
-
-
+/* Classe para animação de aparecimento */
 .copy {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
-  animation: appear 1s 1 both;
+  animation: appear 1s 1 both; /* Animação de aparecimento */
 }
 
 @keyframes appear {
   0% {
-    clip-path: circle(30% at -25% -25%);
+    clip-path: circle(30% at -25% -25%); /* Clip-path inicial */
   }
   100% {
-    clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0); /* Clip-path final */
   }
 }
 
+/* Media queries para telas menores */
 @media screen and (max-width: 975px) {
+  /* Exibe o menu hamburguer */
   .hamburger-menu {
     display: flex;
   }
 
+  /* Estilos para o menu de navegação em telas menores */
   .links {
-    position: fixed;
+    position: fixed; /* Fixa a posição */
     top: 0;
     right: 0;
-    max-width: 450px;
-    width: 65%;
-    height: 100%;
-    background-color:rgb(0, 0, 0);
-    z-index: 95;
+    max-width: 450px; /* Largura máxima */
+    width: 65%; /* Largura */
+    height: 100%; /* Altura */
+    background-color: rgb(0, 0, 0); /* Cor de fundo */
+    z-index: 95; /* Z-index para empilhamento */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(100%);
-    transition: 0.5s;
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: center; /* Alinha itens horizontalmente */
+    transform: translateX(100%); /* Translação */
+    transition: 0.5s; /* Transição suave */
   }
 
+  /* Reordenação dos links para coluna */
   .links ul {
     flex-direction: column-reverse;
   }
 
+  /* Estilos dos links no menu de navegação em telas menores */
   .links a {
-    color: #ffffff;
-    margin-left: 0;
-    padding: 2rem 0;
-    font-weight: bold;
+    color: #ffffff; /* Cor do texto */
+    margin-left: 0; /* Margem esquerda */
+    padding: 2rem 0; /* Padding */
+    font-weight: bold; /* Peso da fonte */
   }
 
+  /* Estilos para o botão no menu de navegação */
   .links .btn {
     background: none;
   }
 
+  /* Overlay para tela cheia */
   .overlay {
     display: block;
     position: fixed;
@@ -351,71 +363,85 @@ color: #fff;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(8, 17, 1, 0.545);
-    opacity: 0;
+    background-color: rgba(8, 17, 1, 0.545); /* Cor de fundo com transparência */
+    opacity: 0; /* Opacidade inicial */
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.5s; /* Transição suave */
   }
 
+  /* Exibe o menu de navegação ao abrir o menu hamburguer */
   .big-wrapper.active .links {
-    transform: translateX(0);
-    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.4);
+    transform: translateX(0); /* Translação */
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.4); /* Sombra */
   }
 
+  /* Mostra o overlay ao abrir o menu hamburguer */
   .big-wrapper.active .overlay {
     pointer-events: all;
-    opacity: 1;
+    opacity: 1; /* Opacidade */
   }
 
+  /* Estilos para a área de destaque em telas menores (não utilizado) */
   .showcase-area {
     padding: 2.5rem 0;
     max-width: 700px;
     margin: 0 auto;
   }
 
+  /* Reordenação da grade na área de destaque em telas menores (não utilizado) */
   .showcase-area .container {
     grid-template-columns: 1fr;
     justify-content: center;
     grid-gap: 2rem;
   }
 
+  /* Estilos para o título grande em telas menores (não utilizado) */
   .big-title {
     font-size: 1.1rem;
   }
 
+  /* Estilos para o texto em telas menores (não utilizado) */
   .text {
     font-size: 0.95rem;
     margin: 1.4rem 0 1.5rem;
   }
 
+  /* Estilos para a pessoa em telas menores (não utilizado) */
   .person {
     width: 100%;
     transform: none;
   }
 
+  /* Estilos para o título do logo em telas menores (não utilizado) */
   .logo h3 {
     font-size: 1.25rem;
   }
 
+  /* Posicionamento da forma (não utilizado) */
   .shape {
     bottom: -180px;
     left: -150px;
   }
 }
 
+/* Media queries para telas muito pequenas */
 @media screen and (max-width: 470px) {
+  /* Padding menor para o container principal */
   .container {
     padding: 0 1.5rem;
   }
 
+  /* Tamanho do título grande em telas muito pequenas (não utilizado) */
   .big-title {
     font-size: 0.9rem;
   }
 
+  /* Margem do texto em telas muito pequenas (não utilizado) */
   .text {
     margin: 1.1rem 0 1.5rem;
   }
 
+  /* Tamanho do botão na área de destaque em telas muito pequenas (não utilizado) */
   .showcase-area .btn {
     font-size: 0.8rem;
   }

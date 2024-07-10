@@ -1,58 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-
-}
-body{
-  
-  background-image: url("Logistics.jpg\ -\ Editado.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; /* Isso fará a imagem cobrir toda a página */
-  background-position: center center; /* Isso centralizará a imagem */
-  background-attachment: fixed; /* Isso fará com que a imagem de fundo não role com a página */
-}
- 
- 
-.mapamundo{
-     margin-top: 534px;
-   
-   margin-bottom: -154px;
-}
-svg path{
- fill: #545454;
-stroke: #EBB887;
-stroke-width: .25;
+/* Define margens e paddings padrão como zero para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-svg path:hover{
-    fill: black;
- transition: .6s;
- cursor: pointer;
-   }
+/* Estilos básicos do corpo da página */
+body {
+  background-image: url("Logistics.jpg\ -\ Editado.jpg"); /* Imagem de fundo */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  background-size: cover; /* Cobrir toda a área */
+  background-position: center center; /* Centralizar a imagem */
+  background-attachment: fixed; /* Fixar a imagem de fundo */
+}
 
+/* Estilos para a classe .mapamundo */
+.mapamundo {
+  margin-top: 534px; /* Margem superior */
+  margin-bottom: -154px; /* Margem inferior negativa */
+}
 
-   .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+/* Estilos para os caminhos (paths) dentro de elementos SVG */
+svg path {
+  fill: #545454; /* Cor de preenchimento */
+  stroke: #EBB887; /* Cor da linha */
+  stroke-width: .25; /* Largura da linha */
+}
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 200px;
-    z-index: 1;
-    background-color: black;
-    font-size: 12px;
-    padding-top: 20px;
-    border: 2px solid black;
-  }
+/* Estilos ao passar o mouse sobre os caminhos (paths) dentro de elementos SVG */
+svg path:hover {
+  fill: black; /* Cor de preenchimento ao passar o mouse */
+  transition: .6s; /* Transição suave */
+  cursor: pointer; /* Cursor do mouse */
+}
 
-  .dropdown-content a {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
+/* Estilos para o dropdown */
+.dropdown {
+  position: relative; /* Posição relativa */
+  display: inline-block; /* Exibe como bloco */
+}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+/* Estilos para o conteúdo do dropdown */
+.dropdown-content {
+  display: none; /* Não exibe por padrão */
+  position: absolute; /* Posição absoluta */
+  min-width: 200px; /* Largura mínima */
+  z-index: 1; /* Z-index para empilhamento */
+  background-color: black; /* Cor de fundo */
+  font-size: 12px; /* Tamanho da fonte */
+  padding-top: 20px; /* Padding superior */
+  border: 2px solid black; /* Borda */
+}
+
+/* Estilos para os itens (links) dentro do dropdown */
+.dropdown-content a {
+  display: block; /* Exibe como bloco */
+  font-size: 14px; /* Tamanho da fonte */
+  margin-bottom: 5px; /* Margem inferior */
+}
+
+/* Mostra o dropdown ao passar o mouse sobre o elemento .dropdown */
+.dropdown:hover .dropdown-content {
+  display: block; /* Exibe o conteúdo do dropdown */
+}

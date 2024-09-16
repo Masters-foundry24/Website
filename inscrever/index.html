@@ -102,13 +102,13 @@
             position: absolute;
             top: -30px; /* Ajuste para onde o tooltip deve aparecer */
             left: 50%; /* Centraliza o tooltip */
-            transform: translateX(-50%);
+            transform: translateX(-65%);
             background-color: #333;
             color: #fff;
             padding: 5px 10px;
             border-radius: 5px;
             font-size: 12px;
-            white-space: nowrap;
+           
             z-index: 10; /* Garante que o tooltip apareça acima de outros elementos */
             opacity: 1;
             transition: opacity 0.3s ease;
@@ -129,7 +129,7 @@
         button {
             background-color: red;
             color: white;
-            padding: 12px 25px;
+            padding: 10px 2px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -137,7 +137,8 @@
             font-weight: bold;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease, transform 0.2s ease;
-            width: 15%;
+            width: 44%;
+           margin-top: 50px;
         }
 
         button:hover {
@@ -155,17 +156,16 @@
             box-shadow: 0 0 0 4px rgba(255, 0, 238, 0.4);
         }
 
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+      
 
 
+  
 
-
-
-
-
-
-
-
-        
     </style>
 </head>
 <body>
@@ -209,62 +209,63 @@
     <div style="text-align: center; padding: 20px; margin-top: 500px;">
         <h2 style="font-weight: 400; color: #ffff;">Leve consigo até 3kg de miniaturas para Portugal e ganhe <span style="font-size: 28px; background-image: linear-gradient(to right, #56ff01, #000000); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">50,00€</span>
             para si</h2>
-        <form action="https://api.staticforms.xyz/submit" method="POST">  
+        <form id="inscricao-form" action="https://api.staticforms.xyz/submit" method="POST" >  
             <input type="hidden" name="accessKey" value="0930020f-4df4-479b-aab8-8082eacc7461">   <!----aff6f92c-2234-46bf-a227-9b97f6d1d6c7 chave para o email ventures.masters@gmail.com-->
             <input type="text" name="honeypot" style="display: none;">
             <input type="hidden" name="redirectTo" value="https://mastersminis.com/inscrever/sucesso.html">
             <!----aff6f92c-2234-46bf-a227-9b97f6d1d6c7 chave para o email ceitajosenasio19@gmail.com-->
             <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="name" required>
+                <label for="nome"><span style="color: red;">* </span>Nome: </label>
+                <input type="text" id="nome" name="name" required> 
+
             </div>
 
             <div class="form-group">
-                <label for="telefone">Telefone:</label>
-                <input type="number" id="telefone" name="$phone" required>
+                <label for="telefone"><span style="color: red;">* </span> Telefone:</label>
+                <input type="number" id="telefone" name="$phone" placeholder="(+239) " required>
             </div>
 
             <div class="form-group">
-                <label for="barrio">Bairro:</label>
-                <input type="text" id="barrio" name="$bairro" required>
+                <label for="barrio"><span style="color: red;">* </span> Bairro:</label>
+                <input type="text" id="bairro" name="$bairro" required>
                 <i class="fas fa-info-circle" data-tooltip="Vamos levar as miniaturas para a tua casa. Então nós precisamos de saber onde para ir."></i>
             </div>
 
             <div class="form-group">
-                <label for="agencia">Agência de aviões:</label>
-                <select id="agencia" name="$agencia" required>
+                <label for="agencia"><span style="color: red;">* </span> Agência de aviões:</label>
+                <select id="agencia" name="$agencia" required style="appearance: none;" translate="no">
                     <option value="">Selecione a sua agência de viagens</option>
                     <option value="TAP">TAP</option>
                     <option value="TAAG">TAAG</option>
                     <option value="STP Airways">STP Airways</option>
                 </select>
+                <i class="fas fa-info-circle" data-tooltip="Escolha a agência de viagens com a qual vai viajar para Portugal."></i>
             </div>
 
             <div class="form-group">
-                <label for="dia_viagem">Dia de viagem:</label>
-                <input type="date" id="dia_viagem" name="$data_viagem" required>
-                <i class="fas fa-info-circle" data-tooltip="Qual dia voçê vai sair do aeroporto de São Tomé?"></i>
-            </div>
-
-            <div class="form-group">
-                <label for="mala">Tem espaço na tua mala?:</label>
-                <select id="mala" name="$mala" required  style="appearance: none; /* Remove a seta padrão do select */">
-                    <option value="">Sim/ Não</option>
+                <label for="mala"><span style="color: red;">* </span> Tem espaço na tua mala?</label>
+                <select id="mala" name="$mala" required style="appearance: none; /* Remove a seta padrão do select */">
+                    <option value="">Selecione (Sim/ Não)</option>
                     <option value="Sim">Sim</option>
-                    <option value="Nao">Não</option>
+                    <option value="Não">Não</option>
                 </select>
-                <i class="fas fa-info-circle" data-tooltip="Qual dia voçê vai sair do aeroporto de São Tomé?"></i>
+                <i class="fas fa-info-circle" data-tooltip="Indica se tens espaço disponível na tua mala para transportar as miniaturas."></i>
             </div>
-            
-            <br><br>
-            <button type="submit">  <i>Inscrever</i></button>
+
+            <div id="error-message" class="error" style="display: none;">Você deve indicar que tem espaço na mala para se inscrever.</div>
+
+            <button type="submit">Inscrever <ion-icon name="checkmark-done-outline" style="font-size: 20px; margin-bottom: -4px;"></ion-icon></button> 
         </form>
     </div>
 
 
 
+
+
+
+    
     <!-- Rodapé -->
-  <div class="footer" style="bottom: 0; margin-bottom: -40px;"> 
+  <div class="footer" style="bottom: 0; margin-bottom: -90px; margin-top: 50px;"> 
     <div>
       <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="terms of service/index.html">Terms of Service</a></p>
     </div>
@@ -276,5 +277,43 @@
     </div>
   </div>
   <button style="margin-left: -1000px;" class="toggle-btn"></button>
+    <script>
+        document.getElementById('inscricao-form').addEventListener('submit', function(event) {
+            var malaValue = document.getElementById('mala').value;
+            if (malaValue === 'Não') {
+                event.preventDefault(); // Impede o envio do formulário
+                document.getElementById('error-message').style.display = 'block'; // Exibe a mensagem de erro
+            } else {
+                document.getElementById('error-message').style.display = 'none'; // Oculta a mensagem de erro
+            }
+        });
+    </script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const input = document.getElementById('telefone');
+        const prefix = '(+239) ';
+
+        // Definir o valor inicial
+        input.value = prefix;
+
+        // Adicionar o prefixo ao texto digitado
+        input.addEventListener('input', function() {
+            if (!input.value.startsWith(prefix)) {
+                input.value = prefix;
+            }
+        });
+
+        // Definir o tipo de input como texto para permitir caracteres especiais
+        input.setAttribute('type', 'text');
+    });
+</script>
+
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-</html>     
+</html>

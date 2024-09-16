@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .titulous {
+            margin-top: 530px;
+            font-size: 36px;
+            text-align: center;
+            color: #333;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-in-out;
+        }
+
+        .titulous.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #ff8c00, #ff0080);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+        
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 5px #ff8c00, 0 0 10px #ff0080, 0 0 15px #ff8c00;
+            }
+            50% {
+                text-shadow: 0 0 20px #ff8c00, 0 0 30px #ff0080, 0 0 40px #ff8c00;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff8c00, 0 0 10px #ff0080, 0 0 15px #ff8c00;
+            }
+        }
+
+        .titulous:hover .highlight {
+            animation: textGlow 1.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulous">Obrigado que você <span class="highlight">inscreveu!</span> Vamos ligar você para organizar coisas logo.</h1>
+
+    <script>
+        // Faz a animação do título ao carregar a página
+        document.addEventListener('DOMContentLoaded', function() {
+            const title = document.querySelector('.titulous');
+            setTimeout(() => {
+                title.classList.add('appear');
+            }, 500); // Atraso de 0.5s antes de aparecer
+        });
+    </script>
+</body>
+</html>

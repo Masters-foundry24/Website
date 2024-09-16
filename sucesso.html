@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Define a compatibilidade com IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configurações para responsividade -->
+
+    <!-- Favicon do site -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- Descrição do site -->
+    <meta name="description" content="Contact us for more information or inquiries. We are ready to assist you.">
+
+    <title>Masters Minis-Sucesso</title> <!-- Título da página -->
+
+    <!-- Script para ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
+
+    <!-- Links para os arquivos CSS -->
+    <link rel="stylesheet" href="../Responsive Footer/assets/css/style.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            background-image: url("IMAGEM/sucesso.jpg"); /* Imagem de fundo */
+            background-repeat: no-repeat; /* Não repetir a imagem de fundo */
+            background-size: cover; /* Cobrir todo o fundo com a imagem */
+        }
+ 
+        /* Estilo para o dropdown do menu */
+        .dropdown {
+            position: relative; /* Posição relativa */
+            display: inline-block; /* Exibe como inline-block */
+        }
+
+        /* Estilo para o conteúdo do dropdown */
+        .dropdown-content {
+            display: none; /* Não exibe inicialmente */
+            position: absolute; /* Posição absoluta */
+            min-width: 200px; /* Largura mínima */
+            z-index: 1; /* Índice Z */
+            background-color: black; /* Cor de fundo */
+            font-size: 12px; /* Tamanho da fonte */
+            padding-top: 20px; /* Padding superior */
+            border: 2px solid black; /* Borda */
+        }
+
+        /* Estilo para os links dentro do dropdown */
+        .dropdown-content a {
+            display: block; /* Exibe como bloco */
+            font-size: 14px; /* Tamanho da fonte */
+            margin-bottom: 5px; /* Margem inferior */
+        }
+
+        /* Mostrar o dropdown ao passar o mouse */
+        .dropdown:hover .dropdown-content {
+            display: block; /* Exibe o dropdown */
+        }
+
+
+        .titulous {
+            margin-top: 550px;
+            font-size: 28px;
+            text-align: center;
+            color: #ffff;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-in-out;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .titulous.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #2bff00, #f1087d);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+        
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 5px #2bff00, 0 0 10px #ff0080, 0 0 15px #f1087d;
+            }
+            50% {
+                text-shadow: 0 0 20px #2bff00, 0 0 30px #ff0080, 0 0 40px #f1087d;
+            }
+            100% {
+                text-shadow: 0 0 5px #2bff00, 0 0 10px #ff0080, 0 0 15px #f1087d;
+            }
+        }
+
+        .titulous:hover .highlight {
+            animation: textGlow 1.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <br> <!-- Quebra de linha para espaçamento -->
+
+    <!-- Wrapper principal -->
+    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -27px; margin-bottom: -500px; outline: none; min-height: 0vh;">
+        <!-- Cabeçalho -->
+        <header style="padding-bottom: 3px;">
+            <div class="container">
+                <!-- Logo do site -->
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/branca.jpg" alt="Logo" /></a>
+                </div>
+
+                <!-- Links do menu de navegação -->
+                <div class="links">
+                    <ul>
+                        <a href="../index.html" class="active">Home</a> <!-- Link para a página inicial -->
+                        <a href="../gallery/index.html">Gallery</a> <!-- Link para a galeria -->
+                        <a href="../services/index.html">Services</a> <!-- Link para os serviços -->
+                        <a href="../logistics/index.html">Logistics</a> <!-- Link para a logística -->
+                        <a href="../faq/index.html">FAQ</a> <!-- Link para as perguntas frequentes -->
+                        
+                        <!-- Dropdown no menu -->
+                        <div class="dropdown">
+                            <a href="../about us/index.html">About Us</a> <!-- Link para a página "Sobre nós" -->
+                            <div class="dropdown-content">
+                                <a href="../our amazing team/index.html">Our Amazing Team</a> <!-- Link para a equipe -->
+                                <a href="../about us/index.html">Our Amazing Company</a> <!-- Link para a empresa -->
+                            </div>
+                        </div>
+                        
+                        <a href="../contact/index.html">Contact</a> <!-- Link para a página de contato -->
+                        <a href="../careers/index.html">Careers</a> <!-- Link para a página de carreiras -->
+                    </ul>
+                </div>
+
+                <!-- Sobreposição -->
+                <div class="overlay"></div>
+
+                <!-- Menu de hambúrguer (para mobile) -->
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+<h1 class="titulous">Obrigado que você se <span class="highlight">inscreveu!</span>  Vamos ligar para você para organizar as coisas logo.</h1>
+    
+    <!-- Rodapé -->
+    <div class="footer" style="margin-bottom:-50px; margin-top: 490px;">
+        <div>
+            <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p> <!-- Link para os Termos de Serviço -->
+        </div>
+        <div>
+            <img src="../img/branca.jpg" alt="Image description"> <!-- Imagem no rodapé -->
+        </div>
+        <div>
+            <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../Privacy Policy/index.html">Privacy Policy</a></p> <!-- Link para a Política de Privacidade -->
+        </div>
+    </div>
+    <button style="margin-left: -1000px;" class="toggle-btn">
+    </button> <!-- Botão de alternância de tema -->
+
+
+    <script>
+        // Faz a animação do título ao carregar a página
+        document.addEventListener('DOMContentLoaded', function() {
+            const title = document.querySelector('.titulous');
+            setTimeout(() => {
+                title.classList.add('appear');
+            }, 500); // Atraso de 0.5s antes de aparecer
+        });
+    </script>
+
+    <!-- Script JS do site -->
+    <script src="../app.js"></script> <!-- Link para o arquivo JS -->
+</body>
+</html>

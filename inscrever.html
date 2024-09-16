@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Contact us for more information or inquiries. We are ready to assist you.">
+    <title>Masters Minis-Inscrição</title>
+
+    <script src="https://kit.fontawesome.com/c47b2c56e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Responsive Footer/assets/css/style.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        body {
+            background-image: url("IMAGEM/imagemincrever.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .titulous {
+            margin-top: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            z-index: 1;
+            background-color: black;
+            font-size: 12px;
+            padding-top: 20px;
+            border: 2px solid black;
+        }
+
+        .dropdown-content a {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        form {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Estilizando os grupos de formulários para exibir os labels e inputs em colunas separadas */
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+            max-width: 600px;
+            position: relative; /* Adicionado para o tooltip */
+        }
+
+        /* Estilo para os labels */
+        .form-group label {
+            flex: 1;
+            text-align: left;
+            padding-right: 20px;
+            color: #ffff;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* Estilo para os inputs */
+        .form-group input, .form-group select {
+            flex: 2;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        /* Estilo para os ícones de informações */
+        .form-group i {
+            margin-left: -16px;
+            cursor: pointer;
+            position: relative; /* Necessário para o tooltip */
+        }
+
+        /* Tooltip styling */
+        .form-group i:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: -30px; /* Ajuste para onde o tooltip deve aparecer */
+            left: 50%; /* Centraliza o tooltip */
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 10; /* Garante que o tooltip apareça acima de outros elementos */
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Tooltip escondido por padrão */
+        .form-group i::after {
+            opacity: 0;
+            pointer-events: none; /* Previne a interrupção de interação com outros elementos */
+        }
+
+        .form-group i:hover::after {
+            opacity: 1; /* Exibe o tooltip ao passar o mouse */
+        }
+
+        /* Estilos para o botão */
+        button {
+            background-color: red;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 15%;
+        }
+
+        button:hover {
+            background-color: rgba(47, 182, 3, 0.822);
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #29f801;
+            transform: scale(0.98);
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(255, 0, 238, 0.4);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <br>
+
+    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -27px; margin-bottom: -500px; outline: none; min-height: 0vh;">
+        <header style="padding-bottom: 3px;">
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/branca.jpg" alt="Logo" /></a>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <a href="../index.html" class="active">Home</a>
+                        <a href="../gallery/index.html">Gallery</a>
+                        <a href="../services/index.html">Services</a>
+                        <a href="../logistics/index.html">Logistics</a>
+                        <a href="../faq/index.html">FAQ</a>
+                        <div class="dropdown">
+                            <a href="../about us/index.html">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="../our amazing team/index.html">Our Amazing Team</a>
+                                <a href="../about us/index.html">Our Amazing Company</a>
+                            </div>
+                        </div>
+                        <a href="../contact/index.html">Contact</a>
+                        <a href="../careers/index.html">Careers</a>
+                    </ul>
+                </div>
+
+                <div class="overlay"></div>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Formulário -->
+    <div style="text-align: center; padding: 20px; margin-top: 500px;">
+        <h2 style="font-weight: 400; color: #ffff;">Leve consigo até 3kg de miniaturas para Portugal e ganhe <span style="font-size: 28px; background-image: linear-gradient(to right, #56ff01, #000000); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">50,00€</span>
+            para si</h2>
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="aff6f92c-2234-46bf-a227-9b97f6d1d6c7"> <!-- Required -->
+            <input type="text" name="honeypot" style="display: none;">
+            <input type="hidden" name="redirectTo" value="https://mastersminis.com//sucesso.html">
+            
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="number" id="telefone" name="$phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="barrio">Bairro:</label>
+                <input type="text" id="barrio" name="$bairro" required>
+                <i class="fas fa-info-circle" data-tooltip="Vamos levar as miniaturas para a tua casa. Então nós precisamos de saber onde para ir."></i>
+            </div>
+
+            <div class="form-group">
+                <label for="agencia">Agência de aviões:</label>
+                <select id="agencia" name="$agencia" required>
+                    <option value="">Selecione a sua agência de viagens</option>
+                    <option value="TAP">TAP</option>
+                    <option value="TAAG">TAAG</option>
+                    <option value="STP Airways">STP Airways</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dia_viagem">Dia de viagem:</label>
+                <input type="date" id="dia_viagem" name="$data_viagem" required>
+                <i class="fas fa-info-circle" data-tooltip="Qual dia voçê vai sair do aeroporto de São Tomé?"></i>
+            </div>
+
+            <div class="form-group">
+                <label for="mala">Tem espaço na tua mala?:</label>
+                <select id="mala" name="$mala" required  style="appearance: none; /* Remove a seta padrão do select */">
+                    <option value="">Sim/ Não</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select>
+                <i class="fas fa-info-circle" data-tooltip="Qual dia voçê vai sair do aeroporto de São Tomé?"></i>
+            </div>
+            
+            <br><br>
+            <button type="submit">  <i>Inscrever</i></button>
+        </form>
+    </div>
+
+
+
+    <!-- Rodapé -->
+  <div class="footer" style="bottom: 0; margin-bottom: -40px;"> 
+    <div>
+      <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="terms of service/index.html">Terms of Service</a></p>
+    </div>
+    <div>
+      <img src="../img/branca.jpg" alt="Image description">
+    </div>
+    <div>
+      <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="Privacy Policy/index.html">Privacy Policy</a></p>
+    </div>
+  </div>
+  <button style="margin-left: -1000px;" class="toggle-btn"></button>
+</body>
+</html>     

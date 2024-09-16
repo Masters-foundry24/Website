@@ -58,6 +58,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+       
         }
 
         /* Estilizando os grupos de formulários para exibir os labels e inputs em colunas separadas */
@@ -127,7 +128,7 @@
 
         /* Estilos para o botão */
         button {
-            background-color: red;
+            background-color: black;
             color: white;
             padding: 10px 2px;
             border: none;
@@ -153,12 +154,12 @@
 
         button:focus {
             outline: none;
-            box-shadow: 0 0 0 4px rgba(255, 0, 238, 0.4);
+            box-shadow: 0 0 0 4px #ffff;
         }
 
         .error {
             color: red;
-            font-size: 14px;
+            font-size: 16px;
             margin-top: 5px;
         }
       
@@ -207,7 +208,7 @@
 
     <!-- Formulário -->
     <div style="text-align: center; padding: 20px; margin-top: 500px;">
-        <h2 style="font-weight: 400; color: #ffff;">Leve consigo até 3kg de miniaturas para Portugal e ganhe <span style="font-size: 28px; background-image: linear-gradient(to right, #56ff01, #000000); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">50,00€</span>
+        <h2 style="font-weight: 400; color: #ffff;">Leve consigo até 3kg de miniaturas para Portugal e ganhe <span style="font-size: 28px; background-image: linear-gradient(to right, #000000, #56ff01); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">50,00€</span>
             para si</h2>
         <form id="inscricao-form" action="https://api.staticforms.xyz/submit" method="POST" >  
             <input type="hidden" name="accessKey" value="0930020f-4df4-479b-aab8-8082eacc7461">   <!----aff6f92c-2234-46bf-a227-9b97f6d1d6c7 chave para o email ventures.masters@gmail.com-->
@@ -222,7 +223,7 @@
 
             <div class="form-group">
                 <label for="telefone"><span style="color: red;">* </span> Telefone:</label>
-                <input type="number" id="telefone" name="$phone" placeholder="(+239) " required>
+                <input type="number" id="telefone" name="$phone" placeholder="(+239) xxx xx xx" required>
             </div>
 
             <div class="form-group">
@@ -246,13 +247,13 @@
                 <label for="mala"><span style="color: red;">* </span> Tem espaço na tua mala?</label>
                 <select id="mala" name="$mala" required style="appearance: none; /* Remove a seta padrão do select */">
                     <option value="">Selecione (Sim/ Não)</option>
-                    <option value="Sim">Sim</option>
+                    <option value="Sim" style="font-weight: bold;">Sim</option>
                     <option value="Não">Não</option>
                 </select>
                 <i class="fas fa-info-circle" data-tooltip="Indica se tens espaço disponível na tua mala para transportar as miniaturas."></i>
             </div>
 
-            <div id="error-message" class="error" style="display: none;">Você deve indicar que tem espaço na mala para se inscrever.</div>
+            <div id="error-message" class="error" style="display: none; font-weight: 600;">Se não tiver espaço na mala não poderá se Inscrever</div>
 
             <button type="submit">Inscrever <ion-icon name="checkmark-done-outline" style="font-size: 20px; margin-bottom: -4px;"></ion-icon></button> 
         </form>

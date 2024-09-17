@@ -244,6 +244,11 @@
         }
     }
   
+
+    span.asterisco {
+            font-weight: lighter;
+            font-size: 22px;
+        }
  
 
     </style>
@@ -292,33 +297,33 @@
         <span style="font-size: 28px; background-image: linear-gradient(to right, #000000, #56ff01); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">50,00€</span>
         para si
     </h2>
-    <form id="inscricao-form" action="https://api.staticforms.xyz/submit" method="POST">
+    <form id="inscricao-form" action="https://api.staticforms.xyz/submit" method="POST" style="margin-top: -2px;">
         <input type="hidden" name="accessKey" value="0930020f-4df4-479b-aab8-8082eacc7461">
         <input type="text" name="honeypot" style="display: none;">
         <input type="hidden" name="redirectTo" value="https://mastersminis.com/inscrever/sucesso.html">
 
         <!-- Nome -->
         <div class="form-group">
-            <label for="nome"><span style="color: red;">* </span>Nome: </label>
+            <label for="nome"><span style="color: red;" class="asterisco">* </span>Nome: </label>
             <input type="text" id="nome" name="name" required>
         </div>
 
         <!-- Telefone -->
         <div class="form-group">
-            <label for="telefone"><span style="color: red;">* </span> Telefone:</label>
+            <label for="telefone"><span style="color: red;" class="asterisco">* </span> Telefone:</label>
             <input type="number" id="telefone" name="$phone" placeholder="(+239) xxx xx xx" required>
         </div>
 
         <!-- Bairro -->
         <div class="form-group">
-            <label for="bairro"><span style="color: red;">* </span> Bairro:</label>
+            <label for="bairro"><span style="color: red;" class="asterisco">* </span> Bairro:</label>
             <input type="text" id="bairro" name="$bairro" required>
             <i class="fas fa-info-circle" data-tooltip="Vamos levar as miniaturas para a tua casa. Então nós precisamos de saber onde para ir."></i>
         </div>
 
         <!-- Agência de Aviões -->
         <div class="form-group">
-            <label for="agencia"><span style="color: red;">* </span> Agência de aviões:</label>
+            <label for="agencia"><span style="color: red;" class="asterisco">* </span> Agência de aviões:</label>
             <select id="agencia" name="$agencia" required>
                 <option value="">Selecione a sua agência de viagens</option>
                 <option value="TAP">TAP</option>
@@ -328,9 +333,18 @@
             <i class="fas fa-info-circle" data-tooltip="Escolha a agência de viagens com a qual vai viajar para Portugal."></i>
         </div>
 
+
+
+         <!-- Data -->
+         <div class="form-group">
+            <label for="bairro"><span style="color: red;" class="asterisco">* </span> Data da Viagem:</label>
+            <input type="date" id="Data_Viagem" name="$Data_Viagem" required>
+            <i class="fas fa-info-circle" data-tooltip="Qual dia voçê vai sair do areoporto de São Tomé?"></i>
+        </div>
+
         <!-- Mala -->
         <div class="form-group">
-            <label for="mala"><span style="color: red;">* </span> Tem espaço na tua mala?</label>
+            <label for="mala"><span style="color: red;" class="asterisco">* </span> Tem espaço na tua mala?</label>
             <select id="mala" name="$mala" required>
                 <option value="">Selecione (Sim/ Não)</option>
                 <option value="Sim" style="font-weight: bold;">Sim</option>

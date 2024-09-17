@@ -21,11 +21,26 @@
     <link rel="stylesheet" href="../style.css">
 
     <style>
+
+              /* Certificando-se de que a página preencha toda a altura da tela */
+     html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         /* Estilos para o corpo da página */
         body {
             background-image: url("imagem/sucesso.webp"); /* Imagem de fundo */
             background-repeat: no-repeat; /* Não repetir a imagem de fundo */
             background-size: cover; /* Cobrir todo o fundo com a imagem */
+
+            min-height: 100vh; /* Garante que o body ocupe 100% da altura da viewport */
+
+            justify-content: space-between; /* Mantém o footer no final da página */
+
+            
+            display: flex;
+            flex-direction: column;
         }
  
         /* Estilo para o dropdown do menu */
@@ -103,7 +118,7 @@
     <br> <!-- Quebra de linha para espaçamento -->
 
     <!-- Wrapper principal -->
-    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -27px; margin-bottom: -500px; outline: none; min-height: 0vh;">
+    <div class="big-wrapper light" style="background-color:#ffff; margin-top: -45px; margin-bottom: -420px; outline: none; min-height: 0vh;">
         <!-- Cabeçalho -->
         <header style="padding-bottom: 3px;">
             <div class="container">
@@ -148,7 +163,7 @@
 <h1 class="titulous">Obrigado por <span class="highlight">inscrever!</span>  Vamos ligar para você para organizar as coisas logo.</h1>
     
     <!-- Rodapé -->
-    <div class="footer" style="margin-bottom:-50px; margin-top: 490px;">
+    <div class="footer" style="margin-bottom:-65px; margin-top: 430px;">
         <div>
             <p><a style="color: #ffff; font-weight: 500; font-size: 16px;" href="../terms of service/index.html">Terms of Service</a></p> <!-- Link para os Termos de Serviço -->
         </div>

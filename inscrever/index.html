@@ -117,8 +117,8 @@
         .form-group i:hover::after {
             content: attr(data-tooltip);
             position: absolute;
-            top: -30px; /* Ajuste para onde o tooltip deve aparecer */
-            left: 50%; /* Centraliza o tooltip */
+            top: 1px; /* Ajuste para onde o tooltip deve aparecer */
+            left: 390%; /* Centraliza o tooltip */
             transform: translateX(-65%);
             background-color: #333;
             color: #fff;
@@ -181,6 +181,62 @@
       
 
 
+
+
+
+
+
+
+         /* Para dispositivos móveis */
+    @media (max-width: 768px) {
+        .form-wrapper {
+            margin-top: 50px; /* Reduzindo o espaçamento superior em dispositivos móveis */
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 1.4; /* Melhorando a legibilidade do texto */
+        }
+
+        .form-group {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%; /* Inputs e selects ocupam toda a largura da tela */
+        }
+
+        button {
+            width: 100%; /* Botão ocupa toda a largura da tela */
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 18px; /* Reduzindo o tamanho do texto em telas menores */
+            padding: 0 10px; /* Adicionando preenchimento para evitar texto colado nas bordas */
+        }
+
+        .form-group {
+            width: 100%;
+        }
+
+        .form-group input, .form-group select {
+            font-size: 14px; /* Reduzindo o tamanho da fonte dos inputs para caber melhor */
+            padding: 10px;
+        }
+
+        button {
+            font-size: 16px; /* Tamanho do botão um pouco menor para caber bem */
+            padding: 12px 0; /* Ajustando o espaçamento interno */
+        }
+    }
   
 
     </style>
@@ -223,59 +279,66 @@
     </div>
 
     <!-- Formulário -->
-    <div style="text-align: center; padding: 20px; margin-top: 500px;">
-        <h2 style="font-weight: 400; color: #ffff;">Leve consigo até 3kg de miniaturas para Portugal e ganhe <span style="font-size: 28px; background-image: linear-gradient(to right, #000000, #56ff01); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">50,00€</span>
-            para si</h2>
-        <form id="inscricao-form" action="https://api.staticforms.xyz/submit" method="POST" >  
-            <input type="hidden" name="accessKey" value="0930020f-4df4-479b-aab8-8082eacc7461">   <!----aff6f92c-2234-46bf-a227-9b97f6d1d6c7 chave para o email ventures.masters@gmail.com-->
-            <input type="text" name="honeypot" style="display: none;">
-            <input type="hidden" name="redirectTo" value="https://mastersminis.com/inscrever/sucesso.html">
-            <!----aff6f92c-2234-46bf-a227-9b97f6d1d6c7 chave para o email ceitajosenasio19@gmail.com-->
-            <div class="form-group">
-                <label for="nome"><span style="color: red;">* </span>Nome: </label>
-                <input type="text" id="nome" name="name" required> 
+<div class="form-wrapper" style="text-align: center; padding: 20px; margin-top: 500px;">
+    <h2 style="font-weight: 400; color: #ffff;">
+        Leve consigo até 3kg de miniaturas para Portugal e ganhe 
+        <span style="font-size: 28px; background-image: linear-gradient(to right, #000000, #56ff01); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">50,00€</span>
+        para si
+    </h2>
+    <form id="inscricao-form" action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="0930020f-4df4-479b-aab8-8082eacc7461">
+        <input type="text" name="honeypot" style="display: none;">
+        <input type="hidden" name="redirectTo" value="https://mastersminis.com/inscrever/sucesso.html">
 
-            </div>
+        <!-- Nome -->
+        <div class="form-group">
+            <label for="nome"><span style="color: red;">* </span>Nome: </label>
+            <input type="text" id="nome" name="name" required>
+        </div>
 
-            <div class="form-group">
-                <label for="telefone"><span style="color: red;">* </span> Telefone:</label>
-                <input type="number" id="telefone" name="$phone" placeholder="(+239) xxx xx xx" required>
-            </div>
+        <!-- Telefone -->
+        <div class="form-group">
+            <label for="telefone"><span style="color: red;">* </span> Telefone:</label>
+            <input type="number" id="telefone" name="$phone" placeholder="(+239) xxx xx xx" required>
+        </div>
 
-            <div class="form-group">
-                <label for="barrio"><span style="color: red;">* </span> Bairro:</label>
-                <input type="text" id="bairro" name="$bairro" required>
-                <i class="fas fa-info-circle" data-tooltip="Vamos levar as miniaturas para a tua casa. Então nós precisamos de saber onde para ir."></i>
-            </div>
+        <!-- Bairro -->
+        <div class="form-group">
+            <label for="bairro"><span style="color: red;">* </span> Bairro:</label>
+            <input type="text" id="bairro" name="$bairro" required>
+            <i class="fas fa-info-circle" data-tooltip="Vamos levar as miniaturas para a tua casa. Então nós precisamos de saber onde para ir."></i>
+        </div>
 
-            <div class="form-group">
-                <label for="agencia"><span style="color: red;">* </span> Agência de aviões:</label>
-                <select id="agencia" name="$agencia" required style="appearance: none;" translate="no">
-                    <option value="">Selecione a sua agência de viagens</option>
-                    <option value="TAP">TAP</option>
-                    <option value="TAAG">TAAG</option>
-                    <option value="STP Airways">STP Airways</option>
-                </select>
-                <i class="fas fa-info-circle" data-tooltip="Escolha a agência de viagens com a qual vai viajar para Portugal."></i>
-            </div>
+        <!-- Agência de Aviões -->
+        <div class="form-group">
+            <label for="agencia"><span style="color: red;">* </span> Agência de aviões:</label>
+            <select id="agencia" name="$agencia" required>
+                <option value="">Selecione a sua agência de viagens</option>
+                <option value="TAP">TAP</option>
+                <option value="TAAG">TAAG</option>
+                <option value="STP Airways">STP Airways</option>
+            </select>
+            <i class="fas fa-info-circle" data-tooltip="Escolha a agência de viagens com a qual vai viajar para Portugal."></i>
+        </div>
 
-            <div class="form-group">
-                <label for="mala"><span style="color: red;">* </span> Tem espaço na tua mala?</label>
-                <select id="mala" name="$mala" required style="appearance: none; /* Remove a seta padrão do select */">
-                    <option value="">Selecione (Sim/ Não)</option>
-                    <option value="Sim" style="font-weight: bold;">Sim</option>
-                    <option value="Não">Não</option>
-                </select>
-                <i class="fas fa-info-circle" data-tooltip="Indica se tens espaço disponível na tua mala para transportar as miniaturas."></i>
-            </div>
+        <!-- Mala -->
+        <div class="form-group">
+            <label for="mala"><span style="color: red;">* </span> Tem espaço na tua mala?</label>
+            <select id="mala" name="$mala" required>
+                <option value="">Selecione (Sim/ Não)</option>
+                <option value="Sim" style="font-weight: bold;">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+            <i class="fas fa-info-circle" data-tooltip="Indica se tens espaço disponível na tua mala para transportar as miniaturas."></i>
+        </div>
 
-            <div id="error-message" class="error" style="display: none; font-weight: 600;">Se não tiver espaço na mala não poderá se Inscrever</div>
+        <div id="error-message" class="error" style="display: none; font-weight: 600;">
+            Se não tiver espaço na mala não poderá se Inscrever
+        </div>
 
-            <button type="submit">Inscrever <ion-icon name="checkmark-done-outline" style="font-size: 20px; margin-bottom: -4px;"></ion-icon></button> 
-        </form>
-    </div>
-
-
+        <button type="submit">Inscrever <ion-icon name="checkmark-done-outline" style="font-size: 20px; margin-bottom: -4px;"></ion-icon></button>
+    </form>
+</div>
 
 
 
